@@ -145,9 +145,8 @@ body, html, main, div, span, p, a, img, header, footer, span, section, nav, asid
 
 html, body {
   .fs;
-  background: white;
+  background-image: url("./images/background.jpg");
   .bg-setup;
-  color: black;
   font-family: @font;
   font-size: @max;
   speak: none;
@@ -184,4 +183,19 @@ html {
 
 body {
 
+  // 0. Navigation
+  #meu-navigation {
+    width: @max;
+    height: 20vh;
+    .position(fixed);
+    //
+    .container-fluid {
+      .fs;
+
+      #meu-nav-bg {
+        width: @max;
+        height: @max;
+      }
+    }
+  }
 }

@@ -16,15 +16,10 @@
 
 <script>
     jQuery( document ).ready(function() {
-        AOS.init();
+
     });
 </script>
 
-<script>
-    jQuery(window).on('load', function () {
-        AOS.refresh();
-    });
-</script>
 
 </body>
 </html>

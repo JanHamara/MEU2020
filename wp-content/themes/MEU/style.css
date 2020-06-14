@@ -109,7 +109,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: white;
+  background-image: url("./images/background.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -118,7 +118,6 @@ body {
   -o-background-size: cover;
   -webkit-background-size: cover;
   -ms-content-zooming: none;
-  color: black;
   font-family: 'Dosis', sans-serif;
   font-size: 100%;
   speak: none;
@@ -186,5 +185,18 @@ html {
 .col-xs-12 {
   margin: 0%;
   padding: 0%;
+}
+body #meu-navigation {
+  width: 100%;
+  height: 20vh;
+  position: fixed;
+}
+body #meu-navigation .container-fluid {
+  width: 100%;
+  height: 100%;
+}
+body #meu-navigation .container-fluid #meu-nav-bg {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

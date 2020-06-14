@@ -26,8 +26,6 @@
 
     <!--    Use core WP function to insert favicon    -->
 
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
-
     <?php wp_head(); ?>
 </head>
 
