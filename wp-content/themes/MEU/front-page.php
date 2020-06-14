@@ -10,6 +10,8 @@
 
 <main>
 
-    <h1>SIMULATION OF EUROPEAN POLITICS</h1>
+    <header id="meu-header">
+        <?php get_template_part( 'template-parts/header/page', 'header' ); ?>
+    </header>
 
 <?php get_footer(); ?>

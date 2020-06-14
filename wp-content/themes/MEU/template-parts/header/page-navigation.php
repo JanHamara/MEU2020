@@ -46,5 +46,15 @@
                     </a>
                 </li>
             </ul>
+
+            <!--     Login Container       -->
+            <div id="meu-nav-login"></div>
+            <div id="meu-nav-login-links">
+                <div id="meu-nl-container">
+                    <div class="meu-nl-content">
+                        <div id="meu-nl-login">Log In</div> | <div id="meu-nl-register">Register</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>

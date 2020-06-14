@@ -129,6 +129,11 @@ Text Domain: MEU
   display: none !important;
 }
 
+.meu-yellow {
+  .display(inline);
+  color: @meu-yellow !important;
+}
+
 //------------------------------------------------------------------------------
 
 // Main Setup
@@ -181,7 +186,7 @@ html {
 
 a {
   &:link, &:visited, &:hover, &:active {
-    color: @meu-white;
+    color: @meu-white !important;
     text-decoration: none;
   }
 }
@@ -210,6 +215,8 @@ body {
     .position(fixed);
     top: 1.5vh;
     //
+    z-index: 9999 !important;
+
     .container-fluid {
       width: @max;
       height: 15vh;
@@ -237,11 +244,12 @@ body {
       #meu-nav-list {
         .display(flex);
         .p-center;
-        left: 65%;
+        left: 62.5vw;
         //
         width: 40vw;
         height: 4.5vh;
 
+        // Nav List Item
         .meu-nav-list-item {
           flex: 1;
           height: @max;
@@ -259,6 +267,7 @@ body {
             margin-right: 0;
           }
 
+          // Links
           a {
             .fs;
             //
@@ -278,11 +287,124 @@ body {
           }
         }
       }
+
+      // Nav Login
+      #meu-nav-login {
+        background: @meu-dark-blue;
+        height: 25vh;
+        width: 12vw;
+        //
+        position: absolute;
+        top: 0%;
+        right: 9vw;
+        transform: translate(50%, -50%);
+      }
+
+      #meu-nav-login-links {
+        width: 12vw;
+        height: 4.5vh;
+        //
+        position: absolute;
+        top: 50%;
+        right: 9vw;
+        transform: translate(50%, -50%);
+
+        #meu-nl-container {
+          height: @max;
+          width: 75%;
+          margin: auto;
+          border-top: 1px yellow solid;
+
+          .meu-nl-content {
+            .abs;
+            bottom: 0;
+            font-size: 0.7vw;
+            letter-spacing: 0.1em;
+
+            #meu-nl-login, #meu-nl-register {
+              .display(inline);
+              opacity: 0.8;
+
+              &:hover {
+                opacity: 1;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
-  h1 {
-    width: 80%;
-    .p-center;
+  // 1. Header
+  #meu-header {
+    width: @max;
+    height: 85vh;
+    margin-top: 16vh;
+    //
+    .container-fluid {
+      .fs;
+      .rel;
+
+      .header-container {
+        .p-center;
+        width: 85%;
+        height: 45vh;
+        top: 52%;
+        //
+        #meu-main-heading {
+          letter-spacing: 0.42vw;
+          margin-bottom: 4vh;
+        }
+
+        #meu-main-subheading {
+          letter-spacing: 0.66vw;
+          margin-bottom: 8vh;
+        }
+
+        #meu-main-date {
+          letter-spacing: 0.3vw;
+        }
+
+        #meu-header-links {
+          .abs;
+          bottom: 0;
+
+          .meu-link {
+            .display(inline-block);
+            width: 8vw;
+            height: 4.5vh;
+            .rel;
+            //
+            color: @meu-white !important;
+            font-size: 0.7vw;
+            border-top: 1px @meu-white solid;
+            letter-spacing: 0.2em;
+
+            &:hover {
+              border-top: 1px @meu-yellow solid;
+              font-weight: 700;
+              transition: border-top 1s;
+            }
+
+            span {
+              .abs;
+              bottom: 0;
+            }
+          }
+
+          #meu-read-more {
+            margin-right: 2vw;
+          }
+        }
+
+        // Section Heading
+        .meu-section-heading {
+          letter-spacing: 0.42vw;
+          margin-bottom: 4vh;
+          font-size: 2vw;
+        }
+      }
+    }
   }
 }
