@@ -26,7 +26,7 @@
                         <div id="meu-contact-form">
                             <form id="meu-form" name="contact-form" method="post" action="send_form.php">
                                 <div class="form-group inline-form-group">
-                                    <input id="meu-form-text" class="form-control" type="text" name="fullname" placeholder="Your Name">
+                                    <input id="meu-form-text" class="form-control" type="text" name="name" placeholder="Your Name">
                                 </div>
                                 <div class="form-group inline-form-group">
                                     <input id="meu-form-email" class="form-control" type="text" name="email" placeholder="Your Email" autocomplete="new-password">
