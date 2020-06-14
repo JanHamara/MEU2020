@@ -191,6 +191,30 @@ a {
   }
 }
 
+.meu-link {
+  .display(inline-block);
+  width: 8vw;
+  height: 4.5vh;
+  .rel;
+  //
+  color: @meu-white !important;
+  font-size: 0.7vw;
+  border-top: 1px @meu-white solid;
+  letter-spacing: 0.2em;
+
+  &:hover {
+    border-top: 1px @meu-yellow solid;
+    font-weight: 700;
+    transition: border-top 1s;
+    cursor: pointer;
+  }
+
+  span {
+    .abs;
+    bottom: 0;
+  }
+}
+
 //------------------------------------------------------------------------------
 
 // Main CSS
@@ -422,6 +446,95 @@ body {
 
       }
     }
+
+    // -----------------------------------------------------------------------------
+
+    // Section Template
+
+    .section-header {
+      width: @max;
+      height: 97vh;
+      margin-top: 16vh;
+      //
+      .container-fluid {
+        .fs;
+        .rel;
+
+        .header-container {
+          .p-center;
+          width: 85%;
+          height: 60vh;
+          top: 50%;
+
+          // Section Heading
+          .meu-section-heading {
+            letter-spacing: 0.42vw;
+            margin-bottom: 10vh;
+            font-size: 2vw;
+          }
+
+          // Contact Form
+          #meu-contact-form {
+            form#meu-form {
+
+              .inline-form-group {
+                .display(inline-block);
+                width: 20vw;
+                height: 10vh;
+
+                &:first-child {
+                  margin-right: 2vw;
+                }
+              }
+
+              .textarea-form-group {
+                width: 42.5vw;
+              }
+
+              .form-group {
+
+                input, textarea {
+                  background: none !important;
+                  border: none;
+                  outline: none !important;
+                  border-radius: 0 !important;
+                  padding: 0 !important;
+                  //
+                  color: @meu-white !important;
+                  letter-spacing: 0.1em;
+                  font-size: 0.7vw;
+                  border-top: 1px @meu-white solid;
+
+                  &:focus, &:hover, &:active {
+                    background: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    border-top: 1px @meu-white solid;
+                  }
+                }
+
+                input {
+                  .display(inline-block);
+                  width: @max;
+                  height: 10vh;
+                }
+
+                textarea {
+                  width: @max;
+                  height: 15vh;
+                  margin-bottom: 8vh;
+                  padding-top: 3.5vh !important;
+                  line-height: 4vh;
+                  resize: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // -----------------------------------------------------------------------------
 
     // 7. Footer
     #meu-footer {

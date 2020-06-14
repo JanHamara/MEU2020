@@ -11,7 +11,7 @@
 
 <main>
 
-    <header id="meu-header">
+    <header class="section-header">
         <div class="container-fluid">
             <div class="header-container">
 

@@ -198,6 +198,26 @@ a:active {
   color: #ffffff !important;
   text-decoration: none;
 }
+.meu-link {
+  display: inline-block;
+  width: 8vw;
+  height: 4.5vh;
+  position: relative;
+  color: #ffffff !important;
+  font-size: 0.7vw;
+  border-top: 1px #ffffff solid;
+  letter-spacing: 0.2em;
+}
+.meu-link:hover {
+  border-top: 1px #eeca30 solid;
+  font-weight: 700;
+  transition: border-top 1s;
+  cursor: pointer;
+}
+.meu-link span {
+  position: absolute;
+  bottom: 0;
+}
 body #nav-top-bar {
   position: fixed;
   top: 0;
@@ -383,6 +403,76 @@ body main #meu-main-2 {
 body main #meu-main-2 .container-fluid {
   width: 100%;
   height: 100%;
+}
+body main .section-header {
+  width: 100%;
+  height: 97vh;
+  margin-top: 16vh;
+}
+body main .section-header .container-fluid {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body main .section-header .container-fluid .header-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 60vh;
+  top: 50%;
+}
+body main .section-header .container-fluid .header-container .meu-section-heading {
+  letter-spacing: 0.42vw;
+  margin-bottom: 10vh;
+  font-size: 2vw;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .inline-form-group {
+  display: inline-block;
+  width: 20vw;
+  height: 10vh;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .inline-form-group:first-child {
+  margin-right: 2vw;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .textarea-form-group {
+  width: 42.5vw;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input,
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
+  background: none !important;
+  border: none;
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.1em;
+  font-size: 0.7vw;
+  border-top: 1px #ffffff solid;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input:focus,
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea:focus,
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input:hover,
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea:hover,
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input:active,
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea:active {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-top: 1px #ffffff solid;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input {
+  display: inline-block;
+  width: 100%;
+  height: 10vh;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 8vh;
+  padding-top: 3.5vh !important;
+  line-height: 4vh;
+  resize: none !important;
 }
 body main #meu-footer {
   width: 100%;

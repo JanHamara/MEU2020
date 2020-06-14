@@ -11,18 +11,18 @@
 
 <main>
 
-    <header id="meu-header">
+    <header class="section-header">
         <div class="container-fluid">
             <div class="header-container">
 
                 <?php
                 if ( have_posts() ) {
-                while ( have_posts() ) : the_post();
-                ?>
+                    while ( have_posts() ) : the_post();
+                        ?>
 
-                <h1 class="meu-section-heading">ABOUT US</h1>
+                        <h1 class="meu-section-heading">ABOUT US</h1>
 
-                <?php endwhile; } ?>
+                    <?php endwhile; } ?>
 
             </div>
         </div>
