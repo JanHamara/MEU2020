@@ -206,6 +206,7 @@ body {
     width: @max;
     //
     background-color: @meu-dark-blue;
+    z-index: 9999 !important;
   }
 
   // 0. Navigation
@@ -336,74 +337,185 @@ body {
     }
   }
 
-  // 1. Header
-  #meu-header {
-    width: @max;
-    height: 85vh;
-    margin-top: 16vh;
-    //
-    .container-fluid {
-      .fs;
-      .rel;
+  main {
+    .rel;
 
-      .header-container {
-        .p-center;
-        width: 85%;
-        height: 45vh;
-        top: 52%;
-        //
-        #meu-main-heading {
-          letter-spacing: 0.42vw;
-          margin-bottom: 4vh;
+    // 1. Header
+    #meu-header {
+      width: @max;
+      height: 85vh;
+      margin-top: 16vh;
+      //
+      .container-fluid {
+        .fs;
+        .rel;
+
+        .header-container {
+          .p-center;
+          width: 85%;
+          height: 45vh;
+          top: 52%;
+          //
+          #meu-main-heading {
+            letter-spacing: 0.42vw;
+            margin-bottom: 4vh;
+          }
+
+          #meu-main-subheading {
+            letter-spacing: 0.66vw;
+            margin-bottom: 8vh;
+          }
+
+          #meu-main-date {
+            letter-spacing: 0.3vw;
+          }
+
+          #meu-header-links {
+            .abs;
+            bottom: 0;
+
+            .meu-link {
+              .display(inline-block);
+              width: 8vw;
+              height: 4.5vh;
+              .rel;
+              //
+              color: @meu-white !important;
+              font-size: 0.7vw;
+              border-top: 1px @meu-white solid;
+              letter-spacing: 0.2em;
+
+              &:hover {
+                border-top: 1px @meu-yellow solid;
+                font-weight: 700;
+                transition: border-top 1s;
+              }
+
+              span {
+                .abs;
+                bottom: 0;
+              }
+            }
+
+            #meu-read-more {
+              margin-right: 2vw;
+            }
+          }
+
+          // Section Heading
+          .meu-section-heading {
+            letter-spacing: 0.42vw;
+            margin-bottom: 4vh;
+            font-size: 2vw;
+          }
+        }
+      }
+    }
+
+    // 1.2 Main 2
+    #meu-main-2 {
+      width: @max;
+      height: 85vh;
+      //
+      .container-fluid {
+        .fs;
+
+      }
+    }
+
+    // 7. Footer
+    #meu-footer {
+      width: @max;
+      height: 16.5vh;
+      .abs;
+      bottom: 0;
+      //
+      .container-fluid {
+        width: @max;
+        height: 15vh;
+        .position(relative);
+
+        // Nav Bg
+        #meu-footer-bg {
+          width: @max;
+          height: 15vh;
+          margin-bottom: 1.5vh;
         }
 
-        #meu-main-subheading {
-          letter-spacing: 0.66vw;
-          margin-bottom: 8vh;
-        }
-
-        #meu-main-date {
-          letter-spacing: 0.3vw;
-        }
-
-        #meu-header-links {
+        // Footer Content
+        .meu-footer-content {
           .abs;
           bottom: 0;
+          //
+          width: @max;
+          height: 11vh;
 
-          .meu-link {
-            .display(inline-block);
-            width: 8vw;
-            height: 4.5vh;
+          .meu-fc-container {
+            .fs;
             .rel;
-            //
-            color: @meu-white !important;
-            font-size: 0.7vw;
-            border-top: 1px @meu-white solid;
-            letter-spacing: 0.2em;
 
-            &:hover {
-              border-top: 1px @meu-yellow solid;
-              font-weight: 700;
-              transition: border-top 1s;
-            }
-
-            span {
+            // Social Media
+            #meu-social-media {
               .abs;
-              bottom: 0;
+              left: 7.5vw;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              //
+              height: 4vh;
+
+              li {
+                height: @max;
+
+                a {
+                  height: @max;
+                  opacity: 0.7;
+                  transition: opacity 1s;
+
+                  &:hover {
+                    opacity: 1;
+                    transition: opacity 1s;
+                  }
+
+                  img {
+                    height: @max;
+                  }
+                }
+              }
+            }
+
+            // Sponsored By
+            .meu-fc-thumb-text {
+              .abs;
+              right: 9vw;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              //
+              letter-spacing: 0.1em;
+              font-size: 0.7vw;
+            }
+
+            // V4 Logo
+            #meu-footer-V4 {
+              .abs;
+              right: 0;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              //
+              height: 6vh;
             }
           }
-
-          #meu-read-more {
-            margin-right: 2vw;
-          }
         }
+      }
 
-        // Section Heading
-        .meu-section-heading {
-          letter-spacing: 0.42vw;
-          margin-bottom: 4vh;
-          font-size: 2vw;
-        }
+      // Footer Bottom Bar
+      #footer-bottom-bar {
+        .abs;
+        bottom: 0;
+        height: 1.5vh;
+        width: @max;
+        //
+        background-color: @meu-dark-blue;
+        z-index: 9999 !important;
       }
     }
   }

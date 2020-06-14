@@ -14,4 +14,8 @@
         <?php get_template_part( 'template-parts/header/page', 'header' ); ?>
     </header>
 
+    <section id="meu-main-2">
+        <?php get_template_part( 'template-parts/page/page', 'main-2' ); ?>
+    </section>
+
 <?php get_footer(); ?>
