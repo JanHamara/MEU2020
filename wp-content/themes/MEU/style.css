@@ -109,6 +109,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  color: #ffffff !important;
   background-image: url("./images/background.jpg");
   background-position: center;
   background-size: cover;
@@ -118,7 +119,7 @@ body {
   -o-background-size: cover;
   -webkit-background-size: cover;
   -ms-content-zooming: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Geneva', sans-serif;
   font-size: 100%;
   speak: none;
   font-style: normal;
@@ -186,17 +187,91 @@ html {
   margin: 0%;
   padding: 0%;
 }
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+body #nav-top-bar {
+  position: fixed;
+  top: 0;
+  height: 1.5vh;
+  width: 100%;
+  background-color: #00004b;
+}
 body #meu-navigation {
   width: 100%;
   height: 20vh;
   position: fixed;
+  top: 1.5vh;
 }
 body #meu-navigation .container-fluid {
   width: 100%;
-  height: 100%;
+  height: 15vh;
+  position: relative;
 }
 body #meu-navigation .container-fluid #meu-nav-bg {
   width: 100%;
+  height: 20vh;
+}
+body #meu-navigation .container-fluid #meu-nav-home {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 7.5vh;
+  left: 5.5vw;
+}
+body #meu-navigation .container-fluid #meu-nav-home img {
   height: 100%;
+}
+body #meu-navigation .container-fluid #meu-nav-list {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 65%;
+  width: 40vw;
+  height: 4.5vh;
+}
+body #meu-navigation .container-fluid #meu-nav-list .meu-nav-list-item {
+  flex: 1;
+  height: 100%;
+  font-size: 0.7vw;
+  letter-spacing: 0.1em;
+  margin: 0 1.5vw;
+  padding: 0;
+}
+body #meu-navigation .container-fluid #meu-nav-list .meu-nav-list-item:first-child {
+  margin-left: 0;
+}
+body #meu-navigation .container-fluid #meu-nav-list .meu-nav-list-item:last-child {
+  margin-right: 0;
+}
+body #meu-navigation .container-fluid #meu-nav-list .meu-nav-list-item a {
+  width: 100%;
+  height: 100%;
+  border-top: 1px #ffffff solid;
+  transition: border-top 1s;
+}
+body #meu-navigation .container-fluid #meu-nav-list .meu-nav-list-item a:hover {
+  border-top: 1px #eeca30 solid;
+  font-weight: 700;
+  transition: border-top 1s;
+}
+body #meu-navigation .container-fluid #meu-nav-list .meu-nav-list-item a span {
+  position: absolute;
+  bottom: 0;
+}
+body h1 {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */

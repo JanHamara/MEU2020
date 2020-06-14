@@ -10,4 +10,6 @@
 
 <main>
 
+    <h1>SIMULATION OF EUROPEAN POLITICS</h1>
+
 <?php get_footer(); ?>
