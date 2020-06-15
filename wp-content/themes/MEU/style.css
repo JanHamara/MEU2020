@@ -208,6 +208,11 @@ a:active {
   border-top: 1px #ffffff solid;
   letter-spacing: 0.2em;
 }
+.meu-link:link,
+.meu-link:visited,
+.meu-link:active {
+  border-top: 1px #ffffff solid;
+}
 .meu-link:hover {
   border-top: 1px #eeca30 solid;
   font-weight: 700;
@@ -427,6 +432,46 @@ body main .section-header .container-fluid .header-container .meu-section-headin
   margin-bottom: 10vh;
   font-size: 2vw;
 }
+body main .section-header .container-fluid .header-container .meu-section-paragraph {
+  letter-spacing: 0.3vw;
+  line-height: 4vh;
+  margin-bottom: 8vh;
+  margin-top: -2vh;
+  font-size: 1vw;
+}
+body main .section-header .container-fluid .header-container #meu-sponsor {
+  width: 12vw;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors {
+  width: 100%;
+  height: 9vh;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item {
+  display: inline-block;
+  height: 9vh;
+  width: auto;
+  margin: 7vh 0.85vw 0;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item:first-child {
+  margin-left: 0;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item:last-child {
+  margin-right: 0;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item a {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item a:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item a img {
+  height: 9vh;
+  width: auto;
+}
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .inline-form-group {
   display: inline-block;
   width: 20vw;
@@ -469,7 +514,7 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
   width: 100%;
   height: 15vh;
-  margin-bottom: 8vh;
+  margin-bottom: 7vh;
   padding-top: 3.5vh !important;
   line-height: 4vh;
   resize: none !important;
