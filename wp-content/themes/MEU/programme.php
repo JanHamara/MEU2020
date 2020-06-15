@@ -22,6 +22,17 @@
 
                         <h1 class="meu-section-heading"><span class="meu-yellow">MEU 2020</span> PROGRAMME</h1>
 
+                        <div class="meu-section-paragraph">
+                            <?php echo the_content() ?>
+                        </div>
+
+                        <a href="<?php echo site_url( '/about-us' ) ?>" id="meu-programme-1" class="meu-link">
+                            <span>LEARN MORE</span>
+                        </a>
+
+                        <a href="<?php echo site_url( '/contact' ) ?>" id="meu-programme-2" class="meu-link">
+                            <span>ASK A QUESTION</span>
+                        </a>
                     <?php endwhile; } ?>
 
             </div>

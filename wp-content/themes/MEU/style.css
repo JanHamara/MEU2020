@@ -411,7 +411,7 @@ body main #meu-main-2 .container-fluid {
 }
 body main .section-header {
   width: 100%;
-  height: 97vh;
+  height: auto;
   margin-top: 16vh;
 }
 body main .section-header .container-fluid {
@@ -420,12 +420,9 @@ body main .section-header .container-fluid {
   position: relative;
 }
 body main .section-header .container-fluid .header-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 85%;
-  height: 60vh;
-  top: 50%;
+  width: 100%;
+  height: auto;
+  padding: 18vh 15vh 30vh;
 }
 body main .section-header .container-fluid .header-container .meu-section-heading {
   letter-spacing: 0.42vw;
@@ -438,19 +435,38 @@ body main .section-header .container-fluid .header-container .meu-section-paragr
   margin-bottom: 8vh;
   margin-top: -2vh;
   font-size: 1vw;
+  text-transform: uppercase !important;
+}
+body main .section-header .container-fluid .header-container .meu-section-paragraph #meu-about-section-hidden {
+  display: none;
+}
+body main .section-header .container-fluid .header-container #about-hero-image {
+  width: 100%;
+  margin-bottom: 10vh;
+}
+body main .section-header .container-fluid .header-container #about-hero-image img {
+  width: 10vw;
+  margin: auto;
+}
+body main .section-header .container-fluid .header-container #meu-team-1 {
+  width: 10vw;
+}
+body main .section-header .container-fluid .header-container #meu-programme-2 {
+  width: 10vw;
+  margin-left: 2vw;
 }
 body main .section-header .container-fluid .header-container #meu-sponsor {
   width: 12vw;
 }
 body main .section-header .container-fluid .header-container #meu-sponsors {
   width: 100%;
-  height: 9vh;
+  height: auto;
 }
 body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item {
   display: inline-block;
   height: 9vh;
   width: auto;
-  margin: 7vh 0.85vw 0;
+  margin: 10vh 0.85vw 0;
 }
 body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item:first-child {
   margin-left: 0;
@@ -482,6 +498,7 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
 }
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .textarea-form-group {
   width: 42.5vw;
+  margin-bottom: 0;
 }
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input,
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
@@ -514,10 +531,134 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
   width: 100%;
   height: 15vh;
-  margin-bottom: 7vh;
+  margin-bottom: 3vh;
   padding-top: 3.5vh !important;
   line-height: 4vh;
   resize: none !important;
+}
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .errorMessage {
+  font-size: 0.7vw;
+  float: right;
+  transform: translate(0, -15px);
+  color: #eeca30;
+}
+body main .section-header .container-fluid .header-container #meu-submit-form {
+  margin-top: 3vh;
+}
+body main .section-header .container-fluid .header-container .form-submitted {
+  font-size: 0.7vw;
+  margin-top: 5vh;
+  opacity: 0;
+  transition: opacity 1s;
+  color: #eeca30;
+}
+body main #meu-team {
+  width: 100%;
+  height: auto;
+  padding: 25vh 0 25vh;
+}
+body main #meu-team .container-fluid {
+  width: 100%;
+  height: 100%;
+}
+body main #meu-team .container-fluid .team-container {
+  width: 85vw;
+  height: 100%;
+  margin: auto;
+}
+body main #meu-team .container-fluid .team-container #team-header {
+  font-size: 1.5vw;
+  letter-spacing: 0.42vw;
+  width: 22vw;
+  height: 8vh;
+  border-top: 1px #eeca30 solid;
+  margin-bottom: 10vh;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid {
+  display: flex;
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto 10vh;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item {
+  flex: 1;
+  margin: 0 3.5vw;
+  position: relative;
+  transition: transform 1s;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-bg {
+  width: 100%;
+  height: 100%;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .team-profile-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  width: 50%;
+  margin: auto;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 54%;
+  width: 100%;
+  font-size: 1.2vw;
+  letter-spacing: 0.1em;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 64%;
+  width: 100%;
+  font-size: 0.8vw;
+  letter-spacing: 0.3em;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-email {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 76%;
+  width: 100%;
+  font-size: 0.7vw;
+  letter-spacing: 0.3em;
+  opacity: 0.8;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-media {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 89%;
+  height: 3vh;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-media li {
+  height: 100%;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-media li a {
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-media li a:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-media li a img {
+  height: 100%;
 }
 body main #meu-footer {
   width: 100%;
@@ -581,7 +722,7 @@ body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #me
   right: 0;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 6vh;
+  height: 9vh;
 }
 body main #meu-footer #footer-bottom-bar {
   position: absolute;

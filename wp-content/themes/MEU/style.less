@@ -457,7 +457,7 @@ body {
 
     .section-header {
       width: @max;
-      height: 97vh;
+      height: auto;
       margin-top: 16vh;
       //
       .container-fluid {
@@ -465,10 +465,9 @@ body {
         .rel;
 
         .header-container {
-          .p-center;
-          width: 85%;
-          height: 60vh;
-          top: 50%;
+          width: 100%;
+          height: auto;
+          padding: 18vh 15vh 30vh;
 
           // Section Heading
           .meu-section-heading {
@@ -484,6 +483,36 @@ body {
             margin-bottom: 8vh;
             margin-top: -2vh;
             font-size: 1vw;
+            //
+            text-transform: uppercase !important;
+
+
+            #meu-about-section-hidden {
+              .display(none);
+            }
+
+          }
+
+          // 2. About
+          #about-hero-image {
+            width: 100%;
+            margin-bottom: 10vh;
+
+            img {
+              width: 10vw;
+              margin: auto;
+            }
+          }
+
+          // 3. Team
+          #meu-team-1 {
+            width: 10vw;
+          }
+
+          // 4. Programme
+          #meu-programme-2 {
+            width: 10vw;
+            margin-left: 2vw;
           }
 
           // 5. Support Us
@@ -493,14 +522,14 @@ body {
 
           #meu-sponsors {
             width: @max;
-            height: 9vh;
+            height: auto;
 
             .meu-sponsors-item {
               .display(inline-block);
               height: 9vh;
               width: auto;
               //
-              margin: 7vh 0.85vw 0;
+              margin: 10vh 0.85vw 0;
 
               &:first-child {
                 margin-left: 0;
@@ -544,6 +573,7 @@ body {
 
               .textarea-form-group {
                 width: 42.5vw;
+                margin-bottom: 0;
               }
 
               .form-group {
@@ -577,19 +607,155 @@ body {
                 textarea {
                   width: @max;
                   height: 15vh;
-                  margin-bottom: 7vh;
+                  margin-bottom: 3vh;
                   padding-top: 3.5vh !important;
                   line-height: 4vh;
                   resize: none !important;
                 }
               }
+
+              // Error Message
+              .errorMessage {
+                font-size: 0.7vw;
+                float: right;
+                transform: translate(0, -15px);
+                //
+                color: @meu-yellow;
+              }
             }
+          }
+
+          #meu-submit-form {
+            margin-top: 3vh;
+          }
+
+          .form-submitted {
+            font-size: 0.7vw;
+            margin-top: 5vh;
+            opacity: 0;
+            transition: opacity 1s;
+            //
+            color: @meu-yellow;
           }
         }
       }
     }
 
     // -----------------------------------------------------------------------------
+
+    // 2. About
+
+    // 3. Team
+    #meu-team {
+      width: @max;
+      height: auto;
+      padding: 25vh 0 25vh;
+
+      .container-fluid {
+        .fs;
+
+        .team-container {
+          width: 85vw;
+          height: @max;
+          margin: auto;
+
+          #team-header {
+            font-size: 1.5vw;
+            letter-spacing: 0.42vw;
+            width: 22vw;
+            height: 8vh;
+            border-top: 1px @meu-yellow solid;
+            margin-bottom: 10vh;
+          }
+
+          .meu-team-grid {
+            .display(flex);
+            width: 90%;
+            height: 50vh;
+            margin: 0 auto 10vh;
+
+            .meu-tg-item {
+              flex: 1;
+              margin: 0 3.5vw;
+              .rel;
+              //
+              transition: transform 1s;
+
+              &:hover {
+                transform: scale(1.1);
+                transition: transform 1s;
+              }
+
+              .meu-tg-bg {
+                .fs;
+              }
+
+              .team-profile-photo {
+                .p-center;
+                top: 25%;
+                width: 50%;
+                margin: auto;
+              }
+
+              .meu-tg-name {
+                .p-center;
+                .aligntext;
+                top: 54%;
+                width: 100%;
+                font-size: 1.2vw;
+                letter-spacing: 0.1em;
+              }
+
+              .meu-tg-position {
+                .p-center;
+                .aligntext;
+                top: 64%;
+                width: 100%;
+                font-size: 0.8vw;
+                letter-spacing: 0.3em;
+              }
+
+              .meu-tg-email {
+                .p-center;
+                .aligntext;
+                top: 76%;
+                width: 100%;
+                font-size: 0.7vw;
+                letter-spacing: 0.3em;
+                opacity: 0.8;
+              }
+
+              .meu-tg-media {
+                .p-center;
+                top: 89%;
+                //
+                height: 3vh;
+
+                li {
+                  height: @max;
+
+                  a {
+                    height: @max;
+                    opacity: 0.7;
+                    transition: opacity 1s;
+
+                    &:hover {
+                      opacity: 1;
+                      transition: opacity 1s;
+                    }
+
+                    img {
+                      height: @max;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
 
     // 7. Footer
     #meu-footer {
@@ -669,7 +835,7 @@ body {
               top: 50%;
               transform: translate(-50%, -50%);
               //
-              height: 6vh;
+              height: 9vh;
             }
           }
         }

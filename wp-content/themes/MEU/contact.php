@@ -41,6 +41,8 @@
                             <span>SEND</span>
                         </div>
 
+                        <span class="form-submitted">Thank you for your message. We will be in touch as soon as possible!</span>
+
                     <?php endwhile; } ?>
 
             </div>
