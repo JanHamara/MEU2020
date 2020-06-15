@@ -11,6 +11,12 @@ jQuery( document ).ready(function() {
     let about_read_more_text = document.getElementById("meu-about-1-text");
     let about_collapsible = jQuery("#meu-about-section-hidden");
     let about_on = false;
+    let close_alert = jQuery("#close-covid-alert");
+    let covid_alert = jQuery("#covid-alert");
+
+    close_alert.on('click', function() {
+        covid_alert.fadeOut(300);
+    });
 
     about_read_more.addEventListener('click', function() {
         if (about_on === false) {

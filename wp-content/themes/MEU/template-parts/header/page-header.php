@@ -16,7 +16,7 @@
             <h5 id="meu-main-date">16 - 20 SEPTEMBER 2020</h5>
 
             <div id="meu-header-links">
-                <a href="#meu-main-2" id="meu-read-more" class="meu-link">
+                <a href="#meu-main-1" id="meu-read-more" class="meu-link">
                     <span>READ MORE</span>
                 </a>
                 <a href="#" id="meu-apply-now" class="meu-link">

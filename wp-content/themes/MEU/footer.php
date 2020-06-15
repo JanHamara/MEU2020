@@ -140,7 +140,7 @@
         if(email.val().match(mailformat)) {
             return true;
         } else {
-            var errorMsg = jQuery("<div class='errorMessage'></div>").text('/ The email address above is not correct -');
+            var errorMsg = jQuery("<div class='errorMessage'></div>").text('/ The email address above is not correct');
             email.after(errorMsg);
             email.focus();
             return false;
