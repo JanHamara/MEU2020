@@ -8,13 +8,17 @@
 <div class="container-fluid">
     <div class="header-container">
 
+        <?php $query = new WP_Query( "pagename=what-do-we-offer" ); ?>
+        <?php if ( $query->have_posts() ) : $query->the_post(); ?>
         <h1 class="meu-section-heading meu-link meu-m2-heading">
-            <span>WHAT DO WE OFFER</span>
+            <span><?php the_title(); ?></span>
         </h1>
 
         <div class="meu-section-paragraph">
-            To foster a thought-provoking and critical environment that emphasises openness <br/>and the exchange of ideas we have prepared a diverse social and educational programme
+            <?php the_content(); ?>
         </div>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
 
         <div id="meu-m3-roles">
             <div class="meu-m3-role">

@@ -471,6 +471,13 @@ body main #meu-main-4 .container-fluid .header-container .meu-m2-heading {
   height: 8vh;
   border-top: 1px #eeca30 solid;
 }
+body main #meu-main-1 .container-fluid .header-container .meu-m2-heading:hover,
+body main #meu-main-2 .container-fluid .header-container .meu-m2-heading:hover,
+body main #meu-main-3 .container-fluid .header-container .meu-m2-heading:hover,
+body main #meu-main-4 .container-fluid .header-container .meu-m2-heading:hover {
+  font-weight: 100;
+  cursor: default;
+}
 body main #meu-main-1 .container-fluid .header-container #meu-m2-roles,
 body main #meu-main-2 .container-fluid .header-container #meu-m2-roles,
 body main #meu-main-3 .container-fluid .header-container #meu-m2-roles,

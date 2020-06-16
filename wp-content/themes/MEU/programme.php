@@ -27,11 +27,11 @@
                         </div>
 
                         <a href="<?php echo site_url( '/about-us' ) ?>" id="meu-programme-1" class="meu-link">
-                            <span>LEARN MORE</span>
+                            <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                         </a>
 
                         <a href="<?php echo site_url( '/contact' ) ?>" id="meu-programme-2" class="meu-link">
-                            <span>ASK A QUESTION</span>
+                            <span><?php echo get_post_meta($post->ID, 'Button2', true); ?></span>
                         </a>
                     <?php endwhile; } ?>
 

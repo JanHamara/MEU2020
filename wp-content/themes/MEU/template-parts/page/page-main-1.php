@@ -8,20 +8,16 @@
 <div class="container-fluid">
     <div class="header-container lp-header-container">
 
+        <?php $query = new WP_Query( "pagename=what-is-meu" ); ?>
+        <?php if ( $query->have_posts() ) : $query->the_post(); ?>
         <h1 class="meu-section-heading meu-link meu-m2-heading">
-            <span>WHAT IS MEU?</span>
+            <span><?php the_title(); ?></span>
         </h1>
 
         <div class="meu-section-paragraph">
-            <span class="meu-yellow">Model European Union Bratislava 2020</span> will be the first online international simulation
-            of the legislative processes of the European Union based in Slovakia, with the aim of motivating young people from the V4
-            to discuss salient issues facing our democracies.
-            <br/><br/>
-            The first-hand experience of negotiation and diplomacy in this stimulating multicultural environment will equip our participants
-            with the necessary knowledge, as well as various skillsets helping to tackle the challenges central Europe faces at the moment.
-            <br/><br/>
-            The contemporary issues that will be discussed at this year‘s MEU conference<br/>are the
-            <span class="meu-yellow">European Green Deal</span> and <span class="meu-yellow">disinformation</span>.
+            <?php the_content(); ?>
         </div>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
     </div>
 </div>

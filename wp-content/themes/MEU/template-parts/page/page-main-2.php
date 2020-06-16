@@ -8,14 +8,17 @@
     <div class="container-fluid">
         <div class="header-container">
 
+            <?php $query = new WP_Query( "pagename=what-will-i-do" ); ?>
+            <?php if ( $query->have_posts() ) : $query->the_post(); ?>
             <h1 class="meu-section-heading meu-link meu-m2-heading">
-                <span>WHAT WILL I DO?</span>
+                <span><?php the_title(); ?></span>
             </h1>
 
             <div class="meu-section-paragraph">
-                To authentically reflect the complexity of the legislative processes of the European Union, participants
-                of our online conference will be able to choose from a variety of positions.
+                <?php the_content(); ?>
             </div>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
 
             <div id="meu-m2-roles">
                 <div class="meu-m2-role">

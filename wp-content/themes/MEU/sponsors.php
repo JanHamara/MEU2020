@@ -28,7 +28,7 @@
                     <?php endwhile; } ?>
 
                         <a href="<?php echo site_url( '/contact' ) ?>" id="meu-sponsor" class="meu-link">
-                            <span>BECOME A SPONSOR</span>
+                            <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                         </a>
 
                         <ul id="meu-sponsors" class="list-unstyled list-inline">

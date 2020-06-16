@@ -27,17 +27,14 @@
                         <div class="meu-section-paragraph">
                             <?php echo the_content() ?>
 
+                        <?php $query = new WP_Query( "pagename=about-us-2" ); ?>
+                        <?php if ( $query->have_posts() ) : $query->the_post(); ?>
                             <div id="meu-about-section-hidden">
-                                <br/>
-                                BETA Europe has grown to encompass 16 branches, all of which organise MEU conferences across Europe
-                                in close co-operation with the European Commission, European Parliament, National Parliaments, academia and local NGOs.
-                                <br/><br/>
-                                We strive to establish a strong tradition of organising sustainable, professional and educational events about EU politics
-                                to achieve our goal.
-                                <br/><br/>
-                                <span class="meu-yellow">Model European Union Bratislava 2020</span> will kickstart this initiative.
+                                <?php the_content(); ?>
                             </div>
                         </div>
+                        <?php endif; ?>
+                        <?php wp_reset_postdata(); ?>
 
                         <div id="meu-about-1" class="meu-link">
                             <span id="meu-about-1-text">READ MORE</span>

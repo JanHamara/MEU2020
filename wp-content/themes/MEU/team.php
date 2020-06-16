@@ -27,7 +27,7 @@
                         </div>
 
                         <a href="#meu-team" id="meu-team-1" class="meu-link">
-                            <span>MEET THE TEAM</span>
+                            <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                         </a>
                     <?php endwhile; } ?>
             </div>
