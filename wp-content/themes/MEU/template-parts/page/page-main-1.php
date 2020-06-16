@@ -19,6 +19,9 @@
             <br/><br/>
             The first-hand experience of negotiation and diplomacy in this stimulating multicultural environment will equip our participants
             with the necessary knowledge, as well as various skillsets helping to tackle the challenges central Europe faces at the moment.
+            <br/><br/>
+            The contemporary issues that will be discussed at this year‘s MEU conference<br/>are the
+            <span class="meu-yellow">European Green Deal</span> and <span class="meu-yellow">disinformation</span>.
         </div>
     </div>
 </div>

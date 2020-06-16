@@ -483,7 +483,7 @@ body {
     }
 
     // 1.2 Main 2
-    #meu-main-2, #meu-main-1 {
+    #meu-main-1, #meu-main-2, #meu-main-3 {
       width: @max;
       height: auto;
       margin-top: 0;
@@ -504,16 +504,16 @@ body {
             border-top: 1px @meu-yellow solid;
           }
 
-          #meu-m2-roles {
+          #meu-m2-roles, #meu-m3-roles {
             .display(flex);
             width: @max;
-            height: 30vh;
+            height: auto;
             margin: 2vh auto;
 
-            .meu-m2-role {
+            .meu-m2-role, .meu-m3-role {
               .aligntext;
               flex: 1;
-              height: 30vh;
+              height: auto;
 
               img {
                 width: 50%;
@@ -521,17 +521,28 @@ body {
                 opacity: 0.8;
               }
 
-              .meu-m2-rolename {
-                letter-spacing: 0.3em;
-                margin-bottom: 2vh;
+              .img-resize {
+                transform: scale(0.9);
               }
 
-              .meu-m2-roledesc {
+              .meu-m2-rolename, .meu-m3-rolename {
+                letter-spacing: 0.3em;
+                margin-bottom: 2vh;
+                font-size: 1vw;
+              }
+
+              .meu-m2-roledesc, .meu-m3-roledesc {
                 width: 80%;
                 margin: auto;
                 font-size: 0.7vw;
                 line-height: 200%;
                 letter-spacing: 0.2em;
+              }
+            }
+
+            .meu-m3-role {
+              img {
+                width: 30%;
               }
             }
           }

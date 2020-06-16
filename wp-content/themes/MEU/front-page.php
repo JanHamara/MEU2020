@@ -32,4 +32,8 @@
         <?php get_template_part( 'template-parts/page/page', 'main-2' ); ?>
     </section>
 
+    <section id="meu-main-3" class="section-header">
+        <?php get_template_part( 'template-parts/page/page', 'main-3' ); ?>
+    </section>
+
 <?php get_footer(); ?>
