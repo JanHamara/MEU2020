@@ -41,12 +41,17 @@ jQuery( document ).ready(function() {
     let login_link = jQuery("#meu-nl-login");
     let register_link = jQuery("#meu-nl-register");
     let meu_login = jQuery("#meu-login");
+    let apply_now = jQuery("#meu-apply-now");
 
     login_link.on('click', function() {
         meu_login.fadeIn(500);
     });
 
     register_link.on('click', function() {
+        meu_login.fadeIn(500);
+    });
+
+    apply_now.on('click', function() {
         meu_login.fadeIn(500);
     });
 
