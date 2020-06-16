@@ -103,7 +103,7 @@
 <!--<script type="text/javascript" src="./js/formvalidate.js"></script>-->
 
 <script>
-    document.getElementById("meu-submit-form").addEventListener('click', function() {
+    jQuery("#meu-submit-form").on('click', function() {
         formSubmit();
     });
 

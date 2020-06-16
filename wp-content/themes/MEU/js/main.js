@@ -7,18 +7,12 @@ require('../css/bootstrap.min.css');
 require('../style.less');
 
 jQuery( document ).ready(function() {
-    let about_read_more = document.getElementById("meu-about-1");
+    let about_read_more = jQuery("meu-about-1");
     let about_read_more_text = document.getElementById("meu-about-1-text");
     let about_collapsible = jQuery("#meu-about-section-hidden");
     let about_on = false;
-    let close_alert = jQuery("#close-covid-alert");
-    let covid_alert = jQuery("#covid-alert");
 
-    close_alert.on('click', function() {
-        covid_alert.fadeOut(300);
-    });
-
-    about_read_more.addEventListener('click', function() {
+    about_read_more.on('click', function() {
         if (about_on === false) {
             about_collapsible.fadeIn(100);
             about_read_more_text.innerHTML = "CLOSE";
@@ -28,6 +22,36 @@ jQuery( document ).ready(function() {
             about_read_more_text.innerHTML = "READ MORE";
             about_on = false;
         }
+    });
+
+    // ----------------------------------------------------------------------------------------
+
+    // Covid Alert
+    let close_alert = jQuery("#close-covid-alert");
+    let covid_alert = jQuery("#covid-alert");
+
+    close_alert.on('click', function() {
+        covid_alert.fadeOut(300);
+    });
+
+    // ----------------------------------------------------------------------------------------
+
+    // Login Popup
+    let login_close = jQuery("#close-meu-login");
+    let login_link = jQuery("#meu-nl-login");
+    let register_link = jQuery("#meu-nl-register");
+    let meu_login = jQuery("#meu-login");
+
+    login_link.on('click', function() {
+        meu_login.fadeIn(500);
+    });
+
+    register_link.on('click', function() {
+        meu_login.fadeIn(500);
+    });
+
+    login_close.on('click', function() {
+        meu_login.fadeOut(500);
     });
 });
 

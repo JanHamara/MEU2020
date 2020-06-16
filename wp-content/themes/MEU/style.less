@@ -237,6 +237,7 @@ body {
     z-index: 9998 !important;
   }
 
+  // Covid-19 Alert
   #covid-alert {
     background: @meu-yellow;
     color: @meu-black;
@@ -271,6 +272,128 @@ body {
 
       &:hover {
         opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Login Pop-Up
+  #meu-login {
+    .position(fixed);
+    color: @meu-white;
+    top: 57%;
+    right: 10vw;
+    transform: translate(50%,-50%);
+    width: 20vw;
+    height: 55vh;
+    //
+    .display(none);
+    //
+    z-index: 9995 !important;
+
+    // Overlay
+    #meu-login-overlay {
+      .abs;
+      .fs;
+      z-index: 9999 !important;
+    }
+
+    .meu-login-bg-2 {
+      .abs;
+      width: @max;
+      height: 22vh;
+      top: 0;
+      z-index: 9996 !important;
+    }
+
+    .meu-login-bg {
+      .abs;
+      width: @max;
+      height: 53vh;
+      bottom: 0;
+      z-index: 9997 !important;
+    }
+
+    .meu-login-header {
+      .abs;
+      .aligntext;
+      top: 42%;
+      width: 100%;
+      font-size: 1vw;
+      letter-spacing: 0.3em;
+      z-index: 9998 !important;
+
+      div {
+        .display(inline);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .meu-lh-item-login {
+        opacity: 0.8;
+      }
+      .meu-lh-item-register {
+        color: @meu-yellow;
+      }
+    }
+
+    #meu-login-f {
+      .abs;
+      top: 53%;
+      width: @max;
+      height: auto;
+      z-index: 9998 !important;
+
+      #meu-login-form {
+        width: 80%;
+        margin: auto;
+        z-index: 9998 !important;
+
+        input {
+          background: none !important;
+          border: none;
+          outline: none !important;
+          border-radius: 0 !important;
+          padding: 0 !important;
+          //
+          color: @meu-white !important;
+          height: 6vh;
+          letter-spacing: 0.1em;
+          font-size: 0.7vw;
+          border-top: 1px @meu-white solid;
+
+          &:focus, &:hover, &:active {
+            background: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            border-top: 1px @meu-white solid;
+          }
+        }
+      }
+    }
+
+    #meu-submit-login-form {
+      .abs;
+      top: 88%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9998 !important;
+    }
+
+    #close-meu-login {
+      .abs;
+      color: @meu-white;
+      top: 5%;
+      right: 7%;
+      transform: translate(50%, -50%);
+      //
+      opacity: 0.5;
+      z-index: 9998 !important;
+
+      &:hover {
+        opacity: 0.8;
         cursor: pointer;
       }
     }

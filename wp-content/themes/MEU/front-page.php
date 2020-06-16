@@ -8,6 +8,10 @@
 
 <?php get_header(); ?>
 
+    <!--  -----------------------------------------------------------------------------------------------------------------  -->
+
+    <!--  Covid-19 Alert  -->
+
     <div id="covid-alert">
         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
         <span class="covid-alert-span">ATTENTION</span>
@@ -17,6 +21,44 @@
             <i class="fa fa-close" aria-hidden="true"></i>
         </div>
     </div>
+
+    <!--  -----------------------------------------------------------------------------------------------------------------  -->
+
+    <!--  Login Pop-Up  -->
+
+    <aside id="meu-login">
+        <!--        Background        -->
+        <img src="<?php echo get_template_directory_uri(); ?>/images/login_bg.jpg" class="meu-login-bg-2 img-responsive" alt="login-bg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-login-bg img-responsive" alt="login-item-bg">
+        <!--        LOGIN | REGISTER        -->
+        <div class="meu-login-header">
+            <div class="meu-lh-item-login">LOGIN</div> | <div class="meu-lh-item-register">REGISTER</div>
+        </div>
+        <!--        Login Form        -->
+        <div id="meu-login-f">
+            <form id="meu-login-form" name="login-form" method="post" action="login.php">
+                <div class="form-group">
+                    <input id="meu-login-usermail" class="form-control" type="text" name="usermail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input id="meu-login-password" class="form-control" type="password" name="userpass" placeholder="Password" autocomplete="new-password">
+                </div>
+            </form>
+        </div>
+        <!--        Login Confirm        -->
+        <div id="meu-submit-login-form" class="meu-link">
+            <span>CONFIRM</span>
+        </div>
+        <!--        Close Button        -->
+        <div id="close-meu-login">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <!--        OVERLAY        -->
+        <img src="<?php echo get_template_directory_uri(); ?>/images/login_bg_overlay.png" id="meu-login-overlay" class="img-responsive" alt="login-overlay">
+    </aside>
+
+    <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
 <main>
 

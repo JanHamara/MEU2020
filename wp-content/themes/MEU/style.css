@@ -265,6 +265,110 @@ body #covid-alert #close-covid-alert:hover {
   opacity: 1;
   cursor: pointer;
 }
+body #meu-login {
+  position: fixed;
+  color: #ffffff;
+  top: 57%;
+  right: 10vw;
+  transform: translate(50%, -50%);
+  width: 20vw;
+  height: 55vh;
+  display: none;
+  z-index: 9995 !important;
+}
+body #meu-login #meu-login-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999 !important;
+}
+body #meu-login .meu-login-bg-2 {
+  position: absolute;
+  width: 100%;
+  height: 22vh;
+  top: 0;
+  z-index: 9996 !important;
+}
+body #meu-login .meu-login-bg {
+  position: absolute;
+  width: 100%;
+  height: 53vh;
+  bottom: 0;
+  z-index: 9997 !important;
+}
+body #meu-login .meu-login-header {
+  position: absolute;
+  text-align: center;
+  top: 42%;
+  width: 100%;
+  font-size: 1vw;
+  letter-spacing: 0.3em;
+  z-index: 9998 !important;
+}
+body #meu-login .meu-login-header div {
+  display: inline;
+}
+body #meu-login .meu-login-header div:hover {
+  cursor: pointer;
+}
+body #meu-login .meu-login-header .meu-lh-item-login {
+  opacity: 0.8;
+}
+body #meu-login .meu-login-header .meu-lh-item-register {
+  color: #eeca30;
+}
+body #meu-login #meu-login-f {
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  height: auto;
+  z-index: 9998 !important;
+}
+body #meu-login #meu-login-f #meu-login-form {
+  width: 80%;
+  margin: auto;
+  z-index: 9998 !important;
+}
+body #meu-login #meu-login-f #meu-login-form input {
+  background: none !important;
+  border: none;
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+  height: 6vh;
+  letter-spacing: 0.1em;
+  font-size: 0.7vw;
+  border-top: 1px #ffffff solid;
+}
+body #meu-login #meu-login-f #meu-login-form input:focus,
+body #meu-login #meu-login-f #meu-login-form input:hover,
+body #meu-login #meu-login-f #meu-login-form input:active {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-top: 1px #ffffff solid;
+}
+body #meu-login #meu-submit-login-form {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9998 !important;
+}
+body #meu-login #close-meu-login {
+  position: absolute;
+  color: #ffffff;
+  top: 5%;
+  right: 7%;
+  transform: translate(50%, -50%);
+  opacity: 0.5;
+  z-index: 9998 !important;
+}
+body #meu-login #close-meu-login:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 body #meu-navigation {
   width: 100%;
   height: 20vh;
