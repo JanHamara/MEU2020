@@ -20,11 +20,11 @@ jQuery( document ).ready(function() {
 
     about_read_more.addEventListener('click', function() {
         if (about_on === false) {
-            about_collapsible.show(100);
+            about_collapsible.fadeIn(100);
             about_read_more_text.innerHTML = "CLOSE";
             about_on = true;
         } else {
-            about_collapsible.hide(100);
+            about_collapsible.fadeOut(100);
             about_read_more_text.innerHTML = "READ MORE";
             about_on = false;
         }
