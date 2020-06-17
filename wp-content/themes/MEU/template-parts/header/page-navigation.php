@@ -56,5 +56,17 @@
                     </div>
                 </div>
             </div>
+
+            <!--     Smartphone - MENU       -->
+            <div id="meu-mobile-menu">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
     </nav>
+
+    <!--     Smartphone - MENU Navigation       -->
+    <section id="meu-mobile-menu-collapse">
+        <div class="container-fluid">
+
+        </div>
+    </section>

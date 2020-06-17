@@ -28,10 +28,16 @@ jQuery( document ).ready(function() {
 
     // Covid Alert
     let close_alert = jQuery("#close-covid-alert");
+    let close_alert_2 = jQuery("#close-covid-alert-2");
     let covid_alert = jQuery("#covid-alert");
+    let covid_alert_mobile = jQuery("#covid-alert-mobile");
 
     close_alert.on('click', function() {
         covid_alert.fadeOut(300);
+    });
+
+    close_alert_2.on('click', function() {
+        covid_alert_mobile.fadeOut(300);
     });
 
     // ----------------------------------------------------------------------------------------

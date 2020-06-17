@@ -22,6 +22,18 @@
         </div>
     </div>
 
+    <div id="covid-alert-mobile">
+        <div class="cam-attention">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <span class="covid-alert-span">ATTENTION</span>
+        </div>
+        DUE TO COMPLICATIONS CAUSED BY THE COVID-19 PANDEMIC <br/>
+        THE CONFERENCE WILL TAKE PLACE <span class="covid-alert-span">ONLINE</span>
+        <div id="close-covid-alert-2">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+    </div>
+
     <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
     <!--  Login Pop-Up  -->
