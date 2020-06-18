@@ -27,6 +27,7 @@ jQuery( document ).ready(function() {
     // ----------------------------------------------------------------------------------------
 
     // Covid Alert
+
     let close_alert = jQuery("#close-covid-alert");
     let close_alert_2 = jQuery("#close-covid-alert-2");
     let covid_alert = jQuery("#covid-alert");
@@ -43,6 +44,7 @@ jQuery( document ).ready(function() {
     // ----------------------------------------------------------------------------------------
 
     // Login Popup
+
     let login_close = jQuery("#close-meu-login");
     let login_link = jQuery("#meu-nl-login");
     let register_link = jQuery("#meu-nl-register");
@@ -64,6 +66,34 @@ jQuery( document ).ready(function() {
     login_close.on('click', function() {
         meu_login.fadeOut(500);
     });
+
+    // ----------------------------------------------------------------------------------------
+
+    // Menu
+
+    let menu_collapse = jQuery("#meu-mobile-menu-collapse");
+    let menu_switch = jQuery("#meu-mobile-menu");
+    let menu = false;
+    let menu_icon = document.getElementById("menu-fa");
+    let main_content = jQuery("#meu-main");
+
+    menu_switch.on('click', function() {
+        toggleMenu(menu_collapse, menu, menu_icon);
+    });
+
+    function toggleMenu(menu_collapse, menu_state, menu_icon) {
+        if (menu === false) {
+            menu_collapse.fadeIn(200);
+            menu = true;
+            menu_icon.classList.replace("fa-bars", "fa-times");
+            main_content.hide();
+        } else {
+            menu_collapse.fadeOut(200);
+            menu = false;
+            menu_icon.classList.replace("fa-times", "fa-bars");
+            main_content.show();
+        }
+    }
 });
 
 jQuery( window ).load(function() {

@@ -30,7 +30,7 @@ Text Domain: MEU
 @meu-white: rgb(255, 255, 255);
 @meu-black: rgb(0, 0, 0);
 @meu-blue: rgb(23, 66, 148);
-@meu-light-blue: rgb(50, 93, 148);
+@meu-menu: #080e17ba;
 @meu-dark-blue: rgb(0, 0, 75);
 @meu-yellow: rgb(238, 202, 48);
 
@@ -670,12 +670,12 @@ body {
     .display(none);
 
     @media @smartphone-all {
-      //.display(block);
+      .display(none);
       width: @max;
       height: 90vh;
       .position(fixed);
       bottom: 0;
-      background: @meu-light-blue;
+      background: @meu-menu;
       //
       z-index: 9996 !important;
       //
@@ -711,6 +711,10 @@ body {
               margin-bottom: 2vh;
               font-size: 5vw;
             }
+
+            @media @smartphone-all-landscape {
+              font-size: 3.5vw;
+            }
           }
 
           #meu-main-subheading {
@@ -720,6 +724,10 @@ body {
             @media @smartphone-all {
               font-size: 4vw;
               letter-spacing: 0.35vw;
+            }
+
+            @media @smartphone-all-landscape {
+              font-size: 2.45vw;
             }
           }
 
@@ -912,11 +920,20 @@ body {
           height: auto;
           padding: 18vh 15vh 10vh;
 
+          @media @smartphone-all {
+            padding: 10vh 5vh 10vh;
+          }
+
           // Section Heading
           .meu-section-heading {
             letter-spacing: 0.42vw;
             margin-bottom: 10vh;
             font-size: 2vw;
+
+            @media @smartphone-all {
+              font-size: 5vw;
+              line-height: 200%;
+            }
           }
 
           // Section Paragraph
@@ -954,28 +971,50 @@ body {
             img {
               width: 10vw;
               margin: auto;
+
+              @media @smartphone-all {
+                width: 30vw;
+              }
             }
           }
 
           // 3. Team
           #meu-team-1 {
             width: 10vw;
+
+            @media @smartphone-all {
+              width: 30vw;
+            }
           }
 
           // 4. Programme
           #meu-programme-2 {
             width: 10vw;
             margin-left: 2vw;
+
+            @media @smartphone-all {
+              width: 30vw;
+              margin-left: 5vw;
+            }
           }
 
           // 5. Support Us
           #meu-sponsor {
             width: 12vw;
+
+            @media @smartphone-all {
+              width: 35vw;
+            }
           }
 
           #meu-sponsors {
             width: @max;
             height: auto;
+
+            @media @smartphone-all {
+              .nobound;
+              margin-top: 5vh;
+            }
 
             .meu-sponsors-item {
               .display(inline-block);
@@ -983,6 +1022,15 @@ body {
               width: auto;
               //
               margin: 10vh 0.85vw 0;
+
+              @media @smartphone-all {
+                margin: 5vh 0 0;
+                width: 48%;
+              }
+
+              @media @smartphone-all-landscape {
+                margin: 10vh 0.3vw 0;
+              }
 
               &:first-child {
                 margin-left: 0;
@@ -1005,6 +1053,10 @@ body {
                 img {
                   height: 9vh;
                   width: auto;
+
+                  @media @smartphone-all {
+                    margin: auto;
+                  }
                 }
               }
             }
@@ -1019,6 +1071,10 @@ body {
                 width: 20vw;
                 height: 10vh;
 
+                @media @smartphone-all {
+                  width: 38.3vw;
+                }
+
                 &:first-child {
                   margin-right: 2vw;
                 }
@@ -1027,6 +1083,10 @@ body {
               .textarea-form-group {
                 width: 42.5vw;
                 margin-bottom: 0;
+
+                @media @smartphone-all {
+                  width: 100%;
+                }
               }
 
               .form-group {
@@ -1048,6 +1108,10 @@ body {
                     outline: none !important;
                     box-shadow: none !important;
                     border-top: 1px @meu-white solid;
+                  }
+
+                  @media @smartphone-all {
+                    font-size: 2.5vw;
                   }
                 }
 
@@ -1074,6 +1138,10 @@ body {
                 transform: translate(0, -15px);
                 //
                 color: @meu-yellow;
+
+                @media @smartphone-all {
+                  font-size: 2vw;
+                }
               }
             }
           }
@@ -1089,14 +1157,16 @@ body {
             transition: opacity 1s;
             //
             color: @meu-yellow;
+
+            @media @smartphone-all {
+              font-size: 2vw;
+            }
           }
         }
       }
     }
 
     // -----------------------------------------------------------------------------
-
-    // 2. About
 
     // 3. Team
     #meu-team {
@@ -1119,6 +1189,12 @@ body {
             height: 8vh;
             border-top: 1px @meu-yellow solid;
             margin-bottom: 10vh;
+
+            @media @smartphone-all {
+              width: 50vw;
+              font-size: 4vw;
+              height: 6vh;
+            }
           }
 
           .meu-team-grid {
@@ -1127,12 +1203,22 @@ body {
             height: 50vh;
             margin: 0 auto 10vh;
 
+            @media @smartphone-all {
+              .display;
+              height: auto;
+            }
+
             .meu-tg-item {
               flex: 1;
               margin: 0 3.5vw;
               .rel;
               //
               transition: transform 1s;
+
+              @media @smartphone-all {
+                height: 50vh;
+                margin: 0 0 8vh 0;
+              }
 
               &:hover {
                 transform: scale(1.1);
@@ -1157,6 +1243,10 @@ body {
                 width: 100%;
                 font-size: 1.2vw;
                 letter-spacing: 0.1em;
+
+                @media @smartphone-all {
+                  font-size: 4vw;
+                }
               }
 
               .meu-tg-position {
@@ -1166,6 +1256,11 @@ body {
                 width: 100%;
                 font-size: 0.8vw;
                 letter-spacing: 0.3em;
+
+                @media @smartphone-all {
+                  font-size: 3vw;
+                  opacity: 0.8;
+                }
               }
 
               .meu-tg-email {
@@ -1176,6 +1271,10 @@ body {
                 font-size: 0.7vw;
                 letter-spacing: 0.3em;
                 opacity: 0.8;
+
+                @media @smartphone-all {
+                  font-size: 2.5vw;
+                }
               }
 
               .meu-tg-media {

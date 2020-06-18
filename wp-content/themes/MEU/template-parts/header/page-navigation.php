@@ -59,7 +59,7 @@
 
             <!--     Smartphone - MENU       -->
             <div id="meu-mobile-menu">
-                <i class="fa fa-bars"></i>
+                <i id="menu-fa" class="fa fa-bars"></i>
             </div>
         </div>
     </nav>

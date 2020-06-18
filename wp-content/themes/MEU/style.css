@@ -618,11 +618,12 @@ body #meu-mobile-menu-collapse {
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #meu-mobile-menu-collapse {
+    display: none;
     width: 100%;
     height: 90vh;
     position: fixed;
     bottom: 0;
-    background: #325d94;
+    background: #080e17ba;
     z-index: 9996 !important;
   }
 }
@@ -660,6 +661,11 @@ body main #meu-header .container-fluid .header-container #meu-main-heading {
     font-size: 5vw;
   }
 }
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #meu-header .container-fluid .header-container #meu-main-heading {
+    font-size: 3.5vw;
+  }
+}
 body main #meu-header .container-fluid .header-container #meu-main-subheading {
   letter-spacing: 0.66vw;
   margin-bottom: 8vh;
@@ -668,6 +674,11 @@ body main #meu-header .container-fluid .header-container #meu-main-subheading {
   body main #meu-header .container-fluid .header-container #meu-main-subheading {
     font-size: 4vw;
     letter-spacing: 0.35vw;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #meu-header .container-fluid .header-container #meu-main-subheading {
+    font-size: 2.45vw;
   }
 }
 body main #meu-header .container-fluid .header-container #meu-main-date {
@@ -1065,10 +1076,21 @@ body main .section-header .container-fluid .header-container {
   height: auto;
   padding: 18vh 15vh 10vh;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container {
+    padding: 10vh 5vh 10vh;
+  }
+}
 body main .section-header .container-fluid .header-container .meu-section-heading {
   letter-spacing: 0.42vw;
   margin-bottom: 10vh;
   font-size: 2vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container .meu-section-heading {
+    font-size: 5vw;
+    line-height: 200%;
+  }
 }
 body main .section-header .container-fluid .header-container .meu-section-paragraph {
   letter-spacing: 0.3vw;
@@ -1101,25 +1123,64 @@ body main .section-header .container-fluid .header-container #about-hero-image i
   width: 10vw;
   margin: auto;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #about-hero-image img {
+    width: 30vw;
+  }
+}
 body main .section-header .container-fluid .header-container #meu-team-1 {
   width: 10vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-team-1 {
+    width: 30vw;
+  }
 }
 body main .section-header .container-fluid .header-container #meu-programme-2 {
   width: 10vw;
   margin-left: 2vw;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-programme-2 {
+    width: 30vw;
+    margin-left: 5vw;
+  }
+}
 body main .section-header .container-fluid .header-container #meu-sponsor {
   width: 12vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-sponsor {
+    width: 35vw;
+  }
 }
 body main .section-header .container-fluid .header-container #meu-sponsors {
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-sponsors {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 5vh;
+  }
 }
 body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item {
   display: inline-block;
   height: 9vh;
   width: auto;
   margin: 10vh 0.85vw 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item {
+    margin: 5vh 0 0;
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item {
+    margin: 10vh 0.3vw 0;
+  }
 }
 body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item:first-child {
   margin-left: 0;
@@ -1141,10 +1202,20 @@ body main .section-header .container-fluid .header-container #meu-sponsors .meu-
   height: 9vh;
   width: auto;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-sponsors .meu-sponsors-item a img {
+    margin: auto;
+  }
+}
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .inline-form-group {
   display: inline-block;
   width: 20vw;
   height: 10vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .inline-form-group {
+    width: 38.3vw;
+  }
 }
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .inline-form-group:first-child {
   margin-right: 2vw;
@@ -1152,6 +1223,11 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .textarea-form-group {
   width: 42.5vw;
   margin-bottom: 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .textarea-form-group {
+    width: 100%;
+  }
 }
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input,
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
@@ -1176,6 +1252,12 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
   box-shadow: none !important;
   border-top: 1px #ffffff solid;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input,
+  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group textarea {
+    font-size: 2.5vw;
+  }
+}
 body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .form-group input {
   display: inline-block;
   width: 100%;
@@ -1195,6 +1277,11 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
   transform: translate(0, -15px);
   color: #eeca30;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .errorMessage {
+    font-size: 2vw;
+  }
+}
 body main .section-header .container-fluid .header-container #meu-submit-form {
   margin-top: 3vh;
 }
@@ -1204,6 +1291,11 @@ body main .section-header .container-fluid .header-container .form-submitted {
   opacity: 0;
   transition: opacity 1s;
   color: #eeca30;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container .form-submitted {
+    font-size: 2vw;
+  }
 }
 body main #meu-team {
   width: 100%;
@@ -1227,17 +1319,36 @@ body main #meu-team .container-fluid .team-container #team-header {
   border-top: 1px #eeca30 solid;
   margin-bottom: 10vh;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-team .container-fluid .team-container #team-header {
+    width: 50vw;
+    font-size: 4vw;
+    height: 6vh;
+  }
+}
 body main #meu-team .container-fluid .team-container .meu-team-grid {
   display: flex;
   width: 90%;
   height: 50vh;
   margin: 0 auto 10vh;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-team .container-fluid .team-container .meu-team-grid {
+    display: block;
+    height: auto;
+  }
+}
 body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item {
   flex: 1;
   margin: 0 3.5vw;
   position: relative;
   transition: transform 1s;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item {
+    height: 50vh;
+    margin: 0 0 8vh 0;
+  }
 }
 body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item:hover {
   transform: scale(1.1);
@@ -1267,6 +1378,11 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
   font-size: 1.2vw;
   letter-spacing: 0.1em;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-name {
+    font-size: 4vw;
+  }
+}
 body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-position {
   position: absolute;
   top: 50%;
@@ -1277,6 +1393,12 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
   width: 100%;
   font-size: 0.8vw;
   letter-spacing: 0.3em;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-position {
+    font-size: 3vw;
+    opacity: 0.8;
+  }
 }
 body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-email {
   position: absolute;
@@ -1289,6 +1411,11 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
   font-size: 0.7vw;
   letter-spacing: 0.3em;
   opacity: 0.8;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-email {
+    font-size: 2.5vw;
+  }
 }
 body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-media {
   position: absolute;

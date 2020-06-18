@@ -72,7 +72,7 @@
 
     <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
-<main>
+<main id="meu-main">
 
     <header id="meu-header">
         <?php get_template_part( 'template-parts/header/page', 'header' ); ?>
