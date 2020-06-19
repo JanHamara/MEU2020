@@ -7,18 +7,18 @@ require('../css/bootstrap.min.css');
 require('../style.less');
 
 jQuery( document ).ready(function() {
-    let about_read_more = jQuery("meu-about-1");
+    let about_read_more = jQuery("#meu-about-1");
     let about_read_more_text = document.getElementById("meu-about-1-text");
     let about_collapsible = jQuery("#meu-about-section-hidden");
     let about_on = false;
 
     about_read_more.on('click', function() {
         if (about_on === false) {
-            about_collapsible.fadeIn(100);
+            about_collapsible.fadeIn(300);
             about_read_more_text.innerHTML = "CLOSE";
             about_on = true;
         } else {
-            about_collapsible.fadeOut(100);
+            about_collapsible.fadeOut(300);
             about_read_more_text.innerHTML = "READ MORE";
             about_on = false;
         }

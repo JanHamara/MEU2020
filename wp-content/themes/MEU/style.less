@@ -122,7 +122,7 @@ Text Domain: MEU
     content: '\A';
   }
 
-  @media @smartphone-all {
+  @media @smartphone-all, @tablet-small, @tablet-big {
     .display(none);
 
     &:before {
@@ -227,6 +227,11 @@ a {
     font-size: 2.2vw;
   }
 
+  @media @tablet-small, @tablet-big {
+    width: 20vw;
+    font-size: 1.5vw;
+  }
+
   &:link, &:visited, &:active {
     border-top: 1px @meu-white solid;
   }
@@ -261,7 +266,7 @@ body {
     background-color: @meu-dark-blue;
     z-index: 9998 !important;
 
-    @media @smartphone-all {
+    @media @smartphone-all, @tablet-small, @tablet-big {
       height: 1vh;
     }
   }
@@ -284,10 +289,19 @@ body {
       .display(none);
     }
 
+    @media @tablet-small, @tablet-big {
+      font-size: 1.35vw;
+    }
+
     .fa-exclamation-circle {
       transform: scale(1.5);
       margin-right: 1vw;
       margin-left: 1vw;
+
+      @media @tablet-small, @tablet-big {
+        transform: scale(2.5);
+        margin-right: 2vw;
+      }
     }
     .covid-alert-span {
       .display(inline);
@@ -302,6 +316,11 @@ body {
       font-size: 1vw;
       line-height: 5vh;
       opacity: 0.8;
+
+      @media @tablet-small, @tablet-big {
+        font-size: 2vw;
+        right: 2vw;
+      }
 
       &:hover {
         opacity: 1;
@@ -376,6 +395,11 @@ body {
       right: 50%;
     }
 
+    @media @tablet-small, @tablet-big {
+      width: 60vw;
+      right: 50%;
+    }
+
     // Overlay
     #meu-login-overlay {
       .p-center;
@@ -403,6 +427,10 @@ body {
           font-size: 3.5vw;
           margin-left: 2vw;
         }
+
+        @media @tablet-small, @tablet-big {
+          font-size: 2vw;
+        }
       }
 
       span {
@@ -412,6 +440,10 @@ body {
 
         @media @smartphone-all {
           font-size: 2.5vw;
+        }
+
+        @media @tablet-small, @tablet-big {
+          font-size: 1.5vw;
         }
       }
     }
@@ -440,7 +472,7 @@ body {
       //
       z-index: 9997 !important;
 
-      @media @smartphone-all {
+      @media @smartphone-all, @tablet-small, @tablet-big {
         .display(none); // disable at Phase 2
       }
     }
@@ -456,6 +488,10 @@ body {
 
       @media @smartphone-all {
         font-size: 3vw;
+      }
+
+      @media @tablet-small, @tablet-big {
+        font-size: 2vw;
       }
 
       div {
@@ -503,6 +539,10 @@ body {
             font-size: 2.5vw;
           }
 
+          @media @tablet-small, @tablet-big {
+            font-size: 1.5vw;
+          }
+
           &:focus, &:hover, &:active {
             background: none !important;
             outline: none !important;
@@ -523,6 +563,12 @@ body {
       @media @smartphone-all {
         .display(none); // disable at Phase 2
         font-size: 2.5vw;
+      }
+
+      @media @tablet-small, @tablet-big {
+        .display(none); // disable at Phase 2
+        width: 14vw;
+        font-size: 1.5vw;
       }
     }
 
@@ -552,7 +598,7 @@ body {
     //
     z-index: 9997 !important;
 
-    @media @smartphone-all {
+    @media @smartphone-all, @tablet-small, @tablet-big {
       top: 1vh;
       height: 15vh;
     }
@@ -562,7 +608,7 @@ body {
       height: 15vh;
       .position(relative);
 
-      @media @smartphone-all {
+      @media @smartphone-all, @tablet-small, @tablet-big {
         height: 11vh;
       }
 
@@ -571,7 +617,7 @@ body {
         width: @max;
         height: 20vh;
 
-        @media @smartphone-all {
+        @media @smartphone-all, @tablet-small, @tablet-big {
           height: 15vh;
         }
       }
@@ -585,7 +631,16 @@ body {
 
         @media @smartphone-all {
           height: 6vh;
-          left: 7vh;
+          left: 7vw;
+        }
+
+        @media @tablet-small, @tablet-big {
+          left: 10vw;
+          height: 5vh;
+        }
+
+        @media @tablet-landscape, @iPad-Pro-landscape {
+          left: 7.5vh;
         }
 
         img {
@@ -606,6 +661,12 @@ body {
           .display(none);
         }
 
+        @media @tablet-small, @tablet-big {
+          left: 53vw;
+          width: 50vw;
+          height: 2.5vh;
+        }
+
         // Nav List Item
         .meu-nav-list-item {
           flex: 1;
@@ -615,6 +676,10 @@ body {
           letter-spacing: 0.1em;
           margin: 0 1.5vw;
           padding: 0;
+
+          @media @tablet-small, @tablet-big {
+            font-size: 1vw;
+          }
 
           &:first-child {
             margin-left: 0;
@@ -660,6 +725,12 @@ body {
         @media @smartphone-all {
           .display(none);
         }
+
+        @media @tablet-small, @tablet-big {
+          height: 18vh;
+          width: 17vw;
+          right: 11vw;
+        }
       }
 
       #meu-nav-login-links {
@@ -676,6 +747,12 @@ body {
           .display(none);
         }
 
+        @media @tablet-small, @tablet-big {
+          width: 15vw;
+          height: 2.5vh;
+          right: 11vw;
+        }
+
         #meu-nl-container {
           height: @max;
           width: 75%;
@@ -687,6 +764,10 @@ body {
             bottom: 0;
             font-size: 0.7vw;
             letter-spacing: 0.1em;
+
+            @media @tablet-small, @tablet-big {
+              font-size: 1vw;
+            }
 
             #meu-nl-login, #meu-nl-register {
               .display(inline);
@@ -892,6 +973,11 @@ body {
                 font-size: 2.2vw;
               }
 
+              @media @tablet-small, @tablet-big {
+                width: 20vw;
+                font-size: 1.5vw;
+              }
+
               &:hover {
                 border-top: 1px @meu-yellow solid;
                 font-weight: 700;
@@ -909,6 +995,10 @@ body {
 
               @media @smartphone-all {
                 margin-right: 5vw;
+              }
+
+              @media @tablet-small, @tablet-big {
+                margin-right: 4vw;
               }
             }
           }
@@ -942,6 +1032,10 @@ body {
             padding: 10vh 5vh 10vh;
           }
 
+          @media @tablet-small, @tablet-big {
+            padding: 10vh 10vw 10vh;
+          }
+
           .meu-m2-heading {
             font-size: 1.5vw;
             width: 25vw;
@@ -952,6 +1046,13 @@ body {
               font-size: 4vw;
               width: 55vw;
               height: 6vh;
+            }
+
+            @media @tablet-small, @tablet-big {
+              font-size: 3vw;
+              width: 40vw;
+              height: 6vh;
+              letter-spacing: 0.1em;
             }
 
             &:hover {
@@ -980,6 +1081,11 @@ body {
                   width: 60%;
                   margin-bottom: 2vh;
                 }
+
+                @media @tablet-small, @tablet-big {
+                  width: 70%;
+                  margin-bottom: 3vh;
+                }
               }
 
               .img-resize {
@@ -996,6 +1102,12 @@ body {
                   letter-spacing: 0.1em;
                   margin-bottom: 1.5vh;
                 }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.5vw;
+                  margin-bottom: 1.5vh;
+                  line-height: 200%;
+                }
               }
 
               .meu-m2-roledesc, .meu-m3-roledesc {
@@ -1010,6 +1122,11 @@ body {
                   font-size: 1vw;
                   letter-spacing: 0em;
                 }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1vw;
+                  letter-spacing: 0em;
+                }
               }
             }
 
@@ -1018,6 +1135,10 @@ body {
                 width: 30%;
 
                 @media @smartphone-all {
+                  width: 50%;
+                }
+
+                @media @tablet-small, @tablet-big {
                   width: 50%;
                 }
               }
@@ -1039,7 +1160,11 @@ body {
       width: @max;
       height: auto;
       margin-top: 16vh;
-      //
+
+      @media @tablet-small, @tablet-big {
+        min-height: 70vh;
+      }
+
       .container-fluid {
         .fs;
         .rel;
@@ -1053,6 +1178,10 @@ body {
             padding: 10vh 5vh 10vh;
           }
 
+          @media @tablet-small, @tablet-big {
+            padding: 10vh 10vw 10vh;
+          }
+
           // Section Heading
           .meu-section-heading {
             letter-spacing: 0.42vw;
@@ -1061,6 +1190,11 @@ body {
 
             @media @smartphone-all {
               font-size: 5vw;
+              line-height: 200%;
+            }
+
+            @media @tablet-small, @tablet-big {
+              font-size: 2.6vw;
               line-height: 200%;
             }
           }
@@ -1081,6 +1215,12 @@ body {
               line-height: 3vh;
             }
 
+            @media @tablet-small, @tablet-big {
+              .aligntext(justify);
+              font-size: 1.8vw;
+              line-height: 3vh;
+            }
+
             #meu-about-section-hidden {
               .display(none);
             }
@@ -1089,6 +1229,11 @@ body {
               .display;
               height: 6vh;
               margin-top: 8vh;
+
+              @media @tablet-small, @tablet-big {
+                width: 20vw;
+                font-size: 1.5vw;
+              }
             }
           }
 
@@ -1114,9 +1259,19 @@ body {
             @media @smartphone-all {
               width: 30vw;
             }
+
+            @media @tablet-small, @tablet-big {
+              width: 22vw;
+            }
           }
 
           // 4. Programme
+          #meu-programme-1 {
+            @media @tablet-small, @tablet-big {
+              width: 17vw;
+            }
+          }
+
           #meu-programme-2 {
             width: 10vw;
             margin-left: 2vw;
@@ -1124,6 +1279,11 @@ body {
             @media @smartphone-all {
               width: 30vw;
               margin-left: 5vw;
+            }
+
+            @media @tablet-small, @tablet-big {
+              width: 22vw;
+              margin-left: 4vw;
             }
           }
 
@@ -1134,6 +1294,10 @@ body {
             @media @smartphone-all {
               width: 35vw;
             }
+
+            @media @tablet-small, @tablet-small {
+              width: 25vw;
+            }
           }
 
           #meu-sponsors {
@@ -1143,6 +1307,10 @@ body {
             @media @smartphone-all {
               .nobound;
               margin-top: 5vh;
+            }
+
+            @media @tablet-small, @tablet-big {
+              .nobound;
             }
 
             .meu-sponsors-item {
@@ -1157,16 +1325,29 @@ body {
                 width: 48%;
               }
 
+              @media @tablet-small, @tablet-big {
+                width: 21vw;
+                margin: 10vh 2.6vw 0;
+              }
+
               @media @smartphone-all-landscape {
                 margin: 10vh 0.3vw 0;
               }
 
               &:first-child {
                 margin-left: 0;
+
+                @media @tablet-small, @tablet-big {
+                  margin-left: 2.6vw;
+                }
               }
 
               &:last-child {
                 margin-right: 0;
+
+                @media @tablet-small, @tablet-big {
+                  margin-right: 2.6vw;
+                }
               }
 
               a {
@@ -1183,7 +1364,7 @@ body {
                   height: 9vh;
                   width: auto;
 
-                  @media @smartphone-all {
+                  @media @smartphone-all, @tablet-small, @tablet-big {
                     margin: auto;
                   }
                 }
@@ -1204,6 +1385,10 @@ body {
                   width: 38.3vw;
                 }
 
+                @media @tablet-small, @tablet-big {
+                  width: 38.3vw;
+                }
+
                 &:first-child {
                   margin-right: 2vw;
                 }
@@ -1213,7 +1398,7 @@ body {
                 width: 42.5vw;
                 margin-bottom: 0;
 
-                @media @smartphone-all {
+                @media @smartphone-all, @tablet-small, @tablet-big {
                   width: 100%;
                 }
               }
@@ -1241,6 +1426,9 @@ body {
 
                   @media @smartphone-all {
                     font-size: 2.5vw;
+                  }
+                  @media @tablet-small, @tablet-big {
+                    font-size: 1.5vw;
                   }
                 }
 
@@ -1271,12 +1459,20 @@ body {
                 @media @smartphone-all {
                   font-size: 2vw;
                 }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.5vw;
+                }
               }
             }
           }
 
           #meu-submit-form {
             margin-top: 3vh;
+
+            @media @tablet-small, @tablet-big {
+              font-size: 2vw;
+            }
           }
 
           .form-submitted {
@@ -1289,6 +1485,10 @@ body {
 
             @media @smartphone-all {
               font-size: 2vw;
+            }
+
+            @media @tablet-small, @tablet-big {
+              font-size: 1.5vw;
             }
           }
         }
@@ -1324,6 +1524,12 @@ body {
               font-size: 4vw;
               height: 6vh;
             }
+
+            @media @tablet-small, @tablet-big {
+              width: 37vw;
+              font-size: 3vw;
+              height: 5vh;
+            }
           }
 
           .meu-team-grid {
@@ -1337,6 +1543,12 @@ body {
               height: auto;
             }
 
+            @media @tablet-small, @tablet-big {
+              width: 100%;
+              height: auto;
+              margin: 0 auto -2vh;
+            }
+
             .meu-tg-item {
               flex: 1;
               margin: 0 3.5vw;
@@ -1347,6 +1559,11 @@ body {
               @media @smartphone-all {
                 height: 50vh;
                 margin: 0 0 8vh 0;
+              }
+
+              @media @tablet-small, @tablet-big {
+                height: 28vh;
+                margin: 0 2vw 8vh 2vw;
               }
 
               &:hover {
@@ -1376,6 +1593,10 @@ body {
                 @media @smartphone-all {
                   font-size: 4vw;
                 }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1.5vw;
+                }
               }
 
               .meu-tg-position {
@@ -1388,6 +1609,11 @@ body {
 
                 @media @smartphone-all {
                   font-size: 3vw;
+                  opacity: 0.8;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1vw;
                   opacity: 0.8;
                 }
               }
@@ -1404,6 +1630,11 @@ body {
                 @media @smartphone-all {
                   font-size: 2.5vw;
                 }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 1vw;
+                  letter-spacing: 0.1em;
+                }
               }
 
               .meu-tg-media {
@@ -1411,6 +1642,10 @@ body {
                 top: 89%;
                 //
                 height: 3vh;
+
+                @media @tablet-small, @tablet-big {
+                  height: 1.5vh;
+                }
 
                 li {
                   height: @max;
@@ -1445,17 +1680,16 @@ body {
       .abs;
       bottom: 0;
 
-      @media @smartphone-all {
+      @media @smartphone-all, @tablet-small, @tablet-big {
         height: 13vh;
       }
 
-      //
       .container-fluid {
         width: @max;
         height: 15vh;
         .position(relative);
 
-        @media @smartphone-all {
+        @media @smartphone-all, @tablet-small, @tablet-big {
           height: 12vh;
         }
 
@@ -1465,7 +1699,7 @@ body {
           height: 15vh;
           margin-bottom: 1.5vh;
 
-          @media @smartphone-all {
+          @media @smartphone-all, @tablet-small, @tablet-big {
             height: 12vh;
             margin-bottom: 1vh;
           }
@@ -1479,7 +1713,7 @@ body {
           width: @max;
           height: 11vh;
 
-          @media @smartphone-all {
+          @media @smartphone-all, @tablet-small, @tablet-big {
             height: 9vh;
           }
 
@@ -1498,6 +1732,11 @@ body {
 
               @media @smartphone-all {
                 left: 20vw;
+                height: 3vh;
+              }
+
+              @media @tablet-small, @tablet-big {
+                left: 13vw;
                 height: 3vh;
               }
 
@@ -1535,6 +1774,11 @@ body {
                 right: 20vw;
                 font-size: 1.5vw;
               }
+
+              @media @tablet-small, @tablet-big {
+                right: 17vw;
+                font-size: 1.2vw;
+              }
             }
 
             // V4 Logo
@@ -1549,6 +1793,11 @@ body {
               @media @smartphone-all {
                 height: 5vh;
                 right: -2vw;
+              }
+
+              @media @tablet-small, @tablet-big {
+                height: 7vh;
+                right: -3vw;
               }
             }
           }
@@ -1565,7 +1814,7 @@ body {
         background-color: @meu-dark-blue;
         z-index: 9998 !important;
 
-        @media @smartphone-all {
+        @media @smartphone-all, @tablet-small, @tablet-big {
           height: 1vh;
         }
       }
