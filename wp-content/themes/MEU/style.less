@@ -400,6 +400,11 @@ body {
       right: 50%;
     }
 
+    @media @tablet-landscape, @iPad-Pro-landscape {
+      width: 30vw;
+      right: 15vw;
+    }
+
     // Overlay
     #meu-login-overlay {
       .p-center;
@@ -472,7 +477,7 @@ body {
       //
       z-index: 9997 !important;
 
-      @media @smartphone-all, @tablet-small, @tablet-big {
+      @media @smartphone-all, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
         .display(none); // disable at Phase 2
       }
     }
@@ -570,6 +575,10 @@ body {
         width: 14vw;
         font-size: 1.5vw;
       }
+
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        .display(none); // disable at Phase 2
+      }
     }
 
     #close-meu-login {
@@ -640,7 +649,7 @@ body {
         }
 
         @media @tablet-landscape, @iPad-Pro-landscape {
-          left: 7.5vh;
+          left: 10vh;
         }
 
         img {
@@ -1330,6 +1339,10 @@ body {
                 margin: 10vh 2.6vw 0;
               }
 
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                margin: 12vh 0.7vw 0;
+              }
+
               @media @smartphone-all-landscape {
                 margin: 10vh 0.3vw 0;
               }
@@ -1365,6 +1378,11 @@ body {
                   width: auto;
 
                   @media @smartphone-all, @tablet-small, @tablet-big {
+                    margin: auto;
+                  }
+
+                  @media @tablet-landscape, @iPad-Pro-landscape {
+                    height: 5vh;
                     margin: auto;
                   }
                 }
@@ -1549,6 +1567,11 @@ body {
               margin: 0 auto -2vh;
             }
 
+            @media @tablet-landscape, @iPad-Pro-landscape {
+              width: 100%;
+              height: auto;
+            }
+
             .meu-tg-item {
               flex: 1;
               margin: 0 3.5vw;
@@ -1564,6 +1587,10 @@ body {
               @media @tablet-small, @tablet-big {
                 height: 28vh;
                 margin: 0 2vw 8vh 2vw;
+              }
+
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                height: 40vh;
               }
 
               &:hover {
@@ -1740,6 +1767,10 @@ body {
                 height: 3vh;
               }
 
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                left: 9.5vw;
+              }
+
               li {
                 height: @max;
 
@@ -1779,6 +1810,10 @@ body {
                 right: 17vw;
                 font-size: 1.2vw;
               }
+
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                right: 12vw;
+              }
             }
 
             // V4 Logo
@@ -1797,6 +1832,10 @@ body {
 
               @media @tablet-small, @tablet-big {
                 height: 7vh;
+                right: -3vw;
+              }
+
+              @media @tablet-landscape, @iPad-Pro-landscape {
                 right: -3vw;
               }
             }
