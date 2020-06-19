@@ -12,7 +12,7 @@
 
     <!--  Covid-19 Alert  -->
 
-    <div id="covid-alert">
+    <div id="covid-alert" data-aos="fade-up" data-aos-delay="1500" data-aos-offset="-1000">
         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
         <span class="covid-alert-span">ATTENTION</span>
         <span class="covid-alert-span">|</span>
@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <div id="covid-alert-mobile">
+    <div id="covid-alert-mobile" data-aos="fade-up" data-aos-delay="1500" data-aos-offset="-1000">
         <div class="cam-attention">
             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
             <span class="covid-alert-span">ATTENTION</span>

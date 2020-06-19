@@ -97,6 +97,11 @@ jQuery( document ).ready(function() {
 });
 
 jQuery( window ).load(function() {
-
+    AOS.init({
+        // And I set default options for animations, such as duration or delay
+        delay: 200,
+        duration: 1000,
+        easing: 'ease',
+    });
 });
 

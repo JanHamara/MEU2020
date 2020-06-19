@@ -74,18 +74,18 @@
                     while ( have_posts() ) : the_post();
                         ?>
 
-                        <h1 class="meu-section-heading">WE ARE ACTIVELY LOOKING FOR MORE <span class="meu-yellow">SPONSORS</span></h1>
+                        <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800">WE ARE ACTIVELY LOOKING FOR MORE <span class="meu-yellow">SPONSORS</span></h1>
 
-                        <div class="meu-section-paragraph">
+                        <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100">
                             <?php echo the_content() ?>
                         </div>
                     <?php endwhile; } ?>
 
-                        <a href="<?php echo site_url( '/contact' ) ?>" id="meu-sponsor" class="meu-link">
+                        <a href="<?php echo site_url( '/contact' ) ?>" id="meu-sponsor" class="meu-link" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000">
                             <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                         </a>
 
-                        <ul id="meu-sponsors" class="list-unstyled list-inline">
+                        <ul id="meu-sponsors" class="list-unstyled list-inline" data-aos="fade-in" data-aos-delay="1800" data-aos-offset="-1000">
                             <li class="meu-sponsors-item">
                                 <a href="https://www.visegradfund.org/" target="_blank">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/logos/sponsors/V4.png" class="img-responsive" alt="v4-logo">

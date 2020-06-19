@@ -74,10 +74,9 @@
                     while ( have_posts() ) : the_post();
                         ?>
 
-                        <h1 class="meu-section-heading"><span class="meu-yellow">CONTACT US</span> WITH ANY ENQUIRY OR QUESTION</h1>
+                        <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800"><span class="meu-yellow">CONTACT US</span> WITH ANY ENQUIRY OR QUESTION</h1>
 
-
-                        <div id="meu-contact-form">
+                        <div id="meu-contact-form" data-aos="fade-in" data-aos-delay="1100">
                             <form id="meu-form" name="contact-form" method="post" action="send_form.php">
                                 <div class="form-group inline-form-group">
                                     <input id="meu-form-text" class="form-control" type="text" name="name" placeholder="Your Name">
@@ -91,7 +90,7 @@
                             </form>
                         </div>
 
-                        <div id="meu-submit-form" class="meu-link">
+                        <div id="meu-submit-form" class="meu-link" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000">
                             <span>SEND</span>
                         </div>
 

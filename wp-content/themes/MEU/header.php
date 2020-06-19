@@ -26,6 +26,9 @@
 
     <!--    Use core WP function to insert favicon    -->
 
+    <!--     AOS Framework (Used for animating elements on page as they appear in viewport)    -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <?php wp_head(); ?>
 </head>
 

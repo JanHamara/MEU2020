@@ -8,7 +8,7 @@
 
 <?php wp_footer(); ?>
 
-    <footer id="meu-footer">
+    <footer id="meu-footer" data-aos="fade-up" data-aos-delay="2000" data-aos-offset="-5000">
         <div class="container-fluid">
 
             <!--     Footer Background       -->
@@ -101,6 +101,11 @@
 
 <!--    Additional Scripts    -->
 <!--<script type="text/javascript" src="./js/formvalidate.js"></script>-->
+
+<!--       AOS JS       -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--        In case 2.3.1 version was not available I load this one -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
     jQuery("#meu-submit-form").on('click', function() {

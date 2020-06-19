@@ -6,9 +6,9 @@
 */
 ?>
 
-    <div id="nav-top-bar"></div>
+    <div id="nav-top-bar" data-aos="fade-down"></div>
 
-    <nav id="meu-navigation">
+    <nav id="meu-navigation" data-aos="fade-down">
         <div class="container-fluid">
             <!--     Navigation Background       -->
             <img id="meu-nav-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/navigation_bar.png" class="img-responsive" alt="nav-bg">
@@ -65,7 +65,7 @@
     </nav>
 
     <!--     Smartphone - MENU Navigation       -->
-    <section id="meu-mobile-menu-collapse">
+    <section id="meu-mobile-menu-collapse" data-aos="fade-down">
         <div class="container-fluid">
             <img id="meu-mobile-menu-logo" src="<?php echo get_template_directory_uri(); ?>/images/MEU_branding/logo_main_white.png" class="img-responsive" alt="meu-logo">
 

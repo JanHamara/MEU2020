@@ -74,13 +74,13 @@
                     while ( have_posts() ) : the_post();
                         ?>
 
-                        <h1 class="meu-section-heading">GET TO KNOW <span class="meu-yellow">OUR TEAM</span></h1>
+                        <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800">GET TO KNOW <span class="meu-yellow">OUR TEAM</span></h1>
 
-                        <div class="meu-section-paragraph">
+                        <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100">
                             <?php echo the_content() ?>
                         </div>
 
-                        <a href="#meu-team" id="meu-team-1" class="meu-link">
+                        <a href="#meu-team" id="meu-team-1" class="meu-link" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000">
                             <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                         </a>
                     <?php endwhile; } ?>

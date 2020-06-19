@@ -74,11 +74,11 @@
                     while ( have_posts() ) : the_post();
                         ?>
 
-                        <div id="about-hero-image">
+                        <div id="about-hero-image" data-aos="zoom-in" data-aos-delay="800">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logos/sponsors/BETA_SVK.png" class="img-responsive" alt="beta-slovakia-logo">
                         </div>
 
-                        <div class="meu-section-paragraph">
+                        <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100" data-aos-offset="-1000">
                             <?php echo the_content() ?>
 
                         <?php $query = new WP_Query( "pagename=about-us-2" ); ?>
@@ -90,7 +90,7 @@
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
 
-                        <div id="meu-about-1" class="meu-link">
+                        <div id="meu-about-1" class="meu-link" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000">
                             <span id="meu-about-1-text">READ MORE</span>
                         </div>
 
