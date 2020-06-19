@@ -9,6 +9,9 @@
     <div class="container-fluid">
         <div class="header-container">
 
+            <!--      Main Logo [ Mobile Only ]      -->
+            <img id="meu-header-logo" src="<?php echo get_template_directory_uri(); ?>/images/MEU_branding/logo_main_white_nopadding.png" class="img-responsive" alt="meu-logo">
+
             <h1 id="meu-main-heading"><?php bloginfo( 'name' ); ?></h1>
 
             <?php $query = new WP_Query( "pagename=page-subtitle" ); ?>

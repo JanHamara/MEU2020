@@ -67,6 +67,38 @@
     <!--     Smartphone - MENU Navigation       -->
     <section id="meu-mobile-menu-collapse">
         <div class="container-fluid">
+            <img id="meu-mobile-menu-logo" src="<?php echo get_template_directory_uri(); ?>/images/MEU_branding/logo_main_white.png" class="img-responsive" alt="meu-logo">
 
+            <ul id="meu-nav-list-mobile" class="list-unstyled">
+                <li class="meu-nav-list-item-mobile">
+                    <a href="<?php echo site_url( '/about-us' ) ?>" class="meu-link">
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li class="meu-nav-list-item-mobile">
+                    <a href="<?php echo site_url( '/our-team' ) ?>" class="meu-link">
+                        <span>Our Team</span>
+                    </a>
+                </li>
+                <li class="meu-nav-list-item-mobile">
+                    <a href="<?php echo site_url( '/programme' ) ?>" class="meu-link">
+                        <span>Programme</span>
+                    </a>
+                </li>
+                <li class="meu-nav-list-item-mobile">
+                    <a href="<?php echo site_url( '/sponsors' ) ?>" class="meu-link">
+                        <span>Support Us</span>
+                    </a>
+                </li>
+                <li class="meu-nav-list-item-mobile">
+                    <a href="<?php echo site_url( '/contact' ) ?>" class="meu-link">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div id="meu-nav-list-bottom">
+                <div id="meu-nav-list-login">LOGIN</div> | <div id="meu-nav-list-register">REGISTER</div>
+            </div>
         </div>
     </section>

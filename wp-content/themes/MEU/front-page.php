@@ -42,6 +42,10 @@
         <!--        Background        -->
         <img src="<?php echo get_template_directory_uri(); ?>/images/login_bg.jpg" class="meu-login-bg-2 img-responsive" alt="login-bg">
         <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-login-bg img-responsive" alt="login-item-bg">
+
+        <!--        MEU 2020 Logo        -->
+        <img id="meu-login-logo" src="<?php echo get_template_directory_uri(); ?>/images/MEU_branding/logo_main_white_nopadding_nosubheading.png" class="img-responsive" alt="meu-logo">
+
         <!--        LOGIN | REGISTER        -->
         <div class="meu-login-header">
             <div class="meu-lh-item-login">LOGIN</div> | <div class="meu-lh-item-register">REGISTER</div>
@@ -67,7 +71,19 @@
         </div>
 
         <!--        OVERLAY        -->
-        <img src="<?php echo get_template_directory_uri(); ?>/images/login_bg_overlay.png" id="meu-login-overlay" class="img-responsive" alt="login-overlay">
+        <div id="meu-login-overlay">
+            <div class="cam-attention-2">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <span class="alert-span">ATTENTION</span>
+            </div>
+            <span>
+                THE OFFICAL REGISTRATION PROCESS <br/>
+                FOR THE <strong>MEU 2020</strong> CONFERENCE <br/>
+                HAS NOT BEEN OPEN YET.
+                <br/><br/>
+                REGISTRATIONS WILL OFFICIALY OPEN <br/>ON <strong>01 JULY 2020</strong>
+            </span>
+        </div>
     </aside>
 
     <!--  -----------------------------------------------------------------------------------------------------------------  -->

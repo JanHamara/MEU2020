@@ -30,7 +30,7 @@ Text Domain: MEU
 @meu-white: rgb(255, 255, 255);
 @meu-black: rgb(0, 0, 0);
 @meu-blue: rgb(23, 66, 148);
-@meu-menu: #080e17ba;
+@meu-menu: rgba(7, 7, 16, 0.76);
 @meu-dark-blue: rgb(0, 0, 75);
 @meu-yellow: rgb(238, 202, 48);
 
@@ -371,11 +371,49 @@ body {
     //
     z-index: 9994 !important;
 
+    @media @smartphone-all {
+      width: 80vw;
+      right: 50%;
+    }
+
     // Overlay
     #meu-login-overlay {
-      .abs;
-      .fs;
+      .p-center;
+      width: 100%;
+      height: 40vh;
+      color: @meu-black;
+      padding: 20% 10% 10%;
+      background: @meu-yellow;
       z-index: 9998 !important;
+      //
+      //.display(none);
+
+      .cam-attention-2 {
+        margin-bottom: 3vh;
+      }
+
+      .alert-span {
+        .display(inline);
+        font-size: 0.7vw;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        margin-left: 0.5vw;
+
+        @media @smartphone-all {
+          font-size: 3.5vw;
+          margin-left: 2vw;
+        }
+      }
+
+      span {
+        font-size: 0.6vw;
+        letter-spacing: 0.2em;
+        line-height: 3vh;
+
+        @media @smartphone-all {
+          font-size: 2.5vw;
+        }
+      }
     }
 
     .meu-login-bg-2 {
@@ -394,6 +432,19 @@ body {
       z-index: 9996 !important;
     }
 
+    #meu-login-logo {
+      .p-center;
+      top: 16%;
+      width: 25%;
+      opacity: 0.9;
+      //
+      z-index: 9997 !important;
+
+      @media @smartphone-all {
+        .display(none); // disable at Phase 2
+      }
+    }
+
     .meu-login-header {
       .abs;
       .aligntext;
@@ -402,6 +453,10 @@ body {
       font-size: 1vw;
       letter-spacing: 0.3em;
       z-index: 9997 !important;
+
+      @media @smartphone-all {
+        font-size: 3vw;
+      }
 
       div {
         .display(inline);
@@ -444,6 +499,10 @@ body {
           font-size: 0.7vw;
           border-top: 1px @meu-white solid;
 
+          @media @smartphone-all {
+            font-size: 2.5vw;
+          }
+
           &:focus, &:hover, &:active {
             background: none !important;
             outline: none !important;
@@ -460,6 +519,11 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 9997 !important;
+
+      @media @smartphone-all {
+        .display(none); // disable at Phase 2
+        font-size: 2.5vw;
+      }
     }
 
     #close-meu-login {
@@ -680,6 +744,56 @@ body {
       z-index: 9996 !important;
       //
     }
+
+    .container-fluid {
+      .fs;
+      .rel;
+
+      #meu-nav-list-mobile {
+        .p-center;
+        //top: 55vh; // after you display LOGIN | REGISTER
+        top: 59vh;
+        width: 30vw;
+        padding-left: 0;
+
+        li {
+          width: @max;
+          //margin: 4vh 0; // after you display LOGIN | REGISTER
+          margin: 5vh 0;
+
+          .meu-link {
+            width: @max;
+            font-size: 3vw;
+            height: 4vh;
+            border-top: 1px @meu-yellow solid;
+            font-weight: 600;
+          }
+        }
+      }
+
+      // Login | Register = DISABLED until Phase2
+      #meu-nav-list-bottom {
+        .display(none);
+        .p-center;
+        top: 82vh;
+        font-size: 3vw;
+        letter-spacing: 0.3em;
+
+        #meu-nav-list-login {
+          .display(inline-block);
+        }
+
+        #meu-nav-list-register {
+          .display(inline-block);
+          opacity: 0.8;
+        }
+      }
+
+      #meu-mobile-menu-logo {
+        width: 70vw;
+        margin: 3vh auto 0;
+      }
+    }
   }
 
   main {
@@ -702,6 +816,20 @@ body {
           height: 45vh;
           top: 52%;
           //
+          @media @smartphone-all {
+            height: 70vh;
+          }
+
+          #meu-header-logo {
+            .display(none);
+
+            @media @smartphone-all {
+              .display(block);
+              width: 40vw;
+              margin: 0 auto 7vh;
+            }
+          }
+
           #meu-main-heading {
             letter-spacing: 0.42vw;
             margin-bottom: 4vh;
@@ -724,6 +852,7 @@ body {
             @media @smartphone-all {
               font-size: 4vw;
               letter-spacing: 0.35vw;
+              margin-bottom: 5vh;
             }
 
             @media @smartphone-all-landscape {
@@ -744,7 +873,7 @@ body {
             bottom: 0;
 
             @media @smartphone-all {
-              bottom: 5vh;
+              bottom: 15vh;
             }
 
             .meu-link {
