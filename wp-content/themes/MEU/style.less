@@ -271,6 +271,237 @@ body {
     }
   }
 
+  // Privacy Policy
+  #privacy-policy {
+    background: @meu-yellow;
+    color: @meu-black;
+    width: 50vw;
+    height: 50vh;
+    padding: 7vh;
+    line-height: 5vh;
+    font-size: 0.7vw;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    //
+    .position(fixed);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    //
+    z-index: 9997 !important;
+
+    @media @smartphone-all {
+      width: 85vw;
+      height: 60vh;
+      padding: 5vh;
+    }
+
+    @media @tablet-small, @tablet-big {
+      padding: 4vh;
+      height: 46vh;
+    }
+
+    h3 {
+      margin-bottom: 5vh;
+
+      @media @smartphone-all {
+        font-size: 4vw;
+        text-transform: uppercase;
+        margin: 2vh 0 6vh 0;
+      }
+
+      @media @tablet-small, @tablet-big {
+        margin-bottom: 3.5vh;
+      }
+
+      @media @smartphone-all-landscape {
+        font-size: 2vw;
+      }
+    }
+
+    p {
+      font-size: 0.7vw;
+
+      @media @smartphone-all {
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        line-height: 3vh;
+      }
+
+      @media @tablet-small, @tablet-big {
+        font-size: 1.5vw;
+        line-height: 3vh;
+      }
+
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        font-size: 1.2vw;
+        line-height: 3vh;
+      }
+    }
+
+    .pp-1 {
+      margin-bottom: 3vh;
+    }
+
+    .pp-2 {
+      font-weight: 500 !important;
+    }
+
+    #pp-links {
+      margin-top: 4vh;
+
+      @media @smartphone-all {
+        margin-top: 6vh;
+      }
+
+      @media @tablet-small, @tablet-big {
+        margin-top: 3.5vh;
+      }
+
+      .meu-link {
+        height: 6vh;
+        border-top: 1px @meu-black solid;
+        margin-right: 2vw;
+        color: @meu-black !important;
+      }
+
+      #pp-agree {
+        width: 7vw;
+
+        @media @smartphone-all {
+          width: 17vw;
+          margin-right: 5vw;
+        }
+
+        @media @tablet-small, @tablet-big {
+          width: 15vw;
+        }
+      }
+
+      #pp-privacy-policy {
+        width: 10vw;
+
+        @media @smartphone-all {
+          width: 29vw;
+        }
+
+        @media @tablet-small, @tablet-big {
+          width: 20vw;
+        }
+      }
+    }
+  }
+
+  #pp-modal {
+    z-index: 9998 !important;
+
+    .modal-dialog {
+      width: 80vw;
+
+      @media @smartphone-all {
+        width: 90vw;
+        margin: 5vh auto;
+      }
+
+      .modal-content {
+        border: none;
+        border-radius: 0;
+        color: @meu-black !important;
+        background: @meu-yellow;
+        height: auto;
+        padding: 7vh;
+        //
+        .rel;
+
+        @media @smartphone-all {
+          padding: 2vh 2vh 3vh 2vh;
+        }
+
+        @media @tablet-small, @tablet-big {
+          padding: 3vh;
+        }
+
+        .modal-body {
+          letter-spacing: 0.1em;
+
+          h3 {
+            margin-bottom: 5vh;
+          }
+
+          p {
+            font-size: 0.7vw;
+            line-height: 180%;
+
+            @media @smartphone-all {
+              font-size: 2vw;
+              line-height: 200%;
+            }
+
+            @media @smartphone-all-landscape {
+              font-size: 1.2vw;
+            }
+
+            @media @tablet-small, @tablet-big {
+              font-size: 1.2vw;
+            }
+
+            @media @tablet-landscape, @iPad-Pro-landscape {
+              font-size: 1vw;
+            }
+          }
+
+          h6 {
+            @media @smartphone-all, @smartphone-all-landscape {
+              margin-bottom: 2vh;
+              line-height: 200%;
+            }
+
+            @media @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
+              font-size: 1.5vw;
+              margin-bottom: 1.7vh;
+              font-weight: 500 !important;
+            }
+          }
+
+          hr {
+            background: @meu-black !important;
+            color: @meu-black !important;
+            border-color: @meu-black !important;
+          }
+
+          a {
+            &:link, &:visited, &:hover, &:active {
+              .display(inline);
+              color: @meu-black !important;
+              text-decoration: underline;
+            }
+
+            &:hover {
+              font-weight: 700 !important;
+            }
+          }
+
+          #close-privacy-policy {
+            .abs;
+            right: 0;
+            top: 4.5vh;
+            transform: translate(-50%, -50%);
+            color: @meu-black;
+            opacity: 0.8;
+
+            @media @smartphone-all {
+              top: 3vh;
+            }
+
+            &:hover {
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // Covid-19 Alert
   #covid-alert {
     background: @meu-yellow;
@@ -279,6 +510,7 @@ body {
     height: 5vh;
     line-height: 5vh;
     font-size: 0.7vw;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
     //
     width: 100%;
     .position(fixed);
@@ -341,6 +573,7 @@ body {
       height: 14vh;
       line-height: 3vh;
       font-size: 2.5vw;
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
       //
       width: 100%;
       .position(fixed);
@@ -1788,6 +2021,41 @@ body {
                     height: @max;
                   }
                 }
+              }
+            }
+
+            // Privacy Policy
+            #pp-footer {
+              .abs;
+              left: 17vw;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              //
+              letter-spacing: 0.1em;
+              font-size: 0.7vw;
+              opacity: 0.8;
+
+              &:hover {
+                opacity: 1;
+                cursor: pointer;
+              }
+
+              @media @smartphone-all {
+                font-size: 1.5vw;
+                left: 45vw;
+              }
+
+              @media @smartphone-all-landscape {
+                left: 18vw;
+              }
+
+              @media @tablet-small, @tablet-big {
+                font-size: 1.2vw;
+                left: 30vw;
+              }
+
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                left: 21vw;
               }
             }
 

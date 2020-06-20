@@ -7,6 +7,31 @@ require('../css/bootstrap.min.css');
 require('../style.less');
 
 jQuery( document ).ready(function() {
+
+    // ----------------------------------------------------------------------------------------
+
+    // Privacy Consent
+
+    let pp_alert = jQuery("#privacy-policy");
+    let pp = false;
+    let pp_agree = jQuery("#pp-agree");
+    let pp_close = jQuery("#close-privacy-policy");
+    let privacy_policy = jQuery("#pp-modal");
+    let pp_footer = jQuery("#pp-footer");
+
+    pp_agree.on('click', function() {
+        pp = true;
+        pp_alert.fadeOut(500);
+    });
+
+    pp_close.on('click', function() {
+        privacy_policy.fadeOut(500);
+    });
+
+    // ----------------------------------------------------------------------------------------
+
+    // About - Full Text
+
     let about_read_more = jQuery("#meu-about-1");
     let about_read_more_text = document.getElementById("meu-about-1-text");
     let about_collapsible = jQuery("#meu-about-section-hidden");

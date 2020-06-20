@@ -268,6 +268,236 @@ body #nav-top-bar {
     height: 1vh;
   }
 }
+body #privacy-policy {
+  background: #eeca30;
+  color: #000000;
+  width: 50vw;
+  height: 50vh;
+  padding: 7vh;
+  line-height: 5vh;
+  font-size: 0.7vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9997 !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #privacy-policy {
+    width: 85vw;
+    height: 60vh;
+    padding: 5vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #privacy-policy {
+    padding: 4vh;
+    height: 46vh;
+  }
+}
+body #privacy-policy h3 {
+  margin-bottom: 5vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #privacy-policy h3 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin: 2vh 0 6vh 0;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #privacy-policy h3 {
+    margin-bottom: 3.5vh;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body #privacy-policy h3 {
+    font-size: 2vw;
+  }
+}
+body #privacy-policy p {
+  font-size: 0.7vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #privacy-policy p {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    line-height: 3vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #privacy-policy p {
+    font-size: 1.5vw;
+    line-height: 3vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body #privacy-policy p {
+    font-size: 1.2vw;
+    line-height: 3vh;
+  }
+}
+body #privacy-policy .pp-1 {
+  margin-bottom: 3vh;
+}
+body #privacy-policy .pp-2 {
+  font-weight: 500 !important;
+}
+body #privacy-policy #pp-links {
+  margin-top: 4vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #privacy-policy #pp-links {
+    margin-top: 6vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #privacy-policy #pp-links {
+    margin-top: 3.5vh;
+  }
+}
+body #privacy-policy #pp-links .meu-link {
+  height: 6vh;
+  border-top: 1px #000000 solid;
+  margin-right: 2vw;
+  color: #000000 !important;
+}
+body #privacy-policy #pp-links #pp-agree {
+  width: 7vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #privacy-policy #pp-links #pp-agree {
+    width: 17vw;
+    margin-right: 5vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #privacy-policy #pp-links #pp-agree {
+    width: 15vw;
+  }
+}
+body #privacy-policy #pp-links #pp-privacy-policy {
+  width: 10vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #privacy-policy #pp-links #pp-privacy-policy {
+    width: 29vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #privacy-policy #pp-links #pp-privacy-policy {
+    width: 20vw;
+  }
+}
+body #pp-modal {
+  z-index: 9998 !important;
+}
+body #pp-modal .modal-dialog {
+  width: 80vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #pp-modal .modal-dialog {
+    width: 90vw;
+    margin: 5vh auto;
+  }
+}
+body #pp-modal .modal-dialog .modal-content {
+  border: none;
+  border-radius: 0;
+  color: #000000 !important;
+  background: #eeca30;
+  height: auto;
+  padding: 7vh;
+  position: relative;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #pp-modal .modal-dialog .modal-content {
+    padding: 2vh 2vh 3vh 2vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #pp-modal .modal-dialog .modal-content {
+    padding: 3vh;
+  }
+}
+body #pp-modal .modal-dialog .modal-content .modal-body {
+  letter-spacing: 0.1em;
+}
+body #pp-modal .modal-dialog .modal-content .modal-body h3 {
+  margin-bottom: 5vh;
+}
+body #pp-modal .modal-dialog .modal-content .modal-body p {
+  font-size: 0.7vw;
+  line-height: 180%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #pp-modal .modal-dialog .modal-content .modal-body p {
+    font-size: 2vw;
+    line-height: 200%;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body #pp-modal .modal-dialog .modal-content .modal-body p {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body #pp-modal .modal-dialog .modal-content .modal-body p {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body #pp-modal .modal-dialog .modal-content .modal-body p {
+    font-size: 1vw;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape) {
+  body #pp-modal .modal-dialog .modal-content .modal-body h6 {
+    margin-bottom: 2vh;
+    line-height: 200%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body #pp-modal .modal-dialog .modal-content .modal-body h6 {
+    font-size: 1.5vw;
+    margin-bottom: 1.7vh;
+    font-weight: 500 !important;
+  }
+}
+body #pp-modal .modal-dialog .modal-content .modal-body hr {
+  background: #000000 !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+body #pp-modal .modal-dialog .modal-content .modal-body a:link,
+body #pp-modal .modal-dialog .modal-content .modal-body a:visited,
+body #pp-modal .modal-dialog .modal-content .modal-body a:hover,
+body #pp-modal .modal-dialog .modal-content .modal-body a:active {
+  display: inline;
+  color: #000000 !important;
+  text-decoration: underline;
+}
+body #pp-modal .modal-dialog .modal-content .modal-body a:hover {
+  font-weight: 700 !important;
+}
+body #pp-modal .modal-dialog .modal-content .modal-body #close-privacy-policy {
+  position: absolute;
+  right: 0;
+  top: 4.5vh;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body #pp-modal .modal-dialog .modal-content .modal-body #close-privacy-policy {
+    top: 3vh;
+  }
+}
+body #pp-modal .modal-dialog .modal-content .modal-body #close-privacy-policy:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 body #covid-alert {
   background: #eeca30;
   color: #000000;
@@ -275,6 +505,7 @@ body #covid-alert {
   height: 5vh;
   line-height: 5vh;
   font-size: 0.7vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -336,6 +567,7 @@ body #covid-alert-mobile {
     height: 14vh;
     line-height: 3vh;
     font-size: 2.5vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -2066,6 +2298,41 @@ body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #me
 }
 body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #meu-social-media li a img {
   height: 100%;
+}
+body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
+  position: absolute;
+  left: 17vw;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  font-size: 0.7vw;
+  opacity: 0.8;
+}
+body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
+    font-size: 1.5vw;
+    left: 45vw;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
+    left: 18vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
+    font-size: 1.2vw;
+    left: 30vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
+    left: 21vw;
+  }
 }
 body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container .meu-fc-thumb-text {
   position: absolute;

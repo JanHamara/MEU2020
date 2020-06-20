@@ -38,6 +38,9 @@
                         </li>
                     </ul>
 
+                    <!--     Privacy Policy      -->
+                    <a href="#pp-modal" id="pp-footer" data-toggle="modal">Privacy Policy</a>
+
                     <!--     Sponsored By      -->
                     <span class="meu-fc-thumb-text">Sponsored by</span>
 

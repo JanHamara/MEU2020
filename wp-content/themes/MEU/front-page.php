@@ -10,6 +10,50 @@
 
     <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
+    <!--  Privacy Policy  -->
+
+    <div id="privacy-policy" data-aos="zoom-in" data-aos-delay="1500">
+        <h3>Personal data & Cookies</h3>
+        <p class="pp-1">
+            This websites collects certain cookies and personal data,
+            in order to enable core functionality of the website <span class="line-brk"></span>
+            (personal account, social login, contact form),
+            as well as to provide you with the best experience with our services.
+        </p>
+        <p class="pp-2">By using this website, you agree with the collection of this data, as well as with our Privacy Policy.</p>
+
+        <div id="pp-links">
+            <div id="pp-agree" class="meu-link">
+                <span>I AGREE</span>
+            </div>
+            <a href="#pp-modal" id="pp-privacy-policy" class="meu-link" data-toggle="modal">
+                <span>PRIVACY POLICY</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pp-modal" tabindex="-1" role="dialog" aria-labelledby="privacy-policy-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                <?php $query = new WP_Query( "pagename=privacy-policy" ); ?>
+                <?php if ( $query->have_posts() ) : $query->the_post(); ?>
+                    <h3><?php the_title(); ?></h3>
+
+                    <p><?php the_content(); ?></p>
+                <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
+
+                    <a href="#" id="close-privacy-policy" data-dismiss="modal">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -----------------------------------------------------------------------------------------------------------------  -->
+
     <!--  Covid-19 Alert  -->
 
     <div id="covid-alert" data-aos="fade-up" data-aos-delay="1500" data-aos-offset="-1000">
