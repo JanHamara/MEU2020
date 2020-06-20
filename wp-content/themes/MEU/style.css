@@ -620,7 +620,7 @@ body #meu-navigation .container-fluid #meu-nav-home {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 7.5vh;
+  height: 9vh;
   left: 5.5vw;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
