@@ -11,7 +11,7 @@
     <nav id="meu-navigation" data-aos="fade-down">
         <div class="container-fluid">
             <!--     Navigation Background       -->
-            <img id="meu-nav-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/navigation_bar.png" class="img-responsive" alt="nav-bg">
+            <img id="meu-nav-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_components/navigation_bar.png" class="img-responsive" alt="nav-bg">
 
             <!--     Navigation Logo       -->
             <a id="meu-nav-home" href="<?php echo home_url() ?>">

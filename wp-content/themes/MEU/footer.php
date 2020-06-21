@@ -12,7 +12,7 @@
         <div class="container-fluid">
 
             <!--     Footer Background       -->
-            <img id="meu-footer-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/footer_bar.png" class="img-responsive" alt="footer-bg">
+            <img id="meu-footer-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_components/footer_bar.png" class="img-responsive" alt="footer-bg">
 
             <div class="meu-footer-content">
                 <div class="meu-fc-container">

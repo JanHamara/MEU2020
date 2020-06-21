@@ -16,7 +16,7 @@
 <aside id="meu-login">
     <!--        Background        -->
     <img src="<?php echo get_template_directory_uri(); ?>/images/login_bg.jpg" class="meu-login-bg-2 img-responsive" alt="login-bg">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-login-bg img-responsive" alt="login-item-bg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-login-bg img-responsive" alt="login-item-bg">
 
     <!--        MEU 2020 Logo        -->
     <img id="meu-login-logo" src="<?php echo get_template_directory_uri(); ?>/images/MEU_branding/logo_main_white_nopadding_nosubheading.png" class="img-responsive" alt="meu-logo">
@@ -100,7 +100,7 @@
                 <div class="meu-team-grid">
                     <div class="meu-tg-item">
                         <!--        Background        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/1.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
@@ -125,7 +125,7 @@
                     </div>
 
                     <div class="meu-tg-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/2.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="meu-tg-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/3.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
@@ -178,7 +178,7 @@
                 <div class="meu-team-grid">
                     <div class="meu-tg-item">
                         <!--        Background        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/4.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
@@ -203,7 +203,7 @@
                     </div>
 
                     <div class="meu-tg-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/5.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
@@ -228,7 +228,7 @@
                     </div>
 
                     <div class="meu-tg-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_compontents/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/6.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
