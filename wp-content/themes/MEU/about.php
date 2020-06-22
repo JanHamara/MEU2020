@@ -75,7 +75,7 @@
                         ?>
 
                         <div id="about-hero-image" data-aos="zoom-in" data-aos-delay="800">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logos/sponsors/BETA_SVK.png" class="img-responsive" alt="beta-slovakia-logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo_2.png" class="img-responsive" alt="beta-slovakia-logo">
                         </div>
 
                         <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100" data-aos-offset="-1000">
