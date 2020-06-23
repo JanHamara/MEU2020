@@ -4,7 +4,7 @@ require('../../../wp-load.php');
 
 if(isset($_POST['email'])) {
     $email_to = "contact@meubratislava.eu";
-    $email_subject = "New message from [ www.meubratislava.eu ]";
+    $email_subject = "NEW MESSAGE | CONTACT FORM [ MEU BRATISLAVA 2020 ]";
     function died($error) {
         // Even though I validate data at front-end with Javascript, it is generally advised to test data in back end too
         // Therefore I verify correctness of data with PHP too, just to demonstrate how it is possible to be done
@@ -24,17 +24,19 @@ if(isset($_POST['email'])) {
     $mail = $_POST['email'];
     $message = $_POST['message'];
     $email_from = "contact@meubratislava.eu";
-    $error_message = "";
-
-
-    $email_message = "New message from [ www.meubratislava.eu ]:\n\n";
+    $error_message = "Sorry there was an error with your submitted data!";
+    $email_message = "You have a new message from the contact form at [ www.meubratislava.eu ]\n\n";
     function clean_string($string) {
         $bad = array("content-type","bcc:","to:","cc:","href");
         return str_replace($bad,"",$string);
     }
+    $email_message .= "---------------------------------------------------------\n\n";
+    $email_message .= "The message comes from:\n\n";
     $email_message .= "Name: ".clean_string($name)."\n";
-    $email_message .= "Email: ".clean_string($mail)."\n";
-    $email_message .= "Message: ".clean_string($message)."\n";
+    $email_message .= "Email: ".clean_string($mail)."\n\n";
+    $email_message .= "---------------------------------------------------------\n\n";
+    $email_message .= "".clean_string($message)."\n\n";
+    $email_message .= "---------------------------------------------------------\n";
 // create email headers
     $headers = 'From: '.$email_from."\r\n".
         'Reply-To: '.$email_from."\r\n" .
