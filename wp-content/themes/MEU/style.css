@@ -2152,11 +2152,11 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
     font-size: 1.5vw;
   }
 }
-body main .section-header .container-fluid .header-container #meu-submit-form {
+body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form #meu-submit-form {
   margin-top: 3vh;
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  body main .section-header .container-fluid .header-container #meu-submit-form {
+  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form #meu-submit-form {
     font-size: 2vw;
   }
 }

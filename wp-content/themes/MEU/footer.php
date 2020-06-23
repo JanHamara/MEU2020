@@ -8,51 +8,51 @@
 
 <?php wp_footer(); ?>
 
-    <footer id="meu-footer" data-aos="fade-up" data-aos-delay="2000" data-aos-offset="-5000">
-        <div class="container-fluid">
+<footer id="meu-footer" data-aos="fade-up" data-aos-delay="2000" data-aos-offset="-5000">
+    <div class="container-fluid">
 
-            <!--     Footer Background       -->
-            <img id="meu-footer-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_components/footer_bar.png" class="img-responsive" alt="footer-bg">
+        <!--     Footer Background       -->
+        <img id="meu-footer-bg" src="<?php echo get_template_directory_uri(); ?>/images/page_components/footer_bar.png" class="img-responsive" alt="footer-bg">
 
-            <div class="meu-footer-content">
-                <div class="meu-fc-container">
-                    <!--     Social Media      -->
-                    <ul id="meu-social-media" class="list-unstyled list-inline">
-                        <!--     Facebook      -->
-                        <li>
-                           <a href="https://www.facebook.com/BETASlovakia" target="_blank">
-                               <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" class="img-responsive" alt="facebook-logo">
-                           </a>
-                        </li>
-                        <!--     Instagram      -->
-                        <li>
-                            <a href="https://www.instagram.com/beta_slovakia/" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/instagram_icon.png" class="img-responsive" alt="instagram-logo">
-                            </a>
-                        </li>
-                        <!--     LinkedIn      -->
-                        <li>
-                            <a href="https://www.linkedin.com/betaslovakia" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin_icon.png" class="img-responsive" alt="linkedin-logo">
-                            </a>
-                        </li>
-                    </ul>
+        <div class="meu-footer-content">
+            <div class="meu-fc-container">
+                <!--     Social Media      -->
+                <ul id="meu-social-media" class="list-unstyled list-inline">
+                    <!--     Facebook      -->
+                    <li>
+                        <a href="https://www.facebook.com/BETASlovakia" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" class="img-responsive" alt="facebook-logo">
+                        </a>
+                    </li>
+                    <!--     Instagram      -->
+                    <li>
+                        <a href="https://www.instagram.com/beta_slovakia/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/instagram_icon.png" class="img-responsive" alt="instagram-logo">
+                        </a>
+                    </li>
+                    <!--     LinkedIn      -->
+                    <li>
+                        <a href="https://www.linkedin.com/betaslovakia" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin_icon.png" class="img-responsive" alt="linkedin-logo">
+                        </a>
+                    </li>
+                </ul>
 
-                    <!--     Privacy Policy      -->
-                    <a href="#pp-modal" id="pp-footer" data-toggle="modal">Privacy Policy</a>
+                <!--     Privacy Policy      -->
+                <a href="#pp-modal" id="pp-footer" data-toggle="modal">Privacy Policy</a>
 
-                    <!--     Sponsored By      -->
-                    <span class="meu-fc-thumb-text">Sponsored by</span>
+                <!--     Sponsored By      -->
+                <span class="meu-fc-thumb-text">Sponsored by</span>
 
-                    <!--     V4 Logo      -->
-                    <img id="meu-footer-V4" src="<?php echo get_template_directory_uri(); ?>/images/logos/V4_logo.png" class="img-responsive" alt="V4-logo">
-                </div>
+                <!--     V4 Logo      -->
+                <img id="meu-footer-V4" src="<?php echo get_template_directory_uri(); ?>/images/logos/V4_logo.png" class="img-responsive" alt="V4-logo">
             </div>
         </div>
+    </div>
 
-        <!--     Footer Bottom Line       -->
-        <div id="footer-bottom-bar"></div>
-    </footer>
+    <!--     Footer Bottom Line       -->
+    <div id="footer-bottom-bar"></div>
+</footer>
 
 </main>
 
@@ -164,14 +164,9 @@
             // Check for validity of email address
             if (validateMail()) {
                 var dataString = meu_form.serialize();
-                form_submitted.css({"opacity": 1});
-                meu_form.trigger("reset");
-                setTimeout(function () {
-                    form_submitted.css({"opacity": 0});
-                }, 3000);
                 jQuery.ajax({
                     type: "POST",
-                    url: "send_form.php",
+                    url: "../wp-content/themes/MEU/send-form.php",
                     data: dataString,
                     success: function() {
                         form_submitted.css({"opacity": 1});

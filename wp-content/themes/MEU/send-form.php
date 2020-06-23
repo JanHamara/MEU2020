@@ -1,4 +1,7 @@
 <?php
+
+require('../../../wp-load.php');
+
 if(isset($_POST['email'])) {
     $email_to = "contact@meubratislava.eu";
     $email_subject = "New message from [ www.meubratislava.eu ]";
@@ -20,20 +23,10 @@ if(isset($_POST['email'])) {
     $name = $_POST['name'];
     $mail = $_POST['email'];
     $message = $_POST['message'];
-    $email_from = $_POST['email'];
+    $email_from = "contact@meubratislava.eu";
     $error_message = "";
-    // Email Regex
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-    if(!preg_match($email_exp,$email_from)) {
-        $error_message .= 'Email adress is not valid!<br />';
-    }
-    $string_exp = "/^[A-Za-z .'-]+$/";
-    if(!preg_match($string_exp,$name)) {
-        $error_message .= 'Sorry, but the name should contain only letters!<br />';
-    }
-    if(strlen($error_message) > 0) {
-        died($error_message);
-    }
+
+
     $email_message = "New message from [ www.meubratislava.eu ]:\n\n";
     function clean_string($string) {
         $bad = array("content-type","bcc:","to:","cc:","href");
@@ -46,8 +39,10 @@ if(isset($_POST['email'])) {
     $headers = 'From: '.$email_from."\r\n".
         'Reply-To: '.$email_from."\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
-    ?>
-    <?php
+    if (@wp_mail($email_to, $email_subject, $email_message, $headers)) {
+        echo "SEND MAIL: Success";
+    } else {
+        echo "SEND MAIL: Failed";
+    }
 }
 ?>
