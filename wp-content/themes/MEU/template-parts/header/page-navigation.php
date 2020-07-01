@@ -4,6 +4,19 @@
 	Copyright: 2020, Jan Hamara, www.janhamara.com
     Wordpress v5.4
 */
+
+
+use Auth0\SDK\Auth0;
+
+$auth0 = new Auth0([
+  'domain' => 'meu-dev.eu.auth0.com',
+  'client_id' => 'F7SVHAQH1LDYVJKOq6OR95UpdaE4dN7e',
+  'client_secret' => 'H66C9oiuJdLv3-jhhDacXRfPqYdjGfDktAZ-6CjJmqqgkoqGG3Q8CX3I1zyKEgX9',
+  'redirect_uri' => 'https://www.meubratislava.eu',
+  'scope' => 'openid profile email',
+]);
+
+$userInfo = $auth0->getUser();
 ?>
 
     <div id="nav-top-bar" data-aos="fade-down"></div>
@@ -52,7 +65,11 @@
             <div id="meu-nav-login-links">
                 <div id="meu-nl-container">
                     <div class="meu-nl-content">
-                        <div id="meu-nl-login">Log In</div> | <div id="meu-nl-register">Register</div>
+                    <?php if (!$userInfo) { ?>
+                        <a href="<?php echo site_url( '/login' ) ?>" id="meu-nl-login">Log In</a> | <a href="<?php echo site_url( '/login' ) ?>" id="meu-nl-register">Register</a>
+                        <?php } else { ?>
+                        <a href="<?php echo site_url( '/account' ) ?>" id="meu-nl-login"><i class="fa fa-user"></i> &nbsp;My Account</a>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

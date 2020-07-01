@@ -221,7 +221,6 @@ a {
   font-size: 0.7vw;
   border-top: 1px @meu-white solid;
   letter-spacing: 0.2em;
-  .bold-mobile-font-type;
 
   @media @smartphone-all {
     width: 25vw;
@@ -247,12 +246,6 @@ a {
   span {
     .abs;
     bottom: 0;
-  }
-}
-
-.bold-mobile-font-type {
-  @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
-    font-weight: 500 !important;
   }
 }
 
@@ -347,10 +340,6 @@ body {
 
     .pp-1 {
       margin-bottom: 3vh;
-
-      @media @smartphone-all, @smartphone-all-landscape, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
-        font-weight: 500 !important;
-      }
     }
 
     .pp-2 {
@@ -373,7 +362,6 @@ body {
         border-top: 1px @meu-black solid;
         margin-right: 2vw;
         color: @meu-black !important;
-        .bold-mobile-font-type;
       }
 
       #pp-agree {
@@ -387,8 +375,6 @@ body {
         @media @tablet-small, @tablet-big {
           width: 15vw;
         }
-
-        .bold-mobile-font-type;
       }
 
       #pp-privacy-policy {
@@ -401,8 +387,6 @@ body {
         @media @tablet-small, @tablet-big {
           width: 20vw;
         }
-
-        .bold-mobile-font-type;
       }
     }
   }
@@ -438,7 +422,6 @@ body {
 
         .modal-body {
           letter-spacing: 0.1em;
-          .bold-mobile-font-type;
 
           h3 {
             margin-bottom: 5vh;
@@ -467,8 +450,6 @@ body {
           }
 
           h6 {
-            margin-bottom: 1vh;
-
             @media @smartphone-all, @smartphone-all-landscape {
               margin-bottom: 2vh;
               line-height: 200%;
@@ -535,7 +516,6 @@ body {
     .position(fixed);
     bottom: 0;
     z-index: 9999 !important;
-    .bold-mobile-font-type;
 
     @media @smartphone-all {
       .display(none);
@@ -585,8 +565,6 @@ body {
   #covid-alert-mobile {
     .display(none);
 
-    .bold-mobile-font-type;
-
     @media @smartphone-all {
       .display;
       background: @meu-yellow;
@@ -604,25 +582,18 @@ body {
 
       .cam-attention {
         margin-bottom: 1vh;
-
-        .covid-alert-span {
-          .display(inline);
-          font-weight: 700;
-          margin-right: 0.5vw;
-        }
-      }
-
-
-      .covid-alert-span {
-          .display(inline);
-          font-weight: 700;
-          margin-right: 0.5vw;
       }
 
       .fa-exclamation-circle {
         transform: scale(1.5);
         margin-right: 1vw;
         margin-left: 1vw;
+      }
+
+      .covid-alert-span {
+        .display(inline);
+        font-weight: 600;
+        margin-right: 0.5vw;
       }
 
       #close-covid-alert-2 {
@@ -676,7 +647,6 @@ body {
       padding: 20% 10% 10%;
       background: @meu-yellow;
       z-index: 9998 !important;
-      .bold-mobile-font-type;
       //
       //.display(none);
 
@@ -1086,10 +1056,6 @@ body {
   #meu-mobile-menu-collapse {
     .display(none);
 
-    @media @smartphone-all-landscape {
-      .display(none);
-    }
-
     @media @smartphone-all {
       .display(none);
       width: @max;
@@ -1109,7 +1075,7 @@ body {
       #meu-nav-list-mobile {
         .p-center;
         //top: 55vh; // after you display LOGIN | REGISTER
-        top: 60vh;
+        top: 59vh;
         width: 30vw;
         padding-left: 0;
 
@@ -1147,8 +1113,8 @@ body {
       }
 
       #meu-mobile-menu-logo {
-        width: 63vw;
-        margin: 8vh auto 0;
+        width: 70vw;
+        margin: 3vh auto 0;
       }
     }
   }
@@ -1182,7 +1148,7 @@ body {
 
             @media @smartphone-all {
               .display(block);
-              width: 35vw;
+              width: 40vw;
               margin: 0 auto 7vh;
             }
           }
@@ -1209,7 +1175,7 @@ body {
             @media @smartphone-all {
               font-size: 4vw;
               letter-spacing: 0.35vw;
-              margin-bottom: 6vh;
+              margin-bottom: 5vh;
             }
 
             @media @smartphone-all-landscape {
@@ -1228,10 +1194,9 @@ body {
           #meu-header-links {
             .abs;
             bottom: 0;
-            .bold-mobile-font-type;
 
             @media @smartphone-all {
-              bottom: 12vh;
+              bottom: 15vh;
             }
 
             .meu-link {
@@ -1244,10 +1209,8 @@ body {
               font-size: 0.7vw;
               border-top: 1px @meu-white solid;
               letter-spacing: 0.2em;
-              .bold-mobile-font-type;
 
               @media @smartphone-all {
-                height: 5.5vh;
                 width: 25vw;
                 font-size: 2.2vw;
               }
@@ -1324,7 +1287,7 @@ body {
             @media @smartphone-all {
               font-size: 4vw;
               width: 55vw;
-              height: 8vh;
+              height: 6vh;
             }
 
             @media @tablet-small, @tablet-big {
@@ -1375,7 +1338,6 @@ body {
                 letter-spacing: 0.3em;
                 margin-bottom: 2vh;
                 font-size: 1vw;
-                .bold-mobile-font-type;
 
                 @media @smartphone-all {
                   font-size: 1.5vw;
@@ -1397,7 +1359,6 @@ body {
                 line-height: 200%;
                 letter-spacing: 0.2em;
                 opacity: 0.8;
-                .bold-mobile-font-type;
 
                 @media @smartphone-all {
                   font-size: 1vw;
@@ -1489,7 +1450,6 @@ body {
             font-size: 1vw;
             //
             text-transform: uppercase !important;
-            .bold-mobile-font-type;
 
             @media @smartphone-all {
               .aligntext(justify);
@@ -1511,7 +1471,6 @@ body {
               .display;
               height: 6vh;
               margin-top: 8vh;
-              .bold-mobile-font-type;
 
               @media @tablet-small, @tablet-big {
                 width: 20vw;
@@ -1747,7 +1706,6 @@ body {
                 transform: translate(0, -15px);
                 //
                 color: @meu-yellow;
-                .bold-mobile-font-type;
 
                 @media @smartphone-all {
                   font-size: 2vw;
@@ -1757,14 +1715,14 @@ body {
                   font-size: 1.5vw;
                 }
               }
+            }
+          }
 
-              #meu-submit-form {
-                margin-top: 3vh;
+          #meu-submit-form {
+            margin-top: 3vh;
 
-                @media @tablet-small, @tablet-big {
-                  font-size: 2vw;
-                }
-              }
+            @media @tablet-small, @tablet-big {
+              font-size: 2vw;
             }
           }
 
@@ -1775,7 +1733,6 @@ body {
             transition: opacity 1s;
             //
             color: @meu-yellow;
-            .bold-mobile-font-type;
 
             @media @smartphone-all {
               font-size: 2vw;
@@ -1854,7 +1811,6 @@ body {
               .rel;
               //
               transition: transform 1s;
-              .bold-mobile-font-type;
 
               @media @smartphone-all {
                 height: 50vh;
@@ -1913,7 +1869,6 @@ body {
 
                 @media @smartphone-all {
                   font-size: 3vw;
-                  font-weight: 400 !important;
                   opacity: 0.8;
                 }
 
@@ -2079,7 +2034,6 @@ body {
               letter-spacing: 0.1em;
               font-size: 0.7vw;
               opacity: 0.8;
-              .bold-mobile-font-type;
 
               &:hover {
                 opacity: 1;
@@ -2088,7 +2042,7 @@ body {
 
               @media @smartphone-all {
                 font-size: 1.5vw;
-                left: 42vw;
+                left: 45vw;
               }
 
               @media @smartphone-all-landscape {
@@ -2114,10 +2068,9 @@ body {
               //
               letter-spacing: 0.1em;
               font-size: 0.7vw;
-              .bold-mobile-font-type;
 
               @media @smartphone-all {
-                right: 17vw;
+                right: 20vw;
                 font-size: 1.5vw;
               }
 

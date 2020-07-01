@@ -228,11 +228,6 @@ a:active {
   border-top: 1px #ffffff solid;
   letter-spacing: 0.2em;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  .meu-link {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   .meu-link {
     width: 25vw;
@@ -259,11 +254,6 @@ a:active {
 .meu-link span {
   position: absolute;
   bottom: 0;
-}
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  .bold-mobile-font-type {
-    font-weight: 500 !important;
-  }
 }
 body #nav-top-bar {
   position: fixed;
@@ -351,11 +341,6 @@ body #privacy-policy p {
 body #privacy-policy .pp-1 {
   margin-bottom: 3vh;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #privacy-policy .pp-1 {
-    font-weight: 500 !important;
-  }
-}
 body #privacy-policy .pp-2 {
   font-weight: 500 !important;
 }
@@ -378,11 +363,6 @@ body #privacy-policy #pp-links .meu-link {
   margin-right: 2vw;
   color: #000000 !important;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #privacy-policy #pp-links .meu-link {
-    font-weight: 500 !important;
-  }
-}
 body #privacy-policy #pp-links #pp-agree {
   width: 7vw;
 }
@@ -397,11 +377,6 @@ body #privacy-policy #pp-links #pp-agree {
     width: 15vw;
   }
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #privacy-policy #pp-links #pp-agree {
-    font-weight: 500 !important;
-  }
-}
 body #privacy-policy #pp-links #pp-privacy-policy {
   width: 10vw;
 }
@@ -413,11 +388,6 @@ body #privacy-policy #pp-links #pp-privacy-policy {
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   body #privacy-policy #pp-links #pp-privacy-policy {
     width: 20vw;
-  }
-}
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #privacy-policy #pp-links #pp-privacy-policy {
-    font-weight: 500 !important;
   }
 }
 body #pp-modal {
@@ -454,11 +424,6 @@ body #pp-modal .modal-dialog .modal-content {
 body #pp-modal .modal-dialog .modal-content .modal-body {
   letter-spacing: 0.1em;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #pp-modal .modal-dialog .modal-content .modal-body {
-    font-weight: 500 !important;
-  }
-}
 body #pp-modal .modal-dialog .modal-content .modal-body h3 {
   margin-bottom: 5vh;
 }
@@ -486,9 +451,6 @@ body #pp-modal .modal-dialog .modal-content .modal-body p {
   body #pp-modal .modal-dialog .modal-content .modal-body p {
     font-size: 1vw;
   }
-}
-body #pp-modal .modal-dialog .modal-content .modal-body h6 {
-  margin-bottom: 1vh;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape) {
   body #pp-modal .modal-dialog .modal-content .modal-body h6 {
@@ -549,11 +511,6 @@ body #covid-alert {
   bottom: 0;
   z-index: 9999 !important;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #covid-alert {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #covid-alert {
     display: none;
@@ -601,11 +558,6 @@ body #covid-alert #close-covid-alert:hover {
 body #covid-alert-mobile {
   display: none;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #covid-alert-mobile {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #covid-alert-mobile {
     display: block;
@@ -624,20 +576,15 @@ body #covid-alert-mobile {
   body #covid-alert-mobile .cam-attention {
     margin-bottom: 1vh;
   }
-  body #covid-alert-mobile .cam-attention .covid-alert-span {
-    display: inline;
-    font-weight: 700;
-    margin-right: 0.5vw;
-  }
-  body #covid-alert-mobile .covid-alert-span {
-    display: inline;
-    font-weight: 700;
-    margin-right: 0.5vw;
-  }
   body #covid-alert-mobile .fa-exclamation-circle {
     transform: scale(1.5);
     margin-right: 1vw;
     margin-left: 1vw;
+  }
+  body #covid-alert-mobile .covid-alert-span {
+    display: inline;
+    font-weight: 600;
+    margin-right: 0.5vw;
   }
   body #covid-alert-mobile #close-covid-alert-2 {
     display: inline-block;
@@ -690,11 +637,6 @@ body #meu-login #meu-login-overlay {
   padding: 20% 10% 10%;
   background: #eeca30;
   z-index: 9998 !important;
-}
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body #meu-login #meu-login-overlay {
-    font-weight: 500 !important;
-  }
 }
 body #meu-login #meu-login-overlay .cam-attention-2 {
   margin-bottom: 3vh;
@@ -1084,11 +1026,6 @@ body #meu-navigation .container-fluid #meu-mobile-menu {
 body #meu-mobile-menu-collapse {
   display: none;
 }
-@media only screen and (max-width: 824px) and (orientation: landscape) {
-  body #meu-mobile-menu-collapse {
-    display: none;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #meu-mobile-menu-collapse {
     display: none;
@@ -1110,7 +1047,7 @@ body #meu-mobile-menu-collapse .container-fluid #meu-nav-list-mobile {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 60vh;
+  top: 59vh;
   width: 30vw;
   padding-left: 0;
 }
@@ -1143,8 +1080,8 @@ body #meu-mobile-menu-collapse .container-fluid #meu-nav-list-bottom #meu-nav-li
   opacity: 0.8;
 }
 body #meu-mobile-menu-collapse .container-fluid #meu-mobile-menu-logo {
-  width: 63vw;
-  margin: 8vh auto 0;
+  width: 70vw;
+  margin: 3vh auto 0;
 }
 body main {
   position: relative;
@@ -1180,7 +1117,7 @@ body main #meu-header .container-fluid .header-container #meu-header-logo {
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-header .container-fluid .header-container #meu-header-logo {
     display: block;
-    width: 35vw;
+    width: 40vw;
     margin: 0 auto 7vh;
   }
 }
@@ -1208,7 +1145,7 @@ body main #meu-header .container-fluid .header-container #meu-main-subheading {
   body main #meu-header .container-fluid .header-container #meu-main-subheading {
     font-size: 4vw;
     letter-spacing: 0.35vw;
-    margin-bottom: 6vh;
+    margin-bottom: 5vh;
   }
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -1228,14 +1165,9 @@ body main #meu-header .container-fluid .header-container #meu-header-links {
   position: absolute;
   bottom: 0;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-header .container-fluid .header-container #meu-header-links {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-header .container-fluid .header-container #meu-header-links {
-    bottom: 12vh;
+    bottom: 15vh;
   }
 }
 body main #meu-header .container-fluid .header-container #meu-header-links .meu-link {
@@ -1248,14 +1180,8 @@ body main #meu-header .container-fluid .header-container #meu-header-links .meu-
   border-top: 1px #ffffff solid;
   letter-spacing: 0.2em;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-header .container-fluid .header-container #meu-header-links .meu-link {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-header .container-fluid .header-container #meu-header-links .meu-link {
-    height: 5.5vh;
     width: 25vw;
     font-size: 2.2vw;
   }
@@ -1349,7 +1275,7 @@ body main #meu-main-4 .container-fluid .header-container .meu-m2-heading {
   body main #meu-main-4 .container-fluid .header-container .meu-m2-heading {
     font-size: 4vw;
     width: 55vw;
-    height: 8vh;
+    height: 6vh;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -1519,42 +1445,6 @@ body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-r
   margin-bottom: 2vh;
   font-size: 1vw;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-rolename,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-rolename {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-rolename,
   body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-rolename,
@@ -1669,42 +1559,6 @@ body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-r
   line-height: 200%;
   letter-spacing: 0.2em;
   opacity: 0.8;
-}
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m2-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m2-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role .meu-m3-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-roledesc,
-  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-role .meu-m3-roledesc {
-    font-weight: 500 !important;
-  }
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role .meu-m2-roledesc,
@@ -1872,11 +1726,6 @@ body main .section-header .container-fluid .header-container .meu-section-paragr
   font-size: 1vw;
   text-transform: uppercase !important;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main .section-header .container-fluid .header-container .meu-section-paragraph {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main .section-header .container-fluid .header-container .meu-section-paragraph {
     text-align: justify;
@@ -1898,11 +1747,6 @@ body main .section-header .container-fluid .header-container .meu-section-paragr
   display: block;
   height: 6vh;
   margin-top: 8vh;
-}
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main .section-header .container-fluid .header-container .meu-section-paragraph .meu-link-block {
-    font-weight: 500 !important;
-  }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   body main .section-header .container-fluid .header-container .meu-section-paragraph .meu-link-block {
@@ -2137,11 +1981,6 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
   transform: translate(0, -15px);
   color: #eeca30;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .errorMessage {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form .errorMessage {
     font-size: 2vw;
@@ -2152,11 +1991,11 @@ body main .section-header .container-fluid .header-container #meu-contact-form f
     font-size: 1.5vw;
   }
 }
-body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form #meu-submit-form {
+body main .section-header .container-fluid .header-container #meu-submit-form {
   margin-top: 3vh;
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  body main .section-header .container-fluid .header-container #meu-contact-form form#meu-form #meu-submit-form {
+  body main .section-header .container-fluid .header-container #meu-submit-form {
     font-size: 2vw;
   }
 }
@@ -2166,11 +2005,6 @@ body main .section-header .container-fluid .header-container .form-submitted {
   opacity: 0;
   transition: opacity 1s;
   color: #eeca30;
-}
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main .section-header .container-fluid .header-container .form-submitted {
-    font-weight: 500 !important;
-  }
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main .section-header .container-fluid .header-container .form-submitted {
@@ -2249,11 +2083,6 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
   position: relative;
   transition: transform 1s;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item {
     height: 50vh;
@@ -2323,7 +2152,6 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-position {
     font-size: 3vw;
-    font-weight: 400 !important;
     opacity: 0.8;
   }
 }
@@ -2480,11 +2308,6 @@ body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp
   font-size: 0.7vw;
   opacity: 0.8;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
-    font-weight: 500 !important;
-  }
-}
 body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer:hover {
   opacity: 1;
   cursor: pointer;
@@ -2492,7 +2315,7 @@ body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container #pp-footer {
     font-size: 1.5vw;
-    left: 42vw;
+    left: 45vw;
   }
 }
 @media only screen and (max-width: 824px) and (orientation: landscape) {
@@ -2519,14 +2342,9 @@ body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container .me
   letter-spacing: 0.1em;
   font-size: 0.7vw;
 }
-@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait), only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
-  body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container .meu-fc-thumb-text {
-    font-weight: 500 !important;
-  }
-}
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-footer .container-fluid .meu-footer-content .meu-fc-container .meu-fc-thumb-text {
-    right: 17vw;
+    right: 20vw;
     font-size: 1.5vw;
   }
 }

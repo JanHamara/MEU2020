@@ -24,7 +24,7 @@
                 <a href="#meu-main-1" id="meu-read-more" class="meu-link">
                     <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                 </a>
-                <a href="#" id="meu-apply-now" class="meu-link">
+                <a href="<?php echo site_url( '/login' ) ?>" id="meu-apply-now" class="meu-link">
                     <span><?php echo get_post_meta($post->ID, 'Button2', true); ?></span>
                 </a>
             </div>

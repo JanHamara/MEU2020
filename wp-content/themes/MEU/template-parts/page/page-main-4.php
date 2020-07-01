@@ -17,7 +17,7 @@
             <?php the_content(); ?>
         </div>
 
-        <div class="meu-link meu-link-block">
+        <a href="<?php echo site_url( '/login' ) ?>" class="meu-link meu-link-block">
             <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
         </div>
         <?php endif; ?>
