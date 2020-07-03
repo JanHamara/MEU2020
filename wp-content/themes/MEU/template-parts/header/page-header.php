@@ -18,15 +18,15 @@
             <?php if ( $query->have_posts() ) : $query->the_post(); ?>
             <h3 id="meu-main-subheading" data-aos="fade-in" data-aos-delay="1100" data-aos-offset="-1000"><?php the_content(); ?></h3>
 
-            <h5 id="meu-main-date" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000"><?php echo get_post_meta($post->ID, 'Date', true); ?></h5>
+            <h5 id="meu-main-date" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000"><?php echo get_post_meta($post->ID, 'Date', true); ?> | <span class="meu-yellow">NO PARTICIPATION FEE</span></h5>
 
             <div id="meu-header-links" data-aos="fade-in" data-aos-delay="1700" data-aos-offset="-1000">
                 <a href="#meu-main-1" id="meu-read-more" class="meu-link">
                     <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
                 </a>
-                <a href="<?php echo site_url( '/login' ) ?>" id="meu-apply-now" class="meu-link">
-                    <span><?php echo get_post_meta($post->ID, 'Button2', true); ?></span>
-                </a>
+<!--                <a href="--><?php //echo site_url( '/login' ) ?><!--" id="meu-apply-now" class="meu-link">-->
+<!--                    <span>--><?php //echo get_post_meta($post->ID, 'Button2', true); ?><!--</span>-->
+<!--                </a>-->
             </div>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>

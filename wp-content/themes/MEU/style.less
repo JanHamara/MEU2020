@@ -229,8 +229,7 @@ a {
   }
 
   @media @tablet-small, @tablet-big {
-    width: 20vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
   &:link, &:visited, &:active {
@@ -288,7 +287,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     //
-    z-index: 9997 !important;
+    z-index: 9998 !important;
 
     @media @smartphone-all {
       width: 85vw;
@@ -312,6 +311,10 @@ body {
 
       @media @tablet-small, @tablet-big {
         margin-bottom: 3.5vh;
+      }
+
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        margin: 1vh 0 5vh 0;
       }
 
       @media @smartphone-all-landscape {
@@ -362,6 +365,10 @@ body {
         margin-top: 3.5vh;
       }
 
+      @media @tablet-landscape, @iPad-Pro-landscape {
+        margin-top: 6vh;
+      }
+
       .meu-link {
         height: 4vh;
         border-top: 1px @meu-black solid;
@@ -370,6 +377,10 @@ body {
 
         span {
           padding-top: 2vh;
+
+          @media @tablet-landscape, @iPad-Pro-landscape {
+            padding-top: 1vh;
+          }
         }
       }
 
@@ -387,7 +398,7 @@ body {
   }
 
   #pp-modal {
-    z-index: 9998 !important;
+    z-index: 9999 !important;
 
     .modal-dialog {
       width: 80vw;
@@ -569,7 +580,7 @@ body {
       padding: 2.5vh 2vh;
       height: 14vh;
       line-height: 3vh;
-      font-size: 2.5vw;
+      font-size: 3vw;
       box-shadow: 0 5px 15px rgba(0,0,0,.5);
       //
       width: 100%;
@@ -582,9 +593,9 @@ body {
       }
 
       .fa-exclamation-circle {
-        transform: scale(1.5);
-        margin-right: 1vw;
+        transform: scale(1.8);
         margin-left: 1vw;
+        margin-right: 3vw;
       }
 
       .covid-alert-span {
@@ -605,228 +616,59 @@ body {
     }
   }
 
-  // Login Pop-Up
-  #meu-login {
+  // Apply Now | Call-to-action
+  #meu-apply-now-cta {
     .position(fixed);
-    color: @meu-white;
-    top: 57%;
-    right: 10vw;
-    transform: translate(50%,-50%);
-    width: 20vw;
-    height: 55vh;
-    box-shadow: 0 0 15px #9c9c9c42;
+    right: 0;
+    top: 80%;
+    width: auto;
+    height: auto;
+    padding: 1vw;
     //
-    .display(none);
+    font-size: 0.9vw;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 5px 15px rgba(250,250,250,.2);
+    font-weight: 600 !important;
     //
-    z-index: 9994 !important;
+    z-index: 9997 !important;
 
     @media @smartphone-all {
-      width: 80vw;
-      right: 50%;
+      font-size: 3vw;
+      padding: 6vw 4vw;
+      letter-spacing: 0.1em;
+      top: 72.5%;
     }
 
     @media @tablet-small, @tablet-big {
-      width: 60vw;
-      right: 50%;
+      font-size: 1.5vw;
+      padding: 2vw 2vw;
+      letter-spacing: 0.1em;
     }
 
-    @media @tablet-landscape, @iPad-Pro-landscape {
-      width: 30vw;
-      right: 15vw;
+    &:link, &:visited, &:hover, &:active {
+      color: @meu-black !important;
+      background: @meu-yellow !important;
     }
 
-    // Overlay
-    #meu-login-overlay {
-      .p-center;
-      width: 100%;
-      height: 40vh;
-      color: @meu-black;
-      padding: 20% 10% 10%;
-      background: @meu-yellow;
-      z-index: 9998 !important;
-      //
-      //.display(none);
-
-      .cam-attention-2 {
-        margin-bottom: 3vh;
-      }
-
-      .alert-span {
-        .display(inline);
-        font-size: 0.7vw;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        margin-left: 0.5vw;
-
-        @media @smartphone-all {
-          font-size: 3.5vw;
-          margin-left: 2vw;
-        }
-
-        @media @tablet-small, @tablet-big {
-          font-size: 2vw;
-        }
-      }
-
-      span {
-        font-size: 0.6vw;
-        letter-spacing: 0.2em;
-        line-height: 3vh;
-
-        @media @smartphone-all {
-          font-size: 2.5vw;
-        }
-
-        @media @tablet-small, @tablet-big {
-          font-size: 1.5vw;
-        }
-      }
+    &:hover {
+      box-shadow: 0 5px 15px rgba(250,250,250,.3);
     }
 
-    .meu-login-bg-2 {
-      .abs;
-      width: @max;
-      height: 22vh;
-      top: 0;
-      z-index: 9995 !important;
-    }
-
-    .meu-login-bg {
-      .abs;
-      width: @max;
-      height: 53vh;
-      bottom: 0;
-      z-index: 9996 !important;
-    }
-
-    #meu-login-logo {
-      .p-center;
-      top: 16%;
-      width: 25%;
-      opacity: 0.9;
-      //
-      z-index: 9997 !important;
-
-      @media @smartphone-all, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
-        .display(none); // disable at Phase 2
-      }
-    }
-
-    .meu-login-header {
-      .abs;
-      .aligntext;
-      top: 42%;
-      width: 100%;
-      font-size: 1vw;
-      letter-spacing: 0.3em;
-      z-index: 9997 !important;
+    i {
+      margin-right: 0.5vw;
 
       @media @smartphone-all {
-        font-size: 3vw;
+        margin-right: 2vw;
+        transform: scale(1.5);
       }
 
       @media @tablet-small, @tablet-big {
-        font-size: 2vw;
-      }
-
-      div {
-        .display(inline);
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-
-      .meu-lh-item-login {
-        opacity: 0.8;
-      }
-      .meu-lh-item-register {
-        color: @meu-yellow;
-      }
-    }
-
-    #meu-login-f {
-      .abs;
-      top: 53%;
-      width: @max;
-      height: auto;
-      z-index: 9997 !important;
-
-      #meu-login-form {
-        width: 80%;
-        margin: auto;
-        z-index: 9997 !important;
-
-        input {
-          background: none !important;
-          border: none;
-          outline: none !important;
-          border-radius: 0 !important;
-          padding: 0 !important;
-          //
-          color: @meu-white !important;
-          height: 6vh;
-          letter-spacing: 0.1em;
-          font-size: 0.7vw;
-          border-top: 1px @meu-white solid;
-
-          @media @smartphone-all {
-            font-size: 2.5vw;
-          }
-
-          @media @tablet-small, @tablet-big {
-            font-size: 1.5vw;
-          }
-
-          &:focus, &:hover, &:active {
-            background: none !important;
-            outline: none !important;
-            box-shadow: none !important;
-            border-top: 1px @meu-white solid;
-          }
-        }
-      }
-    }
-
-    #meu-submit-login-form {
-      .abs;
-      top: 88%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9997 !important;
-
-      @media @smartphone-all {
-        .display(none); // disable at Phase 2
-        font-size: 2.5vw;
-      }
-
-      @media @tablet-small, @tablet-big {
-        .display(none); // disable at Phase 2
-        width: 14vw;
-        font-size: 1.5vw;
-      }
-
-      @media @tablet-landscape, @iPad-Pro-landscape {
-        .display(none); // disable at Phase 2
-      }
-    }
-
-    #close-meu-login {
-      .abs;
-      color: @meu-white;
-      top: 5%;
-      right: 7%;
-      transform: translate(50%, -50%);
-      //
-      opacity: 0.5;
-      z-index: 9999 !important;
-
-      &:hover {
-        opacity: 0.8;
-        cursor: pointer;
+        margin-right: 1vw;
+        transform: scale(1.2);
       }
     }
   }
+
 
   // 0. Navigation
   #meu-navigation {
@@ -947,6 +789,10 @@ body {
             span {
               .position(static);
               padding-top: 3vh;
+
+              @media @tablet-small, @tablet-big {
+                padding-top: 1.7vh;
+              }
             }
           }
         }
@@ -1191,6 +1037,10 @@ body {
             @media @smartphone-all {
               font-size: 3vw;
             }
+
+            @media @tablet-small, @tablet-big {
+              font-size: 2.2vw;
+            }
           }
 
           #meu-header-links {
@@ -1219,7 +1069,7 @@ body {
               }
 
               @media @tablet-small, @tablet-big {
-                font-size: 1.5vw;
+                font-size: 2vw;
               }
 
               &:hover {
@@ -1371,7 +1221,7 @@ body {
                 }
 
                 @media @tablet-small, @tablet-big {
-                  font-size: 1.5vw;
+                  font-size: 2vw;
                   margin-bottom: 1.5vh;
                   line-height: 200%;
                 }
@@ -1396,7 +1246,7 @@ body {
                 }
 
                 @media @tablet-small, @tablet-big {
-                  font-size: 1vw;
+                  font-size: 1.5vw;
                   letter-spacing: 0em;
                 }
               }
@@ -1491,8 +1341,12 @@ body {
 
             @media @tablet-small, @tablet-big {
               .aligntext(justify);
-              font-size: 1.8vw;
+              font-size: 2.5vw;
               line-height: 3vh;
+            }
+
+            @media @tablet-landscape, @iPad-Pro-landscape {
+              font-size: 1.5vw;
             }
 
             #meu-about-section-hidden {
@@ -1516,7 +1370,7 @@ body {
               width: 75%;
               line-height: 4vh;
 
-              @media @smartphone-all {
+              @media @smartphone-all, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
                 width: 100%;
               }
             }
@@ -1526,7 +1380,7 @@ body {
               width: 15vw;
               float: right;
 
-              @media @smartphone-all {
+              @media @smartphone-all, @tablet-small, @tablet-big, @tablet-landscape, @iPad-Pro-landscape {
                 .display(none);
               }
             }
@@ -1541,8 +1395,12 @@ body {
               width: 10vw;
               margin: auto;
 
-              @media @smartphone-all {
+              @media @smartphone-all, @tablet-small, @tablet-big {
                 width: 30vw;
+              }
+
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                width: 20vw;
               }
             }
           }
@@ -1601,11 +1459,11 @@ body {
 
               @media @tablet-small, @tablet-big {
                 width: 21vw;
-                margin: 10vh 2.6vw 0;
+                margin: 0vh 2.6vw 0;
               }
 
               @media @tablet-landscape, @iPad-Pro-landscape {
-                margin: 12vh 0.7vw 0;
+                margin: 0vh 0.7vw 0;
               }
 
               @media @smartphone-all-landscape {
@@ -1657,6 +1515,10 @@ body {
 
           #meu-sponsors {
             margin-top: 5vh;
+
+            @media @tablet-landscape, @iPad-Pro-landscape {
+              margin-top: 10vh;
+            }
           }
 
           #meu-sponsors-2 {
@@ -2105,8 +1967,8 @@ body {
               }
 
               @media @tablet-small, @tablet-big {
-                font-size: 1.2vw;
-                left: 30vw;
+                font-size: 1.7vw;
+                left: 32vw;
               }
 
               @media @tablet-landscape, @iPad-Pro-landscape {
@@ -2130,8 +1992,8 @@ body {
               }
 
               @media @tablet-small, @tablet-big {
-                right: 17vw;
-                font-size: 2vw;
+                right: 16vw;
+                font-size: 1.7vw;
               }
 
               @media @tablet-landscape, @iPad-Pro-landscape {

@@ -60,7 +60,7 @@
         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
         <span class="covid-alert-span">ATTENTION</span>
         <span class="covid-alert-span">|</span>
-        DUE TO COMPLICATIONS CAUSED BY THE COVID-19 PANDEMIC, THE CONFERENCE WILL TAKE PLACE <span class="covid-alert-span">ONLINE</span>
+        DUE TO COMPLICATIONS CAUSED BY THE COVID-19 PANDEMIC, THIS YEAR'S CONFERENCE WILL BE <span class="covid-alert-span">ONLINE</span>
         <div id="close-covid-alert">
             <i class="fa fa-close" aria-hidden="true"></i>
         </div>
@@ -72,11 +72,19 @@
             <span class="covid-alert-span">ATTENTION</span>
         </div>
         DUE TO COMPLICATIONS CAUSED BY THE COVID-19 PANDEMIC <br/>
-        THE CONFERENCE WILL TAKE PLACE <span class="covid-alert-span">ONLINE</span>
+        THIS YEAR'S EDITION OF THE CONFERENCE WILL BE <span class="covid-alert-span">ONLINE</span>
         <div id="close-covid-alert-2">
             <i class="fa fa-close" aria-hidden="true"></i>
         </div>
     </div>
+
+    <!--  -----------------------------------------------------------------------------------------------------------------  -->
+
+    <!--  APPLY NOW  -->
+
+    <a href="<?php echo site_url( '/login' ) ?>" id="meu-apply-now-cta" data-aos="fade-left" data-aos-delay="1700" data-aos-offset="-1000">
+        <i class="fa fa-edit"></i>APPLY NOW
+    </a>
 
     <!--  -----------------------------------------------------------------------------------------------------------------  -->
 
