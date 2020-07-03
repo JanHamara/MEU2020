@@ -27,19 +27,9 @@
                     <div class="meu-m2-roledesc">Member of the European Parliament</div>
                 </div>
                 <div class="meu-m2-role">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/roles/02.png" class="img-responsive" alt="role-icon">
-                    <div class="meu-m2-rolename">COMMISIONER</div>
-                    <div class="meu-m2-roledesc">Member of the European Commision</div>
-                </div>
-                <div class="meu-m2-role">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/icons/roles/03.png" class="img-responsive" alt="role-icon">
                     <div class="meu-m2-rolename">MINISTER</div>
-                    <div class="meu-m2-roledesc">Member of the Council of Ministers</div>
-                </div>
-                <div class="meu-m2-role">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/roles/04.png" class="img-responsive" alt="role-icon">
-                    <div class="meu-m2-rolename">LOBBYIST</div>
-                    <div class="meu-m2-roledesc">Accredited lobbyist of EU policies</div>
+                    <div class="meu-m2-roledesc">Member of the Council <br/>of Ministers</div>
                 </div>
                 <div class="meu-m2-role">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/icons/roles/05.png" class="img-responsive" alt="role-icon">

@@ -35,19 +35,9 @@ $userInfo = $auth0->getUser();
                     while ( have_posts() ) : the_post();
                         ?>
 
-                        <?php if (!$userInfo) { ?>
+<!--                        --><?php //if (!$userInfo) { ?>
 
-                        <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800"><span class="meu-yellow">MY ACCOUNT</span></h1>
-
-                        <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100">
-                            <?php echo the_content() ?>
-                        </div>
-
-                        <a href="<?php echo site_url( '/login' ) ?>" class="meu-link">
-                            <span>LOGIN</span>
-                        </a>
-
-                        <?php } else { ?>
+<!--                        --><?php //} else { ?>
 
                         <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800"><span class="meu-yellow">MY ACCOUNT</span></h1>
 
@@ -68,7 +58,7 @@ $userInfo = $auth0->getUser();
                             </a>
                         </div>
 
-                        <?php } ?>
+<!--                        --><?php //} ?>
 
                     <?php endwhile; } ?>
 

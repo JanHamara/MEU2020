@@ -28,7 +28,7 @@ $userInfo = $auth0->getUser();
 
             <!--     Navigation Logo       -->
             <a id="meu-nav-home" href="<?php echo home_url() ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo_2.png" class="img-responsive" alt="beta-logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/navigation_logo_text.png" class="img-responsive" alt="beta-logo">
             </a>
 
             <!--     Navigation List       -->

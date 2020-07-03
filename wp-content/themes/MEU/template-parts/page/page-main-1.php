@@ -15,8 +15,13 @@
         </h1>
 
         <div class="meu-section-paragraph">
-            <?php the_content(); ?>
+            <div class="meu-section-meu">
+                <?php the_content(); ?>
+            </div>
+
+            <img id="what-is-meu-image" src="<?php echo get_template_directory_uri(); ?>/images/MEU_branding/logo_main_white_nopadding.png" class="img-responsive" alt="meu-logo">
         </div>
+
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
     </div>

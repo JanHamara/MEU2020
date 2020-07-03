@@ -24,17 +24,17 @@
             <div class="meu-m3-role">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/offer/01.png" class="img-responsive img-resize" alt="offer-icon">
                 <div class="meu-m3-rolename">WEBINARS</div>
-                <div class="meu-m3-roledesc">3x Preparatory webinars held with world-class experts to ensure a high-quality debate throughout the programme</div>
+                <div class="meu-m3-roledesc">Preparatory webinars held with world-class experts to ensure a high-quality debate throughout the programme.</div>
             </div>
             <div class="meu-m3-role">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/offer/02.png" class="img-responsive" alt="offer-icon">
                 <div class="meu-m3-rolename">WORKSHOPS & DISCUSSIONS</div>
-                <div class="meu-m3-roledesc">Providing participants with the opportunity <br/>to exchange ideas with leading politicians, policymakers and high-profile experts</div>
+                <div class="meu-m3-roledesc">Providing participants with the opportunity to interact and exchange ideas with leading politicians, policymakers and high-profile experts.</div>
             </div>
             <div class="meu-m3-role">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/offer/03.png" class="img-responsive" alt="offer-icon">
                 <div class="meu-m3-rolename">SOCIAL NETWORKING</div>
-                <div class="meu-m3-roledesc">Networking opportunities for our participants, facilitating their professional and intellectual development in the field</div>
+                <div class="meu-m3-roledesc">Networking opportunities that aim to establish a strong base of contact among participants, facilitating professional and intellectual development.</div>
             </div>
         </div>
 

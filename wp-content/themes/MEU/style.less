@@ -24,7 +24,7 @@ Text Domain: MEU
 @max: 100%;
 
 // Fonts
-@font: 'Geneva', sans-serif;
+@font: 'Geneva', Arial, sans-serif;
 
 // Main Colors
 @meu-white: rgb(255, 255, 255);
@@ -213,12 +213,13 @@ a {
 
 .meu-link {
   .display(inline-block);
-  width: 8vw;
-  height: 4.5vh;
+  width: auto;
+  height: auto;
+  padding-right: 3vw;
   .rel;
   //
   color: @meu-white !important;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
   border-top: 1px @meu-white solid;
   letter-spacing: 0.2em;
 
@@ -244,8 +245,8 @@ a {
   }
 
   span {
-    .abs;
-    bottom: 0;
+    .position(static);
+    padding-top: 3vh;
   }
 }
 
@@ -868,7 +869,7 @@ body {
       #meu-nav-home {
         .display(inline-block);
         .p-center;
-        height: 9vh;
+        height: 10vh;
         left: 5.5vw;
 
         @media @smartphone-all {
@@ -894,9 +895,9 @@ body {
       #meu-nav-list {
         .display(flex);
         .p-center;
-        left: 62.5vw;
+        left: 59vw;
         //
-        width: 40vw;
+        width: 48vw;
         height: 4.5vh;
 
         @media @smartphone-all {
@@ -912,9 +913,10 @@ body {
         // Nav List Item
         .meu-nav-list-item {
           flex: 1;
-          height: @max;
+          width: auto;
+          height: auto;
           //
-          font-size: 0.7vw;
+          font-size: 0.8vw;
           letter-spacing: 0.1em;
           margin: 0 1.5vw;
           padding: 0;
@@ -933,8 +935,10 @@ body {
 
           // Links
           a {
-            .fs;
+            width: auto;
+            height: auto;
             //
+            padding-right: 1vw;
             border-top: 1px @meu-white solid;
             transition: border-top 1s;
 
@@ -945,8 +949,8 @@ body {
             }
 
             span {
-              .abs;
-              bottom: 0;
+              .position(static);
+              padding-top: 3vh;
             }
           }
         }
@@ -1004,7 +1008,7 @@ body {
           .meu-nl-content {
             .abs;
             bottom: 0;
-            font-size: 0.7vw;
+            font-size: 0.8vw;
             letter-spacing: 0.1em;
 
             @media @tablet-small, @tablet-big {
@@ -1126,7 +1130,7 @@ body {
     // 1. Header
     #meu-header {
       width: @max;
-      height: 85vh;
+      height: 65vh;
       margin-top: 16vh;
       //
       .container-fluid {
@@ -1134,10 +1138,12 @@ body {
         .rel;
 
         .header-container {
-          .p-center;
+          .abs;
           width: 85%;
           height: 45vh;
-          top: 52%;
+          left: 50%;
+          bottom: 22.5vh;
+          transform: translate(-50%, 50%);
           //
           @media @smartphone-all {
             height: 70vh;
@@ -1201,12 +1207,13 @@ body {
 
             .meu-link {
               .display(inline-block);
-              width: 8vw;
-              height: 4.5vh;
+              width: auto;
+              height: auto;
+              padding-right: 3vw;
               .rel;
               //
               color: @meu-white !important;
-              font-size: 0.7vw;
+              font-size: 0.8vw;
               border-top: 1px @meu-white solid;
               letter-spacing: 0.2em;
 
@@ -1227,8 +1234,8 @@ body {
               }
 
               span {
-                .abs;
-                bottom: 0;
+                .position(static);
+                padding-top: 3vh;
               }
             }
 
@@ -1256,7 +1263,7 @@ body {
     }
 
     // 1.2 Main 2
-    #meu-main-1, #meu-main-2, #meu-main-3, #meu-main-4 {
+    #meu-main-1, #meu-main-2, #meu-main-3, #meu-main-4, #meu-main-5 {
       width: @max;
       height: auto;
       margin-top: 0;
@@ -1268,7 +1275,7 @@ body {
         .header-container {
           width: 100%;
           height: auto;
-          padding: 18vh 15vh 10vh;
+          padding: 10vh 15vh 10vh;
 
           @media @smartphone-all {
             padding: 10vh 5vh 10vh;
@@ -1280,8 +1287,9 @@ body {
 
           .meu-m2-heading {
             font-size: 1.5vw;
-            width: 25vw;
-            height: 8vh;
+            width: auto;
+            padding-right: 3vw;
+            height: 9vh;
             border-top: 1px @meu-yellow solid;
 
             @media @smartphone-all {
@@ -1301,13 +1309,18 @@ body {
               font-weight: 100;
               cursor: default;
             }
+
+            span {
+              .position(static);
+              padding-top: 5vh;
+            }
           }
 
           #meu-m2-roles, #meu-m3-roles {
             .display(flex);
             width: @max;
             height: auto;
-            margin: 2vh auto;
+            margin: 10vh auto 0vh;
 
             .meu-m2-role, .meu-m3-role {
               .aligntext;
@@ -1315,7 +1328,7 @@ body {
               height: auto;
 
               img {
-                width: 50%;
+                width: 30%;
                 margin: 0 auto 5vh;
                 opacity: 0.8;
 
@@ -1337,7 +1350,7 @@ body {
               .meu-m2-rolename, .meu-m3-rolename {
                 letter-spacing: 0.3em;
                 margin-bottom: 2vh;
-                font-size: 1vw;
+                font-size: 1.3vw;
 
                 @media @smartphone-all {
                   font-size: 1.5vw;
@@ -1352,10 +1365,14 @@ body {
                 }
               }
 
+              .meu-m3-rolename {
+                margin-bottom: 4vh;
+              }
+
               .meu-m2-roledesc, .meu-m3-roledesc {
                 width: 80%;
                 margin: auto;
-                font-size: 0.7vw;
+                font-size: 0.9vw;
                 line-height: 200%;
                 letter-spacing: 0.2em;
                 opacity: 0.8;
@@ -1443,13 +1460,12 @@ body {
 
           // Section Paragraph
           .meu-section-paragraph {
-            letter-spacing: 0.3vw;
-            line-height: 4vh;
+            .aligntext(justify);
+            letter-spacing: 0.15vw;
+            line-height: 5vh;
             margin-bottom: 8vh;
             margin-top: -2vh;
-            font-size: 1vw;
-            //
-            text-transform: uppercase !important;
+            font-size: 1.2vw;
 
             @media @smartphone-all {
               .aligntext(justify);
@@ -1477,6 +1493,19 @@ body {
                 font-size: 1.5vw;
               }
             }
+
+            .meu-section-meu {
+              .display(inline-block);
+              .aligntext(justify);
+              width: 75%;
+              line-height: 4vh;
+            }
+
+            #what-is-meu-image {
+              .display(inline-block);
+              width: 15vw;
+              float: right;
+            }
           }
 
           // 2. About
@@ -1496,15 +1525,7 @@ body {
 
           // 3. Team
           #meu-team-1 {
-            width: 10vw;
-
-            @media @smartphone-all {
-              width: 30vw;
-            }
-
-            @media @tablet-small, @tablet-big {
-              width: 22vw;
-            }
+            width: auto;
           }
 
           // 4. Programme
@@ -1529,20 +1550,7 @@ body {
             }
           }
 
-          // 5. Support Us
-          #meu-sponsor {
-            width: 9vw;
-
-            @media @smartphone-all {
-              width: 30vw;
-            }
-
-            @media @tablet-small, @tablet-small {
-              width: 20vw;
-            }
-          }
-
-          #meu-sponsors {
+          #meu-sponsors, #meu-sponsors-2 {
             width: @max;
             height: auto;
 
@@ -1560,7 +1568,7 @@ body {
               height: 9vh;
               width: auto;
               //
-              margin: 10vh 0.85vw 0;
+              margin: 3vh 0.85vw 5vh;
 
               @media @smartphone-all {
                 margin: 5vh 0 0;
@@ -1621,6 +1629,10 @@ body {
                 }
               }
             }
+          }
+
+          #meu-sponsors {
+            margin-top: 5vh;
           }
 
           // 6. Contact
@@ -1752,7 +1764,7 @@ body {
     #meu-team {
       width: @max;
       height: auto;
-      padding: 25vh 0 0;
+      padding: 15vh 0 5vh;
 
       .container-fluid {
         .fs;
@@ -1769,6 +1781,7 @@ body {
             height: 8vh;
             border-top: 1px @meu-yellow solid;
             margin-bottom: 10vh;
+            margin-top: 15vh;
 
             @media @smartphone-all {
               width: 50vw;
@@ -2033,7 +2046,7 @@ body {
               transform: translate(-50%, -50%);
               //
               letter-spacing: 0.1em;
-              font-size: 0.7vw;
+              font-size: 0.8vw;
               opacity: 0.8;
 
               &:hover {
@@ -2068,7 +2081,7 @@ body {
               transform: translate(-50%, -50%);
               //
               letter-spacing: 0.1em;
-              font-size: 0.7vw;
+              font-size: 0.8vw;
 
               @media @smartphone-all {
                 right: 20vw;
