@@ -50,13 +50,13 @@
                         <!--        Background        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/1.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/1.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
-                        <div class="meu-tg-name">LUCIA KRAJČOVIČOVÀ</div>
+                        <div class="meu-tg-name">LUCIA KRAJČOVIČOVÁ</div>
                         <!--        Position        -->
-                        <div class="meu-tg-position">PRESIDENT</div>
+                        <div class="meu-tg-position">GENERAL DIRECTOR</div>
                         <!--        Email        -->
-                        <div class="meu-tg-email">president@meubratislava.eu</div>
+                        <div class="meu-tg-email">l.krajcovicova@beta-europe.org</div>
                         <!--        Social Media        -->
                         <ul class="meu-tg-media list-unstyled list-inline">
                             <li>
@@ -75,13 +75,13 @@
                     <div class="meu-tg-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/2.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/2.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
-                        <div class="meu-tg-name">EMA GRAJCAROVÀ</div>
+                        <div class="meu-tg-name">EMA GRAJCAROVÁ</div>
                         <!--        Position        -->
-                        <div class="meu-tg-position">VICE-PRESIDENT</div>
+                        <div class="meu-tg-position">DEPUTY DIRECTOR</div>
                         <!--        Email        -->
-                        <div class="meu-tg-email">vpresident@meubratislava.eu</div>
+                        <div class="meu-tg-email">e.grajcarova@beta-europe.org</div>
                         <!--        Social Media        -->
                         <ul class="meu-tg-media list-unstyled list-inline">
                             <li>
@@ -100,13 +100,13 @@
                     <div class="meu-tg-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/3.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/3.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
                         <div class="meu-tg-name">ANDREA KOMOVÁ</div>
                         <!--        Position        -->
-                        <div class="meu-tg-position">HEAD OF RECRUITMENT</div>
+                        <div class="meu-tg-position">HEAD OF TECHNOLOGY <br/>AND INNOVATION</div>
                         <!--        Email        -->
-                        <div class="meu-tg-email">hr@meubratislava.eu</div>
+                        <div class="meu-tg-email">a.komova@beta-europe.org</div>
                         <!--        Social Media        -->
                         <ul class="meu-tg-media list-unstyled list-inline">
                             <li>
@@ -128,13 +128,13 @@
                         <!--        Background        -->
                         <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/4.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/4.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
                         <div class="meu-tg-name">MILANA IDRISOVÁ</div>
                         <!--        Position        -->
-                        <div class="meu-tg-position">HEAD OF CONTENT</div>
+                        <div class="meu-tg-position">HEAD OF WORKSHOPS <br/>AND PROTOCOL</div>
                         <!--        Email        -->
-                        <div class="meu-tg-email">content@meubratislava.eu</div>
+                        <div class="meu-tg-email">m.idrisova@beta-europe.org</div>
                         <!--        Social Media        -->
                         <ul class="meu-tg-media list-unstyled list-inline">
                             <li>
@@ -153,38 +153,13 @@
                     <div class="meu-tg-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
                         <!--        Profile Photo        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/5.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
-                        <!--        Name        -->
-                        <div class="meu-tg-name">SAMUEL ŠVAJDA</div>
-                        <!--        Position        -->
-                        <div class="meu-tg-position">HEAD OF MARKETING & PR</div>
-                        <!--        Email        -->
-                        <div class="meu-tg-email">marketing@meubratislava.eu</div>
-                        <!--        Social Media        -->
-                        <ul class="meu-tg-media list-unstyled list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/samuel.svajda" target="_blank">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" class="img-responsive" alt="facebook-logo">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/search/results/all/?keywords=SAMUEL%20ŠVAJDA&origin=GLOBAL_SEARCH_HEADER" target="_blank">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin_icon.png" class="img-responsive" alt="linkedin-logo">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="meu-tg-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
-                        <!--        Profile Photo        -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/6.png" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/6.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
                         <!--        Name        -->
                         <div class="meu-tg-name">JAKUB BARSZCZ</div>
                         <!--        Position        -->
-                        <div class="meu-tg-position">HEAD OF FUNDRAISING</div>
+                        <div class="meu-tg-position">HEAD OF PARTNERSHIPS</div>
                         <!--        Email        -->
-                        <div class="meu-tg-email">fundraising@meubratislava.eu</div>
+                        <div class="meu-tg-email">j.barszcz@beta-europe.org</div>
                         <!--        Social Media        -->
                         <ul class="meu-tg-media list-unstyled list-inline">
                             <li>
@@ -198,6 +173,88 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="meu-tg-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <!--        Profile Photo        -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/placeholder.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <!--        Name        -->
+                        <div class="meu-tg-name">NICK D. MADŽAROV</div>
+                        <!--        Position        -->
+                        <div class="meu-tg-position">HEAD OF CONTENT</div>
+                        <!--        Email        -->
+                        <div class="meu-tg-email">n.madzarov@beta-europe.org</div>
+                        <!--        Social Media        -->
+                        <ul class="meu-tg-media list-unstyled list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/nmadzarov" target="_blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" class="img-responsive" alt="facebook-logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ndmadzarov/" target="_blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin_icon.png" class="img-responsive" alt="linkedin-logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="meu-team-grid">
+                    <div class="meu-tg-item">
+                        <!--        Background        -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <!--        Profile Photo        -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/placeholder.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <!--        Name        -->
+                        <div class="meu-tg-name">DOMINIK BUJŇÁK</div>
+                        <!--        Position        -->
+                        <div class="meu-tg-position">PARTICIPANTS COORDINATOR</div>
+                        <!--        Email        -->
+                        <div class="meu-tg-email">d.bujnak@beta-europe.org</div>
+                        <!--        Social Media        -->
+                        <ul class="meu-tg-media list-unstyled list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/panda.dominik" target="_blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" class="img-responsive" alt="facebook-logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/dominik-bujňák-7161a5163/" target="_blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin_icon.png" class="img-responsive" alt="linkedin-logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="meu-tg-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/page_components/team_container.png" class="meu-tg-bg img-responsive" alt="team-item-bg">
+                        <!--        Profile Photo        -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/profile_photos/placeholder.jpg" class="img-responsive img-circle team-profile-photo" alt="team-item-photo">
+                        <!--        Name        -->
+                        <div class="meu-tg-name">LENKA MARČANOVÁ</div>
+                        <!--        Position        -->
+                        <div class="meu-tg-position">HEAD OF MARKETING</div>
+                        <!--        Email        -->
+                        <div class="meu-tg-email">l.marcanova@beta-europe.org</div>
+                        <!--        Social Media        -->
+                        <ul class="meu-tg-media list-unstyled list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/lenka.marcanova" target="_blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" class="img-responsive" alt="facebook-logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/lenka-marcanova-80bb84136/" target="_blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/icons/linkedin_icon.png" class="img-responsive" alt="linkedin-logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="meu-tg-item">
+
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@
 
         <a href="<?php echo site_url( '/login' ) ?>" class="meu-link meu-link-block">
             <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
-        </div>
+        </a>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
     </div>

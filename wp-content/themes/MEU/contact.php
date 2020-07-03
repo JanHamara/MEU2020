@@ -22,7 +22,7 @@
                     while ( have_posts() ) : the_post();
                         ?>
 
-                        <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800"><span class="meu-yellow">CONTACT US</span> WITH ANY ENQUIRY OR QUESTION</h1>
+                        <h1 class="meu-section-heading" data-aos="fade-in" data-aos-delay="800"><span class="meu-yellow">CONTACT US</span> WITH ANY ENQUIRY</h1>
 
                         <div id="meu-contact-form" data-aos="fade-in" data-aos-delay="1100">
                             <form id="meu-form" name="contact-form" method="post" action="send-form.php">

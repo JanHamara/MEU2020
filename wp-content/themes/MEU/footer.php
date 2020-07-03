@@ -42,7 +42,7 @@
                 <a href="#pp-modal" id="pp-footer" data-toggle="modal">Privacy Policy</a>
 
                 <!--     Sponsored By      -->
-                <span class="meu-fc-thumb-text">Sponsored by</span>
+                <span class="meu-fc-thumb-text">Supported by</span>
 
                 <!--     V4 Logo      -->
                 <img id="meu-footer-V4" src="<?php echo get_template_directory_uri(); ?>/images/logos/V4_logo.png" class="img-responsive" alt="V4-logo">
@@ -55,12 +55,6 @@
 </footer>
 
 </main>
-
-<script>
-    jQuery( document ).ready(function() {
-
-    });
-</script>
 
 <!--  Smooth Scrolling  -->
 <script>
@@ -109,6 +103,30 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--        In case 2.3.1 version was not available I load this one -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!--       jQuery Cookie       -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+<script>
+    jQuery( document ).ready(function() {
+        AOS.init({
+            // And I set default options for animations, such as duration or delay
+            delay: 200,
+            duration: 1000,
+            easing: 'ease',
+        });
+
+        if (jQuery.cookie('noShowWelcome')) {
+            jQuery("#privacy-policy").hide();
+        }
+        else {
+            jQuery("#pp-agree").click(function() {
+                jQuery("#privacy-policy").fadeOut(1000);
+                jQuery.cookie('noShowWelcome', true);
+            });
+        }
+    });
+</script>
 
 <script>
     jQuery("#meu-submit-form").on('click', function() {

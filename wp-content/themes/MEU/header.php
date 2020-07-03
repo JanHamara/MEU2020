@@ -17,6 +17,9 @@ $auth0 = new Auth0([
 ]);
 
 $userInfo = $auth0->getUser();
+
+// Privacy Policy
+$ppAgreed = false;
 ?>
 
 <!DOCTYPE html>

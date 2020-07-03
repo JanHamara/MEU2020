@@ -4,6 +4,7 @@ require('../../../wp-load.php');
 
 if(isset($_POST['email'])) {
     $email_to = "contact@meubratislava.eu";
+    $email_to_2 = "n.madzarov@beta-europe.org";
     $email_subject = "NEW MESSAGE | CONTACT FORM [ MEU BRATISLAVA 2020 ]";
     function died($error) {
         // Even though I validate data at front-end with Javascript, it is generally advised to test data in back end too
@@ -42,9 +43,14 @@ if(isset($_POST['email'])) {
         'Reply-To: '.$email_from."\r\n" .
         'X-Mailer: PHP/' . phpversion();
     if (@wp_mail($email_to, $email_subject, $email_message, $headers)) {
-        echo "SEND MAIL: Success";
+        echo "SEND MAIL @ contact@meubratislava.eu: Success";
     } else {
-        echo "SEND MAIL: Failed";
+        echo "SEND MAIL @ contact@meubratislava.eu: Failed";
+    }
+    if (@wp_mail($email_to_2, $email_subject, $email_message, $headers)) {
+        echo "SEND MAIL @ n.madzarov@beta-europe.org: Success";
+    } else {
+        echo "SEND MAIL @ n.madzarov@beta-europe.org: Failed";
     }
 }
 ?>

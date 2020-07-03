@@ -4,6 +4,7 @@
 require('./bootstrap.min');
 require('../css/bootstrap-theme.min.css');
 require('../css/bootstrap.min.css');
+require('./jquery.cookie');
 require('../style.less');
 
 jQuery( document ).ready(function() {
@@ -122,11 +123,6 @@ jQuery( document ).ready(function() {
 });
 
 jQuery( window ).load(function() {
-    AOS.init({
-        // And I set default options for animations, such as duration or delay
-        delay: 200,
-        duration: 1000,
-        easing: 'ease',
-    });
+    
 });
 

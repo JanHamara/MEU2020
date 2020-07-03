@@ -128,7 +128,7 @@ body {
   width: 100%;
   height: 100%;
   color: #ffffff !important;
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/background_new.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -152,7 +152,7 @@ body {
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   html,
   body {
-    background-image: url("./images/background_mobile.jpg");
+    background-image: url("./images/background_new.jpg");
   }
 }
 html {
@@ -1802,16 +1802,16 @@ body main .section-header .container-fluid .header-container #meu-programme-2 {
   }
 }
 body main .section-header .container-fluid .header-container #meu-sponsor {
-  width: 12vw;
+  width: 9vw;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main .section-header .container-fluid .header-container #meu-sponsor {
-    width: 35vw;
+    width: 30vw;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
   body main .section-header .container-fluid .header-container #meu-sponsor {
-    width: 25vw;
+    width: 20vw;
   }
 }
 body main .section-header .container-fluid .header-container #meu-sponsors {
@@ -2144,10 +2144,11 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  top: 64%;
+  top: 66%;
   width: 100%;
-  font-size: 0.8vw;
-  letter-spacing: 0.3em;
+  font-size: 0.6vw;
+  letter-spacing: 0.4em;
+  line-height: 2.5vh;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item .meu-tg-position {
@@ -2167,9 +2168,9 @@ body main #meu-team .container-fluid .team-container .meu-team-grid .meu-tg-item
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  top: 76%;
+  top: 77%;
   width: 100%;
-  font-size: 0.7vw;
+  font-size: 0.6vw;
   letter-spacing: 0.3em;
   opacity: 0.8;
 }
