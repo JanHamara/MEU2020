@@ -1208,6 +1208,34 @@ body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-r
 body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
 body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
 body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role {
+  padding: 2vw 1vw;
+  margin: 0 1vw;
+  border: 0.5px rgba(250, 250, 250, 0.5) solid;
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role:hover,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role:hover,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role:hover,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role:hover,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role:hover,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role:hover,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role:hover,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role:hover,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role:hover,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role:hover {
+  background: rgba(250, 250, 250, 0.1);
+  border: 1px rgba(250, 250, 250, 0.5) solid;
+  cursor: pointer;
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
 body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role,
 body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m3-role,
 body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m3-role,
@@ -1222,6 +1250,9 @@ body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m3-r
   text-align: center;
   flex: 1;
   height: auto;
+  padding: 2vw 1vw;
+  margin: 0 1vw;
+  border: 0.5px rgba(250, 250, 250, 0.5) solid;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role,
@@ -1702,6 +1733,248 @@ body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m3-r
   body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m3-role img,
   body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m3-role img {
     width: 50%;
+  }
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content {
+  display: none;
+  padding: 5vh 2vw;
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img {
+  width: 10%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content img,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content img {
+    width: 20%;
+    margin-bottom: 5vh;
+  }
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename {
+  font-size: 1.7vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename {
+    font-size: 5vw;
+    letter-spacing: 0.1em;
+    margin-bottom: 3vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename {
+    font-size: 4vw;
+    letter-spacing: 0.1em;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolename {
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+  }
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc {
+  font-size: 1vw;
+  margin-bottom: 4vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc {
+    font-size: 3.5vw;
+    letter-spacing: 0em;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc {
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-roledesc {
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+  }
+}
+body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main #meu-main-1 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-2 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-3 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-4 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-5 .container-fluid .header-container #meu-m2-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-1 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-2 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-3 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-4 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent,
+  body main #meu-main-5 .container-fluid .header-container #meu-m3-roles .meu-m2-role-content .meu-m2-rolecontent {
+    font-size: 1.5vw;
   }
 }
 body main #meu-main-1 {

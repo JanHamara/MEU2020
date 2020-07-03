@@ -120,6 +120,47 @@ jQuery( document ).ready(function() {
             main_content.show();
         }
     }
+
+    // ----------------------------------------------------------------------------------------
+
+    // Roles Functionality
+
+    let role1 = jQuery("#m2-role-1");
+    let role2 = jQuery("#m2-role-2");
+    let role3 = jQuery("#m2-role-3");
+    let roles = [role1, role2, role3];
+
+    let role1content = jQuery("#m2-role-1-content");
+    let role2content = jQuery("#m2-role-2-content");
+    let role3content = jQuery("#m2-role-3-content");
+    let roleContents = [role1content, role2content, role3content];
+
+    let roleSet1 = [role1, role1content];
+    let roleSet2 = [role2, role2content];
+    let roleSet3 = [role3, role3content];
+
+    let rolesSet = [roleSet1, roleSet2, roleSet3];
+
+    rolesSet.forEach(element => showRole(element));
+    rolesSet.forEach(element => hideRole(element, roles));
+
+    function showRole(element) {
+        element[0].on('click', function() {
+            roles.forEach(element => hideRoles(element));
+            element[1].fadeIn(300);
+        });
+    }
+
+    function hideRole(element, roles) {
+        element[1].on('click', function() {
+            element[1].hide();
+            roles.forEach(el => el.fadeIn(300));
+        });
+    }
+
+    function hideRoles(element) {
+        element.hide();
+    }
 });
 
 jQuery( window ).load(function() {

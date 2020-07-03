@@ -1172,10 +1172,26 @@ body {
               .display(block);
             }
 
+            .meu-m2-role {
+              padding: 2vw 1vw;
+              margin: 0 1vw;
+              border: 0.5px rgba(250, 250, 250, 0.5) solid;
+
+              &:hover {
+                background: rgba(250, 250, 250, 0.1);
+                border: 1px rgba(250, 250, 250, 0.5) solid;
+                cursor: pointer;
+              }
+            }
+
             .meu-m2-role, .meu-m3-role {
               .aligntext;
               flex: 1;
               height: auto;
+              //
+              padding: 2vw 1vw;
+              margin: 0 1vw;
+              border: 0.5px rgba(250, 250, 250, 0.5) solid;
 
               @media @smartphone-all {
                 .display(block);
@@ -1262,6 +1278,88 @@ body {
 
                 @media @tablet-small, @tablet-big {
                   width: 50%;
+                }
+              }
+            }
+
+            .meu-m2-role-content {
+              .display(none);
+              padding: 5vh 2vw;
+
+              img {
+                width: 10%;
+
+                @media @smartphone-all {
+                  width: 50%;
+                  margin-bottom: 5vh;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  width: 50%;
+                  margin-bottom: 5vh;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  width: 20%;
+                  margin-bottom: 5vh;
+                }
+              }
+
+              .meu-m2-rolename {
+                font-size: 1.7vw;
+
+                @media @smartphone-all {
+                  font-size: 5vw;
+                  letter-spacing: 0.1em;
+                  margin-bottom: 3vh;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 4vw;
+                  letter-spacing: 0.1em;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 3vw;
+                  letter-spacing: 0.1em;
+                }
+              }
+
+              .meu-m2-roledesc {
+                font-size: 1vw;
+                margin-bottom: 4vh;
+
+                @media @smartphone-all {
+                  font-size: 3.5vw;
+                  letter-spacing: 0em;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 3vw;
+                  letter-spacing: 0.1em;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 2vw;
+                  letter-spacing: 0.1em;
+                }
+              }
+
+              .meu-m2-rolecontent {
+                .aligntext(justify);
+                width: 90%;
+                margin: auto;
+
+                @media @smartphone-all {
+                  width: 85%;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 2.5vw;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 1.5vw;
                 }
               }
             }
