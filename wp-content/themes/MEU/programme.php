@@ -27,14 +27,7 @@
                         <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100">
                             <?php echo the_content() ?>
                         </div>
-
-                        <a href="<?php echo site_url( '/about-us' ) ?>" id="meu-programme-1" class="meu-link" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000">
-                            <span><?php echo get_post_meta($post->ID, 'Button1', true); ?></span>
-                        </a>
-
-                        <a href="<?php echo site_url( '/contact' ) ?>" id="meu-programme-2" class="meu-link" data-aos="fade-in" data-aos-delay="1500" data-aos-offset="-1000">
-                            <span><?php echo get_post_meta($post->ID, 'Button2', true); ?></span>
-                        </a>
+                    
                     <?php endwhile; } ?>
 
             </div>

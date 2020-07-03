@@ -253,9 +253,7 @@
                         </ul>
                     </div>
 
-                    <div class="meu-tg-item">
-
-                    </div>
+                    <div class="meu-tg-item meu-tg-item-none"></div>
                 </div>
             </div>
         </div>

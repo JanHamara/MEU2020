@@ -8,7 +8,7 @@
 
 <?php wp_footer(); ?>
 
-<footer id="meu-footer" data-aos="fade-up" data-aos-delay="2000" data-aos-offset="-5000">
+<footer id="meu-footer" data-aos="fade-up" data-aos-delay="2000" data-aos-offset="-10000">
     <div class="container-fluid">
 
         <!--     Footer Background       -->
