@@ -273,10 +273,10 @@ body #privacy-policy {
   background: #eeca30;
   color: #000000;
   width: 50vw;
-  height: 50vh;
+  height: 55vh;
   padding: 7vh;
   line-height: 5vh;
-  font-size: 0.7vw;
+  font-size: 0.9vw;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 50%;
@@ -304,7 +304,7 @@ body #privacy-policy h3 {
   body #privacy-policy h3 {
     font-size: 4vw;
     text-transform: uppercase;
-    margin: 2vh 0 6vh 0;
+    margin: 2vh 0 4vh 0;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -318,13 +318,18 @@ body #privacy-policy h3 {
   }
 }
 body #privacy-policy p {
-  font-size: 0.7vw;
+  font-size: 0.9vw;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #privacy-policy p {
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     text-transform: uppercase;
     line-height: 3vh;
+  }
+}
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  body #privacy-policy p {
+    font-size: 0.8vw;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -350,7 +355,7 @@ body #privacy-policy #pp-links {
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #privacy-policy #pp-links {
-    margin-top: 6vh;
+    margin-top: 4vh;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
@@ -359,36 +364,17 @@ body #privacy-policy #pp-links {
   }
 }
 body #privacy-policy #pp-links .meu-link {
-  height: 6vh;
+  height: 4vh;
   border-top: 1px #000000 solid;
   margin-right: 2vw;
   color: #000000 !important;
 }
-body #privacy-policy #pp-links #pp-agree {
-  width: 7vw;
+body #privacy-policy #pp-links .meu-link span {
+  padding-top: 2vh;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   body #privacy-policy #pp-links #pp-agree {
-    width: 17vw;
     margin-right: 5vw;
-  }
-}
-@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  body #privacy-policy #pp-links #pp-agree {
-    width: 15vw;
-  }
-}
-body #privacy-policy #pp-links #pp-privacy-policy {
-  width: 10vw;
-}
-@media only screen and (max-width: 479px) and (orientation: portrait) {
-  body #privacy-policy #pp-links #pp-privacy-policy {
-    width: 29vw;
-  }
-}
-@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  body #privacy-policy #pp-links #pp-privacy-policy {
-    width: 20vw;
   }
 }
 body #pp-modal {
@@ -453,6 +439,9 @@ body #pp-modal .modal-dialog .modal-content .modal-body p {
     font-size: 1vw;
   }
 }
+body #pp-modal .modal-dialog .modal-content .modal-body h6 {
+  margin-bottom: 1vh;
+}
 @media only screen and (max-width: 479px) and (orientation: portrait), only screen and (max-width: 824px) and (orientation: landscape) {
   body #pp-modal .modal-dialog .modal-content .modal-body h6 {
     margin-bottom: 2vh;
@@ -503,9 +492,9 @@ body #covid-alert {
   background: #eeca30;
   color: #000000;
   padding: 0 2vh;
-  height: 5vh;
-  line-height: 5vh;
-  font-size: 0.7vw;
+  height: 6vh;
+  line-height: 6vh;
+  font-size: 0.9vw;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
@@ -543,7 +532,7 @@ body #covid-alert #close-covid-alert {
   position: absolute;
   right: 1vw;
   font-size: 1vw;
-  line-height: 5vh;
+  line-height: 6vh;
   opacity: 0.8;
 }
 @media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {

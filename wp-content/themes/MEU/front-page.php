@@ -15,8 +15,8 @@
     <div id="privacy-policy" data-aos="zoom-in" data-aos-delay="1500">
         <h3>Personal data & Cookies</h3>
         <p class="pp-1">
-            This websites collects certain cookies and personal data,
-            in order to enable core functionality of the website <span class="line-brk"></span>
+            This website collects certain cookies and personal data,
+            in order to enable core functionality of the website
             (personal account, social login, contact form),
             as well as to provide you with the best experience with our services.
         </p>

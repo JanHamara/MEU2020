@@ -277,10 +277,10 @@ body {
     background: @meu-yellow;
     color: @meu-black;
     width: 50vw;
-    height: 50vh;
+    height: 55vh;
     padding: 7vh;
     line-height: 5vh;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     //
     .position(fixed);
@@ -307,7 +307,7 @@ body {
       @media @smartphone-all {
         font-size: 4vw;
         text-transform: uppercase;
-        margin: 2vh 0 6vh 0;
+        margin: 2vh 0 4vh 0;
       }
 
       @media @tablet-small, @tablet-big {
@@ -320,12 +320,16 @@ body {
     }
 
     p {
-      font-size: 0.7vw;
+      font-size: 0.9vw;
 
       @media @smartphone-all {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
         text-transform: uppercase;
         line-height: 3vh;
+      }
+
+      @media @smartphone-all-landscape {
+        font-size: 0.8vw;
       }
 
       @media @tablet-small, @tablet-big {
@@ -351,7 +355,7 @@ body {
       margin-top: 4vh;
 
       @media @smartphone-all {
-        margin-top: 6vh;
+        margin-top: 4vh;
       }
 
       @media @tablet-small, @tablet-big {
@@ -359,35 +363,25 @@ body {
       }
 
       .meu-link {
-        height: 6vh;
+        height: 4vh;
         border-top: 1px @meu-black solid;
         margin-right: 2vw;
         color: @meu-black !important;
+
+        span {
+          padding-top: 2vh;
+        }
       }
 
       #pp-agree {
-        width: 7vw;
-
         @media @smartphone-all {
-          width: 17vw;
           margin-right: 5vw;
         }
 
-        @media @tablet-small, @tablet-big {
-          width: 15vw;
-        }
       }
 
       #pp-privacy-policy {
-        width: 10vw;
 
-        @media @smartphone-all {
-          width: 29vw;
-        }
-
-        @media @tablet-small, @tablet-big {
-          width: 20vw;
-        }
       }
     }
   }
@@ -451,6 +445,8 @@ body {
           }
 
           h6 {
+            margin-bottom: 1vh;
+
             @media @smartphone-all, @smartphone-all-landscape {
               margin-bottom: 2vh;
               line-height: 200%;
@@ -508,9 +504,9 @@ body {
     background: @meu-yellow;
     color: @meu-black;
     padding: 0 2vh;
-    height: 5vh;
-    line-height: 5vh;
-    font-size: 0.7vw;
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 0.9vw;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     //
     width: 100%;
@@ -547,7 +543,7 @@ body {
       .abs;
       right: 1vw;
       font-size: 1vw;
-      line-height: 5vh;
+      line-height: 6vh;
       opacity: 0.8;
 
       @media @tablet-small, @tablet-big {

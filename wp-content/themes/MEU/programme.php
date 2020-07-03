@@ -27,7 +27,7 @@
                         <div class="meu-section-paragraph" data-aos="fade-in" data-aos-delay="1100">
                             <?php echo the_content() ?>
                         </div>
-                    
+
                     <?php endwhile; } ?>
 
             </div>
