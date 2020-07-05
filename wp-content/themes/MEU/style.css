@@ -64,6 +64,97 @@ Text Domain: MEU
   display: inline;
   color: #eeca30 !important;
 }
+.form-styling .inline-form-group {
+  display: inline-block;
+  width: 20vw;
+  height: 10vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .form-styling .inline-form-group {
+    width: 38.3vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .form-styling .inline-form-group {
+    width: 38.3vw;
+  }
+}
+.form-styling .inline-form-group:first-child {
+  margin-right: 2vw;
+}
+.form-styling .textarea-form-group {
+  width: 42.5vw;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .form-styling .textarea-form-group {
+    width: 100%;
+  }
+}
+.form-styling .form-group input,
+.form-styling .form-group textarea {
+  background: none !important;
+  border: none;
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.1em;
+  font-size: 0.7vw;
+  border-top: 1px #ffffff solid;
+}
+.form-styling .form-group input:focus,
+.form-styling .form-group textarea:focus,
+.form-styling .form-group input:hover,
+.form-styling .form-group textarea:hover,
+.form-styling .form-group input:active,
+.form-styling .form-group textarea:active {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-top: 1px #ffffff solid;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .form-styling .form-group input,
+  .form-styling .form-group textarea {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .form-styling .form-group input,
+  .form-styling .form-group textarea {
+    font-size: 1.5vw;
+  }
+}
+.form-styling .form-group input {
+  display: inline-block;
+  width: 100%;
+  height: 10vh;
+}
+.form-styling .form-group textarea {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 3vh;
+  padding-top: 3.5vh !important;
+  line-height: 4vh;
+  resize: none !important;
+}
+.form-styling .errorMessage {
+  font-size: 0.7vw;
+  float: right;
+  transform: translate(0, -15px);
+  color: #eeca30;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .form-styling .errorMessage {
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .form-styling .errorMessage {
+    font-size: 1.5vw;
+  }
+}
 body,
 html,
 main,
@@ -254,6 +345,95 @@ a:active {
 .meu-link span {
   position: static;
   padding-top: 3vh;
+}
+.meu-link-programme {
+  border-top: 1px #eeca30 solid !important;
+  font-weight: 700 !important;
+  font-size: 1.2vw;
+  margin-top: 8vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .meu-link-programme {
+    text-align: left;
+    font-size: 2.5vw;
+    margin-top: 4vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .meu-link-programme {
+    font-size: 2.2vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .meu-link-programme {
+    font-size: 1.7vw;
+  }
+}
+.mlph {
+  font-size: 1.4vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .mlph {
+    text-align: left;
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .mlph {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .mlph {
+    font-size: 2vw;
+  }
+}
+.meu-table {
+  font-size: 0.9vw;
+  margin-top: -2vh;
+  border: 0.5px white solid;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .meu-table {
+    font-size: 2vw;
+    margin-top: -6vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .meu-table {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  .meu-table {
+    font-size: 1.4vw;
+  }
+}
+.meu-table tr,
+.meu-table th,
+.meu-table td {
+  border: 0.5px white solid;
+}
+.meu-table th,
+.meu-table td {
+  padding: 1vw 2vw 1vw 2vw;
+  line-height: 200%;
+}
+.meu-table .colspan2 {
+  text-align: center;
+}
+.meu-table .dayheader {
+  font-size: 0.6vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .meu-table .dayheader {
+    font-size: 1.7vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .meu-table .dayheader {
+    font-size: 1.1vw;
+  }
 }
 body #nav-top-bar {
   position: fixed;
@@ -2365,6 +2545,251 @@ body main .section-header .container-fluid .header-container .form-submitted {
   body main .section-header .container-fluid .header-container .form-submitted {
     font-size: 1.5vw;
   }
+}
+body main .section-header .container-fluid .header-container #meu-account-menu {
+  margin-bottom: 10vh;
+}
+body main .section-header .container-fluid .header-container #meu-account-menu li {
+  margin: 0 1.5vw 0 0;
+}
+body main .section-header .container-fluid .header-container #meu-account-menu li .meu-link {
+  font-size: 1vw;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-account-menu li .meu-link {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-account-menu li .meu-link {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-account-menu li .meu-link {
+    font-size: 1.7vw;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-account-menu li .meu-link:hover {
+  border-top: 1px #eeca30 solid;
+}
+body main .section-header .container-fluid .header-container #meu-account-menu li #meu-a-1 {
+  border-top: 1px #eeca30 solid;
+}
+body main .section-header .container-fluid .header-container #meu-section-application {
+  display: block;
+}
+body main .section-header .container-fluid .header-container #meu-account-details,
+body main .section-header .container-fluid .header-container #meu-account-seminars,
+body main .section-header .container-fluid .header-container #meu-account-materials {
+  display: none;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 {
+  font-size: 1.2vw !important;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .inline-form-group {
+  display: inline-block;
+  width: 20vw;
+  height: 10vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .inline-form-group {
+    width: 38.3vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .inline-form-group {
+    width: 38.3vw;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .inline-form-group:first-child {
+  margin-right: 2vw;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .textarea-form-group {
+  width: 42.5vw;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait), only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .textarea-form-group {
+    width: 100%;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+  background: none !important;
+  border: none;
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.1em;
+  font-size: 0.7vw;
+  border-top: 1px #ffffff solid;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input:focus,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea:focus,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input:hover,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea:hover,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input:active,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea:active {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-top: 1px #ffffff solid;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+    font-size: 1.5vw;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input {
+  display: inline-block;
+  width: 100%;
+  height: 10vh;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 3vh;
+  padding-top: 3.5vh !important;
+  line-height: 4vh;
+  resize: none !important;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .errorMessage {
+  font-size: 0.7vw;
+  float: right;
+  transform: translate(0, -15px);
+  color: #eeca30;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .errorMessage {
+    font-size: 2vw;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .errorMessage {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 {
+    font-size: 3vw !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 {
+    font-size: 2vw !important;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 {
+    font-size: 1.5vw !important;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 hr {
+  margin-top: 0 !important;
+  margin-bottom: 8vh !important;
+  border-top: 0.5px rgba(250, 250, 250, 0.1) solid;
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 hr {
+    margin-bottom: 6vh !important;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 hr {
+    margin-bottom: 7vh !important;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group label {
+  font-size: 1vw !important;
+  border-top: 1px #eeca30 solid !important;
+  margin-bottom: 5vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group label {
+    font-size: 3vw !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group label {
+    font-size: 2vw !important;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group label {
+    font-size: 1.5vw !important;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group label:hover {
+  cursor: default;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group .af-sublabel {
+  font-size: 1vw !important;
+  opacity: 0.9;
+  margin: 4vh 0 2vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group .af-sublabel {
+    font-size: 2.8vw !important;
+    margin: 0vh 0 2vh;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group .af-sublabel {
+    font-size: 2vw !important;
+    margin: 0vh 0 2vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group .af-sublabel {
+    font-size: 1.5vw !important;
+    margin: 0vh 0 2vh;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+  border-top: none !important;
+  font-size: 1vw !important;
+  margin-bottom: 7vh;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+    font-size: 3vw !important;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) and (orientation: portrait), only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+    font-size: 2vw !important;
+    margin: 0vh 0 4vh;
+  }
+}
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape), only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input,
+  body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+    font-size: 1.5vw !important;
+    margin: 0vh 0 6vh;
+  }
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input:hover,
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea:hover {
+  border-top: none !important;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group input {
+  height: 3vh;
+}
+body main .section-header .container-fluid .header-container #meu-application-form #meu-form-2 .form-group textarea {
+  width: 70%;
+  margin-top: 3vh;
 }
 body main #meu-team {
   width: 100%;

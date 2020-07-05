@@ -161,6 +161,42 @@ jQuery( document ).ready(function() {
     function hideRoles(element) {
         element.hide();
     }
+
+    // ----------------------------------------------------------------------------------------
+
+    // Account Menu
+
+    let account_menu1 = jQuery("#meu-a-1");
+    let account_menu2 = jQuery("#meu-a-2");
+    let account_menu3 = jQuery("#meu-a-3");
+    let account_menu4 = jQuery("#meu-a-4");
+    let account_menus = [account_menu1, account_menu2, account_menu3, account_menu4];
+
+    let account_1 = jQuery("#meu-account-application");
+    let account_2 = jQuery("#meu-account-details");
+    let account_3 = jQuery("#meu-account-seminars");
+    let account_4 = jQuery("#meu-account-materials");
+    let accounts = [account_1, account_2, account_3, account_4];
+
+    let accountSet1 = [account_menu1, account_1];
+    let accountSet2 = [account_menu2, account_2];
+    let accountSet3 = [account_menu3, account_3];
+    let accountSet4 = [account_menu4, account_4];
+
+    let accountSetting = [accountSet1, accountSet2, accountSet3, accountSet4];
+
+    accountSetting.forEach(element => setMenu(element, accounts, account_menus));
+
+    function setMenu(account, all_accounts, menus) {
+        account[0].on('click', function() {
+            all_accounts.forEach(el => el.hide());
+            menus.forEach(ele => ele.css({"borderTop":"1px white solid"}));
+            account[1].show();
+            account[0].css({"borderTop":"1px rgb(238, 202, 48) solid"});
+        });
+    }
+
+
 });
 
 jQuery( window ).load(function() {

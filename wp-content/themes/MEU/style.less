@@ -151,6 +151,98 @@ Text Domain: MEU
   color: @meu-yellow !important;
 }
 
+.form-styling {
+
+  .inline-form-group {
+    .display(inline-block);
+    width: 20vw;
+    height: 10vh;
+
+    @media @smartphone-all {
+      width: 38.3vw;
+    }
+
+    @media @tablet-small, @tablet-big {
+      width: 38.3vw;
+    }
+
+    &:first-child {
+      margin-right: 2vw;
+    }
+  }
+
+  .textarea-form-group {
+    width: 42.5vw;
+    margin-bottom: 0;
+
+    @media @smartphone-all, @tablet-small, @tablet-big {
+      width: 100%;
+    }
+  }
+
+  .form-group {
+
+    input, textarea {
+      background: none !important;
+      border: none;
+      outline: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      //
+      color: @meu-white !important;
+      letter-spacing: 0.1em;
+      font-size: 0.7vw;
+      border-top: 1px @meu-white solid;
+
+      &:focus, &:hover, &:active {
+        background: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border-top: 1px @meu-white solid;
+      }
+
+      @media @smartphone-all {
+        font-size: 2.5vw;
+      }
+      @media @tablet-small, @tablet-big {
+        font-size: 1.5vw;
+      }
+    }
+
+    input {
+      .display(inline-block);
+      width: @max;
+      height: 10vh;
+    }
+
+    textarea {
+      width: @max;
+      height: 15vh;
+      margin-bottom: 3vh;
+      padding-top: 3.5vh !important;
+      line-height: 4vh;
+      resize: none !important;
+    }
+  }
+
+  // Error Message
+  .errorMessage {
+    font-size: 0.7vw;
+    float: right;
+    transform: translate(0, -15px);
+    //
+    color: @meu-yellow;
+
+    @media @smartphone-all {
+      font-size: 2vw;
+    }
+
+    @media @tablet-small, @tablet-big {
+      font-size: 1.5vw;
+    }
+  }
+}
+
 //------------------------------------------------------------------------------
 
 // Main Setup
@@ -246,6 +338,89 @@ a {
   span {
     .position(static);
     padding-top: 3vh;
+  }
+}
+
+.meu-link-programme {
+  border-top: 1px @meu-yellow solid !important;
+  font-weight: 700 !important;
+  font-size: 1.2vw;
+  margin-top: 8vh;
+
+  @media @smartphone-all {
+    .aligntext(left);
+    font-size: 2.5vw;
+    margin-top: 4vh;
+  }
+
+  @media @tablet-small, @tablet-big {
+    font-size: 2.2vw;
+  }
+
+  @media @tablet-landscape, @iPad-Pro-landscape {
+    font-size: 1.7vw;
+  }
+}
+
+.mlph {
+  font-size: 1.4vw;
+
+  @media @smartphone-all {
+    .aligntext(left);
+    font-size: 3vw;
+  }
+
+  @media @tablet-small, @tablet-big {
+    font-size: 2.5vw;
+  }
+
+  @media @tablet-landscape, @iPad-Pro-landscape {
+    font-size: 2vw;
+  }
+}
+
+// Table Formatting
+.meu-table {
+  font-size: 0.9vw;
+  margin-top: -2vh;
+  border: 0.5px white solid;
+
+  @media @smartphone-all {
+    font-size: 2vw;
+    margin-top: -6vh;
+  }
+
+  @media @tablet-small, @tablet-big {
+    font-size: 1.8vw;
+  }
+
+  @media @tablet-landscape, @iPad-Pro-landscape {
+    font-size: 1.4vw;
+  }
+
+  tr, th, td {
+    border: 0.5px white solid;
+  }
+
+  th, td {
+    padding: 1vw 2vw 1vw 2vw;
+    line-height: 200%;
+  }
+
+  .colspan2 {
+    .aligntext(center);
+  }
+
+  .dayheader {
+    font-size: 0.6vw;
+
+    @media @smartphone-all {
+      font-size: 1.7vw;
+    }
+
+    @media @tablet-small, @tablet-big {
+      font-size: 1.1vw;
+    }
   }
 }
 
@@ -1530,6 +1705,7 @@ body {
             }
           }
 
+          // 4. Sponsors
           #meu-sponsors, #meu-sponsors-2 {
             width: @max;
             height: auto;
@@ -1628,95 +1804,7 @@ body {
           // 6. Contact
           #meu-contact-form {
             form#meu-form {
-
-              .inline-form-group {
-                .display(inline-block);
-                width: 20vw;
-                height: 10vh;
-
-                @media @smartphone-all {
-                  width: 38.3vw;
-                }
-
-                @media @tablet-small, @tablet-big {
-                  width: 38.3vw;
-                }
-
-                &:first-child {
-                  margin-right: 2vw;
-                }
-              }
-
-              .textarea-form-group {
-                width: 42.5vw;
-                margin-bottom: 0;
-
-                @media @smartphone-all, @tablet-small, @tablet-big {
-                  width: 100%;
-                }
-              }
-
-              .form-group {
-
-                input, textarea {
-                  background: none !important;
-                  border: none;
-                  outline: none !important;
-                  border-radius: 0 !important;
-                  padding: 0 !important;
-                  //
-                  color: @meu-white !important;
-                  letter-spacing: 0.1em;
-                  font-size: 0.7vw;
-                  border-top: 1px @meu-white solid;
-
-                  &:focus, &:hover, &:active {
-                    background: none !important;
-                    outline: none !important;
-                    box-shadow: none !important;
-                    border-top: 1px @meu-white solid;
-                  }
-
-                  @media @smartphone-all {
-                    font-size: 2.5vw;
-                  }
-                  @media @tablet-small, @tablet-big {
-                    font-size: 1.5vw;
-                  }
-                }
-
-                input {
-                  .display(inline-block);
-                  width: @max;
-                  height: 10vh;
-                }
-
-                textarea {
-                  width: @max;
-                  height: 15vh;
-                  margin-bottom: 3vh;
-                  padding-top: 3.5vh !important;
-                  line-height: 4vh;
-                  resize: none !important;
-                }
-              }
-
-              // Error Message
-              .errorMessage {
-                font-size: 0.7vw;
-                float: right;
-                transform: translate(0, -15px);
-                //
-                color: @meu-yellow;
-
-                @media @smartphone-all {
-                  font-size: 2vw;
-                }
-
-                @media @tablet-small, @tablet-big {
-                  font-size: 1.5vw;
-                }
-              }
+              .form-styling;
             }
           }
 
@@ -1742,6 +1830,158 @@ body {
 
             @media @tablet-small, @tablet-big {
               font-size: 1.5vw;
+            }
+          }
+
+          // Account Menu
+          #meu-account-menu {
+            margin-bottom: 10vh;
+
+            li {
+              margin: 0 1.5vw 0 0;
+
+              .meu-link {
+                font-size: 1vw;
+
+                @media @smartphone-all {
+                  font-size: 2.3vw;
+                }
+
+                @media @tablet-small, @tablet-big {
+                  font-size: 2.3vw;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  font-size: 1.7vw;
+                }
+
+                &:hover {
+                  border-top: 1px @meu-yellow solid;
+                }
+              }
+
+              #meu-a-1 {
+                border-top: 1px @meu-yellow solid;
+              }
+            }
+          }
+
+          #meu-section-application {
+            .display;
+          }
+
+          #meu-account-details, #meu-account-seminars, #meu-account-materials {
+            .display(none);
+          }
+
+          #meu-application-form {
+            #meu-form-2 {
+              .form-styling;
+              font-size: 1.2vw !important;
+
+              @media @smartphone-all {
+                font-size: 3vw !important;
+              }
+
+              @media @tablet-small, @tablet-big {
+                font-size: 2vw !important;
+              }
+
+              @media @tablet-landscape, @iPad-Pro-landscape {
+                font-size: 1.5vw !important;
+              }
+
+              hr {
+                margin-top: 0 !important;
+                margin-bottom: 8vh !important;
+                border-top: 0.5px rgba(250, 250, 250, 0.1) solid;
+
+                @media @tablet-small, @tablet-big {
+                  margin-bottom: 6vh !important;
+                }
+
+                @media @tablet-landscape, @iPad-Pro-landscape {
+                  margin-bottom: 7vh !important;
+                }
+              }
+
+              .form-group {
+                label {
+                  font-size: 1vw !important;
+                  border-top: 1px @meu-yellow solid !important;
+                  margin-bottom: 5vh;
+
+                  @media @smartphone-all {
+                    font-size: 3vw !important;
+                  }
+
+                  @media @tablet-small, @tablet-big {
+                    font-size: 2vw !important;
+                  }
+
+                  @media @tablet-landscape, @iPad-Pro-landscape {
+                    font-size: 1.5vw !important;
+                  }
+
+                  &:hover {
+                    cursor: default;
+                  }
+                }
+
+                .af-sublabel {
+                  font-size: 1vw !important;
+                  opacity: 0.9;
+                  margin: 4vh 0 2vh;
+
+                  @media @smartphone-all {
+                    font-size: 2.8vw !important;
+                    margin: 0vh 0 2vh;
+                  }
+
+                  @media @tablet-small, @tablet-big {
+                    font-size: 2vw !important;
+                    margin: 0vh 0 2vh;
+                  }
+
+                  @media @tablet-landscape, @iPad-Pro-landscape {
+                    font-size: 1.5vw !important;
+                    margin: 0vh 0 2vh;
+                  }
+                }
+
+                input, textarea {
+                  border-top: none !important;
+                  font-size: 1vw !important;
+                  margin-bottom: 7vh;
+
+                  @media @smartphone-all {
+                    font-size: 3vw !important;
+                  }
+
+                  @media @tablet-small, @tablet-big {
+                    font-size: 2vw !important;
+                    margin: 0vh 0 4vh;
+                  }
+
+                  @media @tablet-landscape, @iPad-Pro-landscape {
+                    font-size: 1.5vw !important;
+                    margin: 0vh 0 6vh;
+                  }
+
+                  &:hover {
+                    border-top: none !important;
+                  }
+                }
+
+                input {
+                  height: 3vh;
+                }
+
+                textarea {
+                  width: 70%;
+                  margin-top: 3vh;
+                }
+              }
             }
           }
         }
